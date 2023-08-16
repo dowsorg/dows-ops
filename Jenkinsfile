@@ -14,7 +14,7 @@ pipeline {
                     // 获取分支名称
                     def branch = ${env.BRANCH_NAME.substring(0,4)}
                     def version = ${env.BRANCH_NAME.substring(4)}
-                    echo "=============build $branch-$version=============="
+                    echo "=============build ${branch}-${version}=============="
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
                         echo 'Building for development environment'
@@ -30,8 +30,8 @@ pipeline {
                         //def projectName = sh(script: 'mvn help:evaluate -Dexpression=project.name -q -DforceStdout', returnStdout: true).trim()
                         // 获取当前项目的打包名称
                          docker.withRegistry('https://dev-registry.example.com', 'dev-credentials') {
-                            sh 'docker build -t $artifactId-$branch:$version .'
-                            sh 'docker push $artifactId-$branch:$version'
+                            sh 'docker build -t ${artifactId}-${branch}:${version} .'
+                            sh 'docker push ${artifactId}-${branch}:${version}'
                         }
                     } else if (branch.startsWith('sit-')) {
                         // 测试环境
