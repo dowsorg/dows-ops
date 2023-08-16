@@ -7,7 +7,7 @@ pipeline {
                 script {
                     // 获取分支名称
                     def branchName = env.BRANCH_NAME
-                    echo '=============build $branchName=============='
+                    echo '=============build ${branchName}=============='
                     // 根据分支名称的前缀判断不同的环境
                     if (branchName.startsWith('dev-')) {
                         // 开发环境
