@@ -5,11 +5,11 @@
     <parent>
         <artifactId>dows-parent</artifactId>
         <groupId>org.dows.framework</groupId>
-        <version>20220701-SNAPSHOT</version>
+        <version>20230331-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>dxz-user</artifactId>
+    <artifactId>dows-ops</artifactId>
     <groupId>org.dows.saas</groupId>
     <version>20230730-SNAPSHOT</version>
 
@@ -38,51 +38,6 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>org.dows.saas</groupId>
-            <artifactId>goods-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.saas</groupId>
-            <artifactId>order-user-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.saas</groupId>
-            <artifactId>store-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.cloud</groupId>
-            <artifactId>account-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.cloud</groupId>
-            <artifactId>user-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.cloud</groupId>
-            <artifactId>auth-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.saas</groupId>
-            <artifactId>amp-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.saas</groupId>
-            <artifactId>marketing-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dows.saas</groupId>
-            <artifactId>pay-rest</artifactId>
-            <version>20220701-SNAPSHOT</version>
-        </dependency>
 
 
         <!--database-->
@@ -96,28 +51,16 @@
         </dependency>
 
         <!--api 接口文档-->
-<!--
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-spring-boot-starter</artifactId>
-        </dependency>
--->
-
-<!--        <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.0.4</version>
-        </dependency>-->
+        </dependency>
 
         <!--web -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <!--<version>4.0.1</version>-->
         </dependency>
 
         <dependency>
@@ -128,10 +71,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
-<!--        <dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>-->
+        </dependency>
 
 
         <!--异步日志-->
@@ -196,7 +139,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
                 <configuration>
                     <layers>
                         <enabled>true</enabled>
