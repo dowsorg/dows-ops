@@ -23,8 +23,8 @@ pipeline {
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=dxz@dows --password=dowsdxz123456 registry.cn-hangzhou.aliyuncs.com
-                            docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$tag
-                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$tag
+                            docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:${tag}
+                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:${tag}
                         '''
                     } else if (branch.startsWith('sit-')) {
                         // 测试环境
