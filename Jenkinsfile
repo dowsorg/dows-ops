@@ -15,7 +15,6 @@ pipeline {
                     def branch = env.BRANCH_NAME.split('/')[1]
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
-                    env.VER = ver
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
                         echo "=============build $rte-$tag=============="
