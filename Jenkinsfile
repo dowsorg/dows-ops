@@ -14,7 +14,7 @@ pipeline {
                     // 获取分支名称
                     def branch = ${env.BRANCH_NAME}
                     def version = ${env.BRANCH_NAME}
-                    echo "=============build $branch-${version} ${branch.substring(4)}=============="
+                    echo "=============build ${branch}-${version} ${branch.substring(4)}=============="
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
                         echo 'Building for development environment'
