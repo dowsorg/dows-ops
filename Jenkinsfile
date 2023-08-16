@@ -54,6 +54,5 @@ pipeline {
                 }
             }
         }
-        stage('push image') {
     }
 }
