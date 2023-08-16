@@ -48,6 +48,8 @@ pipeline {
                         // 执行其他环境的构建步骤
                         echo 'Building for production environment'
                         // 执行 Maven 打包等操作
+                    } else {
+                        //
                     }
                 }
             }
