@@ -14,8 +14,8 @@ pipeline {
                     // 获取分支名称 并用分割出版本号和名称
                     def branch = env.BRANCH_NAME.split('/')[1]
                     def rte = branch.split('-')[0]
-                    def version = branch.split('-')[1]
-                    echo "=============build $rte-$version=============="
+                    def tag = branch.split('-')[1]
+                    echo "=============build $rte-$tag=============="
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
                         echo 'Building for development environment'
@@ -23,8 +23,8 @@ pipeline {
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=dxz@dows --password=dowsdxz123456 registry.cn-hangzhou.aliyuncs.com
-                            docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-$branch:$version
-                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-$branch:$version
+                            docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$tag
+                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$tag
                         '''
                     } else if (branch.startsWith('sit-')) {
                         // 测试环境
