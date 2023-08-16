@@ -17,14 +17,14 @@ pipeline {
                     def ver = branch.split('-')[1]
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
-                        echo "=============build $rte-$tag=============="
+                        echo "=============build $rte-$ver=============="
                         echo 'Building for development environment'
                         sh '''
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=dxz@dows --password=dowsdxz123456 registry.cn-hangzhou.aliyuncs.com
-                            docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:VER
-                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:VER
+                            docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:ver
+                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:ver
                         '''
                     } else if (branch.startsWith('sit-')) {
                         // 测试环境
