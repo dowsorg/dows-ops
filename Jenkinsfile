@@ -12,11 +12,12 @@ pipeline {
             steps {
                 script {
                     // 获取分支名称
-                    def branch = ${env.BRANCH_NAME}.substring(0,4)
-                    def version = ${env.BRANCH_NAME}.substring(4)
-                    echo "=============build ${branch}-${version}=============="
+//                     def branch = ${env.BRANCH_NAME}.substring(0,4)
+//                     def version = ${env.BRANCH_NAME}.substring(4)
+//                     echo "=============build ${branch}-${version}=============="
+                       echo "==================================================="
                     // 根据分支名称的前缀判断不同的环境
-                    if (branch.startsWith('dev-')) {
+//                     if (branch.startsWith('dev-')) {
 //                         echo 'Building for development environment'
 //                         sh '''
 //                             /usr/local/mvn/bin/mvn -v
@@ -33,22 +34,22 @@ pipeline {
 //                             sh 'docker build -t ${artifactId}-${branch}:${version} .'
 //                             sh 'docker push ${artifactId}-${branch}:${version}'
 //                         }
-                    } else if (branch.startsWith('sit-')) {
-                        // 测试环境
-                        // 执行测试环境的构建步骤
-                        echo 'Building for sit environment'
-                        // 执行 Maven 打包等操作
-                    } else if (branch.startsWith('uat-')) {
-                        // 生产环境
-                        // 执行生产环境的构建步骤
-                        echo 'Building for uat environment'
-                        // 执行 Maven 打包等操作
-                    } else if (branch.startsWith('prd-')){
-                        // 其他环境
-                        // 执行其他环境的构建步骤
-                        echo 'Building for production environment'
-                        // 执行 Maven 打包等操作
-                    }
+//                     } else if (branch.startsWith('sit-')) {
+//                         // 测试环境
+//                         // 执行测试环境的构建步骤
+//                         echo 'Building for sit environment'
+//                         // 执行 Maven 打包等操作
+//                     } else if (branch.startsWith('uat-')) {
+//                         // 生产环境
+//                         // 执行生产环境的构建步骤
+//                         echo 'Building for uat environment'
+//                         // 执行 Maven 打包等操作
+//                     } else if (branch.startsWith('prd-')){
+//                         // 其他环境
+//                         // 执行其他环境的构建步骤
+//                         echo 'Building for production environment'
+//                         // 执行 Maven 打包等操作
+//                     }
                 }
             }
         }
