@@ -22,18 +22,10 @@ pipeline {
                         sh '''
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                            docker login --username=dxz@dows --password=dowsdxz123456 registry.cn-hangzhou.aliyuncs.com
+                            docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-$branch:$version
+                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-$branch:$version
                         '''
-                        // 获取当前项目的 artifactId
-                        //def artifactId = sh(script: 'mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout', returnStdout: true).trim()
-                        // 获取当前项目的版本号
-                        // def version = sh(script: 'mvn help:evaluate -Dexpression=project.version -q -DforceStdout', returnStdout: true).trim()
-                        // 获取当前项目的名称
-                        //def projectName = sh(script: 'mvn help:evaluate -Dexpression=project.name -q -DforceStdout', returnStdout: true).trim()
-                        // 获取当前项目的打包名称
-                        docker.withRegistry('http://192.168.1.60:7080', 'dev-credentials') {
-                            sh 'docker build -t dows-ops-${branch}:${version} .'
-                            sh 'docker push dows-ops-${branch}:${version}'
-                        }
                     } else if (branch.startsWith('sit-')) {
                         // 测试环境
                         // 执行测试环境的构建步骤
