@@ -15,9 +15,10 @@ pipeline {
                     def branch = env.BRANCH_NAME.split('/')[1]
                     def rte = branch.split('-')[0]
                     def tag = branch.split('-')[1]
-                    echo "=============build $rte-$tag=============="
+
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
+                        echo "=============build $rte-$tag=============="
                         echo 'Building for development environment'
                         sh '''
                             /usr/local/mvn/bin/mvn -v
