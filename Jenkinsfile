@@ -1,11 +1,11 @@
 pipeline {
     agent any
 
-//     environment {
-//         JAVA_HOME = '/usr/local/jdk17'  // 指定 JDK 17 的路径
-//         MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
-//         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
-//     }
+    environment {
+        JAVA_HOME = '/usr/local/jdk17'  // 指定 JDK 17 的路径
+        MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
+        PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
+    }
 
     stages {
         stage('build jar') {
