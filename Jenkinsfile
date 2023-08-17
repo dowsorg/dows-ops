@@ -23,9 +23,9 @@ pipeline {
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=dxz@dows --password=dowsdxz123456 registry.cn-hangzhou.aliyuncs.com
-                            docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:ver
-                            docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:ver
                         '''
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$ver"
                     } else if (branch.startsWith('sit-')) {
                         // 测试环境
                         // 执行测试环境的构建步骤
