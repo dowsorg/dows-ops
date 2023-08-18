@@ -6,6 +6,9 @@ pipeline {
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
         SAAS_PATH = '/dows/hep'
+        BRANCH="${env.BRANCH_NAME}.split('/')[1]"
+        RTE="${BRANCH}.split('-')[0]"
+        VER="${BRANCH}.split('-')[1]"
     }
 
     stages {
@@ -13,14 +16,29 @@ pipeline {
         stage('CI-CD') {
             steps {
                 script {
+
+                    // def branch = env.BRANCH_NAME.split('/')[1]
+                    // def rte = branch.split('-')[0]
+                    // def ver = branch.split('-')[1]
+
+                    if( env.BRANCH_NAME != null ) {
+                        checkout([$class: 'GitSCM', branches: [[name: "origin/${env.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
+                        updateGitlabCommitStatus name: '代码拉取', state: 'success'
+                    } else {
+                        withEnv(["BRANCH=${params.PREJECT_BRANCHTAG}"])
+                        echo "==============$BRANCH=================="
+                        checkout([$class: 'GitSCM', branches: [[name: "${params.PREJECT_BRANCHTAG}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
+                        updateGitlabCommitStatus name: '代码拉取', state: 'success'
+                    }
+
                     // 获取分支名称 并用分割出版本号和名称
-                    def branch = env.BRANCH_NAME.split('/')[1]
-                    def rte = branch.split('-')[0]
-                    def ver = branch.split('-')[1]
-                    echo "=============build ${env.BRANCH_NAME}-[$rte-$ver]=============="
-                    // 根据分支名称的前缀判断不同的环境s
-                    if (branch.startsWith('dev-')) {
-                        echo 'Building for development environment for "${env.BRANCH_NAME}"'
+                    // def branch = env.BRANCH_NAME.split('/')[1]
+                    // def rte = branch.split('-')[0]
+                    // def ver = branch.split('-')[1]
+                    echo "=============build $rte-$ver=============="
+                    // 根据分支名称的前缀判断不同的环境
+                    if (BRANCH.startsWith('dev-')) {
+                        echo 'Building for development environment for ${env.BRANCH_NAME}'
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
                         checkout([$class: 'GitSCM', branches: [[name: '${env.BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         sh '''
