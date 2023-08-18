@@ -18,7 +18,7 @@ pipeline {
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
                     echo "=============build ${env.BRANCH_NAME}-[$rte-$ver]=============="
-                    // 根据分支名称的前缀判断不同的环境
+                    // 根据分支名称的前缀判断不同的环境s
                     if (branch.startsWith('dev-')) {
                         echo 'Building for development environment for ${env.BRANCH_NAME}'
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
