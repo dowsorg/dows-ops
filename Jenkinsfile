@@ -30,7 +30,7 @@ pipeline {
                         checkout([$class: 'GitSCM', branches: [[name: "${params.PREJECT_BRANCHTAG}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         updateGitlabCommitStatus name: '代码拉取', state: 'success'
                     }
-
+                    echo "==============PREJECT_BRANCHTAG：${params.PREJECT_BRANCHTAG}=================="
                     // 获取分支名称 并用分割出版本号和名称
                     // def branch = env.BRANCH_NAME.split('/')[1]
                     // def rte = branch.split('-')[0]
