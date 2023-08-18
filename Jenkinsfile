@@ -21,7 +21,7 @@ pipeline {
                     // def rte = branch.split('-')[0]
                     // def ver = branch.split('-')[1]
 
-                    if( env.BRANCH_NAME != null ) {
+                    if( env.gitlabSourceBranch != null ) {
                         checkout([$class: 'GitSCM', branches: [[name: "origin/${env.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         updateGitlabCommitStatus name: '代码拉取', state: 'success'
                     } else {
