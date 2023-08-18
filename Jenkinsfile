@@ -5,42 +5,86 @@ pipeline {
         JAVA_HOME = '/usr/local/jdk17'  // 指定 JDK 17 的路径
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
+        SAAS_PATH = '/dows/hep'
     }
 
     stages {
-        stage('build jar') {
+
+        stage('CI-CD') {
             steps {
                 script {
                     // 获取分支名称 并用分割出版本号和名称
                     def branch = env.BRANCH_NAME.split('/')[1]
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
+                    echo "=============build $rte-$ver=============="
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
-                        echo "=============build $rte-$ver=============="
                         echo 'Building for development environment'
+                        //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
+                        checkout([$class: 'GitSCM', branches: [[name: '${env.BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         sh '''
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
-                            docker login --username=dxz@dows --password=dowsdxz123456 registry.cn-hangzhou.aliyuncs.com
+                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/dows/dows-ops-dev:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-dev:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-dev:$ver"
+                        // 远程copy 文件
+                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        // 在远程服务器上执行启动脚本
+                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
+                        // 本地copy并执行
+                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
+                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
                     } else if (branch.startsWith('sit-')) {
-                        // 测试环境
-                        // 执行测试环境的构建步骤
                         echo 'Building for sit environment'
-                        // 执行 Maven 打包等操作
+                        sh '''
+                            /usr/local/mvn/bin/mvn -v
+                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
+                        '''
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
+                        // 远程copy 文件
+                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        // 在远程服务器上执行启动脚本
+                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
+                        // 本地copy并执行
+                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
+                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
                     } else if (branch.startsWith('uat-')) {
-                        // 生产环境
-                        // 执行生产环境的构建步骤
                         echo 'Building for uat environment'
-                        // 执行 Maven 打包等操作
+                        sh '''
+                            /usr/local/mvn/bin/mvn -v
+                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
+                        '''
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-uat:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-uat:$ver"
+                        // 远程copy 文件
+                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        // 在远程服务器上执行启动脚本
+                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
+                        // 本地copy并执行
+                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
+                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
                     } else if (branch.startsWith('prd-')){
-                        // 其他环境
-                        // 执行其他环境的构建步骤
                         echo 'Building for production environment'
-                        // 执行 Maven 打包等操作
+                        sh '''
+                            /usr/local/mvn/bin/mvn -v
+                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
+                        '''
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-prd:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-prd:$ver"
+                        // 远程copy 文件
+                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        // 在远程服务器上执行启动脚本
+                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
+                        // 本地copy并执行
+                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
+                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
                     }
                 }
             }
