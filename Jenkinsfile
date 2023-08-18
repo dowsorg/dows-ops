@@ -20,7 +20,7 @@ pipeline {
                     echo "=============build $rte-$ver=============="
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
-                        echo 'Building for development environment'
+                        echo 'Building for development environment for ${env.BRANCH_NAME}'
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
                         checkout([$class: 'GitSCM', branches: [[name: '${env.BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         sh '''
