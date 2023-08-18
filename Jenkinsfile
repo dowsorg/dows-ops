@@ -6,9 +6,9 @@ pipeline {
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
         SAAS_PATH = '/dows/hep'
-        BRANCH="${env.BRANCH_NAME}.split('/')[1]"
-        RTE="${BRANCH}.split('-')[0]"
-        VER="${BRANCH}.split('-')[1]"
+        BRANCH="${env.BRANCH_NAME.split('/')[1]}"
+        RTE="${BRANCH.split('-')[0]}"
+        VER="${BRANCH.split('-')[1]}"
     }
 
     stages {
