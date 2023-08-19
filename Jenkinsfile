@@ -54,7 +54,8 @@ pipeline {
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
                         checkout([$class: 'GitSCM', 
                             branches: [[name: "$branch"]], 
-                            extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'src']],// 下载代码放到 ${WORKSPACE}/src 中
+                            extensions: [],
+                            //extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'src']],// 下载代码放到 ${WORKSPACE}/src 中
                             userRemoteConfigs: [[
                                 credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
                                 url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
