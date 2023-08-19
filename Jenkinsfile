@@ -69,7 +69,7 @@ pipeline {
                             docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-sop-dev:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
                         // 远程copy 文件
                         sh "sshpass -p 'findsoft2022!@#' scp saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH"
                         // 在远程服务器上执行启动脚本
