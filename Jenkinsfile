@@ -16,7 +16,7 @@ pipeline {
         JAVA_HOME = '/usr/local/jdk17'  // 指定 JDK 17 的路径
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
-        SAAS_PATH = '/dows/hep'
+        SAAS_PATH = '/dows/ops'
         BRANCH="${env.BRANCH_NAME.split('/')[1]}"
         RTE="${BRANCH.split('-')[0]}"
         VER="${BRANCH.split('-')[1]}"
@@ -56,7 +56,7 @@ pipeline {
                         checkout([$class: 'GitSCM', 
                             branches: [[name: "$branch"]], 
                             //extensions: [],
-                            extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '']],// 下载代码放到 ${WORKSPACE}/src 中
+                            extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '']],// 下载代码放到 ${WORKSPACE}/ 中
                             userRemoteConfigs: [[
                                 credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
                                 url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
@@ -68,15 +68,15 @@ pipeline {
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-dev:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-dev:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-sop-dev:$ver"
                         // 远程copy 文件
-                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH"
                         // 在远程服务器上执行启动脚本
-                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd /dows/hep/saas/ops-admin/dev && docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
-                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
-                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
+                        //sh "cp -r saas/ops-admin/dev $SAAS_PATH"
+                        //sh "cd /dows/hep/saas/ops-admin/dev && docker compose stop && docker compose up -d"
                     } else if (branch.startsWith('sit-')) {
                         echo 'Building for sit environment'
                         sh '''
