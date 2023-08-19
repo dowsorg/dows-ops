@@ -1,3 +1,14 @@
+
+def detect_branch() {
+    def RESULT = sh(returnStdout: true, script: '''
+        cd src 
+        for branch in `git branch -r | grep -v HEAD`; do echo -e `git show --format="%ci %cr" $branch | head -n 1` "\\t" $branch; done | sort -r |head -n 1 |awk \'{print $NF}\'
+    ''') // 获取分支名如：origin/develop
+    def content = "RESULT=$RESULT\n" 
+    RESULT=sh(returnStdout: true, script: content+'echo $RESULT|sed "s#origin/##g"') // 删除 origin
+    return RESULT
+}
+
 pipeline {
     agent any
 
@@ -17,10 +28,14 @@ pipeline {
             steps {
                 script {
 
+                    def Branch = detect_branch()
+                    echo "================Branch = ${Branch}================"
                     // def branch = env.BRANCH_NAME.split('/')[1]
                     // def rte = branch.split('-')[0]
                     // def ver = branch.split('-')[1]
-
+                    def arr = ref.split("refs/heads/") as List
+                    def currentBranch = arr[1]
+                    echo "================currentBranch = ${currentBranch}================"
                     if( env.gitlabSourceBranch != null ) {
                         checkout([$class: 'GitSCM', branches: [[name: "origin/${env.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         updateGitlabCommitStatus name: '代码拉取', state: 'success'
