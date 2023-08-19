@@ -27,35 +27,29 @@ pipeline {
         stage('CI-CD') {
             steps {
                 script {
-
-                    def Branch = detect_branch()
-                    echo "================Branch = ${Branch}================"
-                    // def branch = env.BRANCH_NAME.split('/')[1]
-                    // def rte = branch.split('-')[0]
-                    // def ver = branch.split('-')[1]
-                    def arr = ref.split("refs/heads/") as List
-                    def currentBranch = arr[1]
-                    echo "================currentBranch = ${currentBranch}================"
-                    if( env.gitlabSourceBranch != null ) {
-                        checkout([$class: 'GitSCM', branches: [[name: "origin/${env.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
-                        updateGitlabCommitStatus name: '代码拉取', state: 'success'
-                    } else {
-                        withEnv(["BRANCH=${params.PREJECT_BRANCHTAG}"])
-                        echo "==============$BRANCH=================="
-                        checkout([$class: 'GitSCM', branches: [[name: "${params.PREJECT_BRANCHTAG}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
-                        updateGitlabCommitStatus name: '代码拉取', state: 'success'
-                    }
-                    echo "==============PREJECT_BRANCHTAG：${params.PREJECT_BRANCHTAG}=================="
                     // 获取分支名称 并用分割出版本号和名称
-                    // def branch = env.BRANCH_NAME.split('/')[1]
-                    // def rte = branch.split('-')[0]
-                    // def ver = branch.split('-')[1]
-                    echo "=============build $rte-$ver=============="
+                    def branch = detect_branch()
+                    def rte = branch.split('-')[0]
+                    def ver = branch.split('-')[1]
+                    // 手动构建
+                    // if( BRANCH != null ) {
+                    //     echo "================manual build ${branch}================"
+                    //     checkout([$class: 'GitSCM', branches: [[name: "origin/${env.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
+                    //     updateGitlabCommitStatus name: '代码拉取', state: 'success'
+                    // } else {
+                    //     //withEnv(["BRANCH=${params.PREJECT_BRANCHTAG}"])
+                    //     //echo "==============$BRANCH=================="
+                    //     echo "================auto build ${branch}================"
+                    //     checkout([$class: 'GitSCM', branches: [[name: "orign/${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
+                    //     updateGitlabCommitStatus name: '代码拉取', state: 'success'
+                    // }
+                    
+                   
                     // 根据分支名称的前缀判断不同的环境
-                    if (BRANCH.startsWith('dev-')) {
-                        echo 'Building for development environment for ${env.BRANCH_NAME}'
+                    if (branch.startsWith('dev-')) {
+                        echo "Building for development environment for ${branch}"
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
-                        checkout([$class: 'GitSCM', branches: [[name: '${env.BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
+                        checkout([$class: 'GitSCM', branches: [[name: "orign/${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         sh '''
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
