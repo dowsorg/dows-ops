@@ -26,6 +26,8 @@ pipeline {
 
         stage('CI-CD') {
             steps {
+                step([$class: 'WsCleanup']) //清理空间
+                        
                 script {
                     // 获取分支名称 并用分割出版本号和名称
                     def branch = detect_branch()
@@ -49,7 +51,15 @@ pipeline {
                     if (branch.startsWith('dev-')) {
                         echo "Building for development environment for ${branch}"
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
-                        checkout([$class: 'GitSCM', branches: [[name: "orign/${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
+                        checkout([$class: 'GitSCM', 
+                            branches: [[name: "$branch"]], // 任意分支 博主用的master 
+                            //extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'src']],// 下载代码放到 ${WORKSPACE}/src 中
+                            userRemoteConfigs: [[
+                                credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
+                                url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
+                            ]]
+                        ])
+                        //checkout([$class: 'GitSCM', branches: [[name: "orign/${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
                         sh '''
                             /usr/local/mvn/bin/mvn -v
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
