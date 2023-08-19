@@ -26,7 +26,8 @@ pipeline {
 
         stage('CI-CD') {
             steps {
-                step([$class: 'WsCleanup']) //清理空间
+                //清理空间
+                step([$class: 'WsCleanup']) 
                         
                 script {
                     // 获取分支名称 并用分割出版本号和名称
@@ -52,8 +53,8 @@ pipeline {
                         echo "Building for development environment for ${branch}"
                         //git branch: "${env.BRANCH_NAME}", url: 'http://192.168.1.21/dows/dows-hep.git'
                         checkout([$class: 'GitSCM', 
-                            branches: [[name: "$branch"]], // 任意分支 博主用的master 
-                            //extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'src']],// 下载代码放到 ${WORKSPACE}/src 中
+                            branches: [[name: "$branch"]], 
+                            extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'src']],// 下载代码放到 ${WORKSPACE}/src 中
                             userRemoteConfigs: [[
                                 credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
                                 url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
