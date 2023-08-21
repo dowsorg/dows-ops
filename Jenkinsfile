@@ -55,7 +55,7 @@ pipeline {
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
       
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/dev"'
@@ -72,8 +72,8 @@ pipeline {
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
                         // 远程copy 文件
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/sit"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/sit root@192.168.1.60:$SAAS_PATH"
@@ -88,8 +88,8 @@ pipeline {
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-uat:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-uat:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
                         // 远程copy 文件
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/uat"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/uat root@192.168.1.60:$SAAS_PATH"
@@ -101,8 +101,8 @@ pipeline {
                             /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
                             docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
                         '''
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-prd:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-prd:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
                         // 远程copy 文件
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/prd"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/prd root@192.168.1.60:$SAAS_PATH"
