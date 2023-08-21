@@ -87,7 +87,7 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
                         // 远程copy 文件
-                        sh "sshpass -p 'findsoft2022!@#' scp saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
+                        sh "sshpass -p 'findsoft2022!@#' scp ./saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
                         // 在远程服务器上执行启动脚本
                         sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/dev && docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
