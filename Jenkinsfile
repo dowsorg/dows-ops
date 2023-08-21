@@ -33,18 +33,6 @@ pipeline {
                     def branch = detect_branch()
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
-                    // 手动构建
-                    // if( BRANCH != null ) {
-                    //     echo "================manual build ${branch}================"
-                    //     checkout([$class: 'GitSCM', branches: [[name: "origin/${env.BRANCH_NAME}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
-                    //     updateGitlabCommitStatus name: '代码拉取', state: 'success'
-                    // } else {
-                    //     //withEnv(["BRANCH=${params.PREJECT_BRANCHTAG}"])
-                    //     //echo "==============$BRANCH=================="
-                    //     echo "================auto build ${branch}================"
-                    //     checkout([$class: 'GitSCM', branches: [[name: "orign/${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'dows-gitlab', url: 'http://192.168.1.21/dows/dows-ops.git']]])
-                    //     updateGitlabCommitStatus name: '代码拉取', state: 'success'
-                    // }
                     
                     // 根据分支名称的前缀判断不同的环境
                     if (branch.startsWith('dev-')) {
@@ -73,7 +61,7 @@ pipeline {
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/dev"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH"
                         // 在远程服务器上执行启动脚本
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/dev;sudo docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com;docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/dev;sudo docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com;docker compose stop && docker compose up -d"'
                         // 本地copy并执行
                         //sh "cp -r saas/ops-admin/dev $SAAS_PATH/ops-admin/dev"
                         //sh "cd /dows/hep/saas/ops-admin/dev && docker compose stop && docker compose up -d"
@@ -89,7 +77,7 @@ pipeline {
                         // 远程copy 文件
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/sit"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/sit root@192.168.1.60:$SAAS_PATH"
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/sit && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/sit && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
                         // 本地copy并执行
                         //sh "cp -r saas/hep-admin/dev $SAAS_PATH"
                         //sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
@@ -105,7 +93,7 @@ pipeline {
                         // 远程copy 文件
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/uat"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/uat root@192.168.1.60:$SAAS_PATH"
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/uat && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/uat && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
                     } else if (branch.startsWith('prd-')){
                         echo 'Building for production environment'
                         sh '''
@@ -118,7 +106,7 @@ pipeline {
                         // 远程copy 文件
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/prd"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/prd root@192.168.1.60:$SAAS_PATH"
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/prd && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/prd && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
                     }
                 }
             }
