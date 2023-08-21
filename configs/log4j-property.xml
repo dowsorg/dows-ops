@@ -16,9 +16,9 @@
 
   <!--  <property name="BASE_LOG_PATH" value="/dows/dxz"/>-->
     <!--日志应用名，例如/data/logs/app/app-info.log-->
-    <property name="APP_NAME" value="dxz-user"/>
+    <property name="APP_NAME" value="ops-admin"/>
     <!--日志根路径-->
-    <property name="LOG_HOME" value="/dows/dxz/dxz-user/logs"/>
+    <property name="LOG_HOME" value="/dows/saas/ops-admin/logs"/>
 
 <!--    <property name="LOG_NAME" value="spring"/>
     <property name="LOG_FILE" value="${LOG_HOME}/${LOG_NAME}-%d{yyyy-MM-dd}.%i.log"/>
