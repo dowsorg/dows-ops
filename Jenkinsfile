@@ -16,7 +16,7 @@ pipeline {
         JAVA_HOME = '/usr/local/jdk17'  // 指定 JDK 17 的路径
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'  // 指定 Maven 的路径
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
-        SAAS_PATH = '/dows/saas/ops'
+        SAAS_PATH = '/dows/saas'
         BRANCH="${env.BRANCH_NAME.split('/')[1]}"
         RTE="${BRANCH.split('-')[0]}"
         VER="${BRANCH.split('-')[1]}"
@@ -71,7 +71,7 @@ pipeline {
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
                         // 远程copy 文件
                         //scp -P 8888 uuuu.jar root@10.X.X.X:/tmp/
-                        sh "sshpass -p 'findsoft2022!@#' scp saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
+                        sh "sshpass -p 'findsoft2022!@#' scp ./saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
                         // 在远程服务器上执行启动脚本
                         sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/dev && docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
