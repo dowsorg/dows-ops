@@ -7,18 +7,17 @@ server:
       io: 4
       worker: 32
   servlet:
-    context-path: /user
+    context-path: /ops
 
 
 spring:
   application:
     name: dows-user
   profiles:
-#    include:
-    active: test
+    include: ops-mysql,ops-mybatis
+    active: dev
 
-order:
-  url: http://81.69.171.79:9011/order
+
 
 jasypt:
   encryptor:
