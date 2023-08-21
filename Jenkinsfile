@@ -71,7 +71,7 @@ pipeline {
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-ops-dev:$ver"
                         // 远程copy 文件
                         //scp -P 8888 uuuu.jar root@10.X.X.X:/tmp/
-                        sh "sshpass -p 'findsoft2022!@#' scp /var/jenkins_home/workspace/dows-ops/saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
                         // 在远程服务器上执行启动脚本
                         sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/dev && docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
@@ -87,9 +87,9 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
                         // 远程copy 文件
-                        sh "sshpass -p 'findsoft2022!@#' scp ./saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/sit"
                         // 在远程服务器上执行启动脚本
-                        sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/dev && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/sit && docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
                         //sh "cp -r saas/hep-admin/dev $SAAS_PATH"
                         //sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
@@ -103,12 +103,9 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-uat:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-uat:$ver"
                         // 远程copy 文件
-                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/uat"
                         // 在远程服务器上执行启动脚本
-                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
-                        // 本地copy并执行
-                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
-                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
+                        sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/uat && docker-compose stop && docker compose up -d"'
                     } else if (branch.startsWith('prd-')){
                         echo 'Building for production environment'
                         sh '''
@@ -119,12 +116,9 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-prd:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-prd:$ver"
                         // 远程copy 文件
-                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/prd root@192.168.1.60:$SAAS_PATH/ops-admin/prd"
                         // 在远程服务器上执行启动脚本
-                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
-                        // 本地copy并执行
-                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
-                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
+                        sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/prd && docker-compose stop && docker compose up -d"'
                     }
                 }
             }
