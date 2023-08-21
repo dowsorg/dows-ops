@@ -6,6 +6,7 @@ spring:
     activate:
       on-profile: dev
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.1.60:3306/dows_hep?serverTimezone=GMT%2B8&autoReconnect=true&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
     password: root
@@ -43,6 +44,7 @@ spring:
     activate:
       on-profile: sit
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.1.60:3306/dows_hep?serverTimezone=GMT%2B8&autoReconnect=true&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
     password: root
@@ -115,6 +117,7 @@ spring:
     activate:
       on-profile: prd
   datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://101.35.194.46:3306/nezhadb?serverTimezone=GMT%2B8&autoReconnect=true&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: admin
     password: 7fFsECXmpjX5y3Xw
