@@ -73,7 +73,7 @@ pipeline {
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/dev"'
                         sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH"
                         // 在远程服务器上执行启动脚本
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/dev && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/dev;sudo docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com;docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
                         //sh "cp -r saas/ops-admin/dev $SAAS_PATH/ops-admin/dev"
                         //sh "cd /dows/hep/saas/ops-admin/dev && docker compose stop && docker compose up -d"
