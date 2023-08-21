@@ -87,12 +87,12 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/dows-hep-sit:$ver"
                         // 远程copy 文件
-                        //sh "sshpass -p 'findsoft' scp saas/hep-admin/dev root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp saas/ops-admin/dev root@192.168.1.60:$SAAS_PATH/ops-admin/dev"
                         // 在远程服务器上执行启动脚本
-                        //sh 'sshpass -p "findsoft" user@192.168.1.60 "cd /dows/hep/saas/hep-admin/dev && docker-compose stop && docker compose up -d"'
+                        sh 'sshpass -p "findsoft2022!@#" user@192.168.1.60 "cd $SAAS_PATH/ops-admin/dev && docker-compose stop && docker compose up -d"'
                         // 本地copy并执行
-                        sh "cp -r saas/hep-admin/dev $SAAS_PATH"
-                        sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
+                        //sh "cp -r saas/hep-admin/dev $SAAS_PATH"
+                        //sh "cd /dows/hep/saas/hep-admin/dev && docker compose stop && docker compose up -d"
                     } else if (branch.startsWith('uat-')) {
                         echo 'Building for uat environment'
                         sh '''
