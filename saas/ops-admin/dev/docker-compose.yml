@@ -1,7 +1,7 @@
 version: '3'
 services:
   ops-admin-dev:
-    image: registry.cn-hangzhou.aliyuncs.com/dows/ops-admin-dev:$TAG
+    image: registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$TAG
     restart: unless-stopped
     container_name: ops-admin-dev
     environment:

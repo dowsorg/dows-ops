@@ -1,18 +1,18 @@
 version: '3'
 services:
   hep-admin-sit:
-    image: registry.cn-hangzhou.aliyuncs.com/dows/hep-admin:$TAG
+    image: registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$TAG
     restart: unless-stopped
-    container_name: hep-admin-sit
+    container_name: ops-admin-sit
     environment:
       - JVM_OPTS=-server -Xms1024m -Xmx1024m -XX:MaxGCPauseMillis=500 -XX:+UseParallelGC -XX:+HeapDumpBeforeFullGC -XX:HeapDumpPath=/dows/hep/hep-admin/logs/dump
       - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.profiles.active=sit
-      - APM=-javaagent:/dows/hep/paas/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=hep-admin-sit
+      - APM=-javaagent:/dows/hep/paas/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=ops-admin-sit
     ports:
       - $EHP:8080
       - $EWP:80
     volumes:
-      - ./logs:/dows/hep/hep-admin/logs
+      - ./logs:/dows/saas/ops-admin/logs
       - /dows/hep/paas/skywalking-agent:/dows/hep/paas/skywalking-agent
       #- ../../../../skywalking-agent:/dows/hep/paas/skywalking-agent
     networks:
