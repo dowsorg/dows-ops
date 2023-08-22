@@ -20,7 +20,5 @@ services:
 
 networks:
   dev_net:
-    # 使用外部指定的网络，为 true 就标识网络必须存在
     external:
-      # docker network create -d bridge 网络名称
       true

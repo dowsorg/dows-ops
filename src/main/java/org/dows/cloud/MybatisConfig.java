@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan(basePackages = {"org.dows.*.mapper","org.dows.marketing.dao"})
+@MapperScan(basePackages = {"org.dows.*.mapper"})
 public class MybatisConfig {
     /**
      * 分页插件
