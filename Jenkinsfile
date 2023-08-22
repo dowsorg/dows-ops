@@ -85,7 +85,7 @@ pipeline {
 
                         // 通知
                         sh '''
-                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST 'sh $SAAS_PATH/dev/robot.sh "'$branch'" "$gitCommitAuthorName" "ops-admin" "dev环境构建、打包、传输成功" "green"'
+                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh '$branch' '$gitCommitAuthorName' 'ops-admin' 'dev环境构建、打包、传输成功' 'green'"
                         '''
                     } else if (branch.startsWith('uat-')) {
                         echo 'Building for uat environment for ${branch}'
