@@ -66,53 +66,53 @@ pipeline {
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
 
                         sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/dev"'
-                        sh 'sshpass -p "$AS_PWD" scp -r saas/hep-admin/dev "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
+                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/dev "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
                         sh 'sshpass -p "$AS_PWD" ssh "$AS_USERNAME"@"$AS_HOST" "cd $SAAS_PATH/dev;sudo docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com;docker compose stop && docker compose up -d"'
                         // 通知
                         sh '''
-                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST 'sh $SAAS_PATH/dev/robot.sh "'$branch'" "$gitCommitAuthorName" "hep-admin" "dev环境构建、打包、传输成功" "green"'
+                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST 'sh $SAAS_PATH/dev/robot.sh "'$branch'" "$gitCommitAuthorName" "ops-admin" "dev环境构建、打包、传输成功" "green"'
                         '''
 
                     } else if (branch.startsWith('sit-')) {
                         echo 'Building for sit environment for ${branch}'
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-sit:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-sit:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
 
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/sit"'
-                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/hep-admin/sit root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/sit root@192.168.1.60:$SAAS_PATH"
                         sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/sit && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
 
                         // 通知
                         sh '''
-                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'hep-admin' 'dev环境构建、打包、传输成功'" 'green'
+                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'ops-admin' 'dev环境构建、打包、传输成功'" 'green'
                         '''
                     } else if (branch.startsWith('uat-')) {
                         echo 'Building for uat environment for ${branch}'
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-uat:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-uat:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
 
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/uat"'
-                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/hep-admin/uat root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/uat root@192.168.1.60:$SAAS_PATH"
                         sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/uat && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
                         // 通知
                         sh '''
-                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'hep-admin' 'dev环境构建、打包、传输成功'" 'green'
+                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'ops-admin' 'dev环境构建、打包、传输成功'" 'green'
                         '''
                     } else if (branch.startsWith('prd-')){
                         echo 'Building for production environment for ${branch}'
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-prd:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-prd:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
 
                         sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/prd"'
-                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/hep-admin/prd root@192.168.1.60:$SAAS_PATH"
+                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/prd root@192.168.1.60:$SAAS_PATH"
                         sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/prd && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
 
                         // 通知
                         sh '''
-                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'hep-admin' 'dev环境构建、打包、传输成功'" 'green'
+                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'ops-admin' 'dev环境构建、打包、传输成功'" 'green'
                         '''
                     }
                 }
