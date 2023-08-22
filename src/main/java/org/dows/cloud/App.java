@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Hello world!
+ * Hello world!ddd
  */
 @Slf4j
 @EnableConfigurationProperties(AppVersion.class)
