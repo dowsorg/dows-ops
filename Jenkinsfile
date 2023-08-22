@@ -29,6 +29,7 @@ pipeline {
             steps {
                 script {
                     def branch = detect_branch()
+                    echo  "=============当前分支为:${branch}=============="
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
 
@@ -37,23 +38,23 @@ pipeline {
                     checkout([$class: 'GitSCM',
                         branches: [[name: "$branch"]],
                         //extensions: [],
-                        extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '']],// 下载代码放到 ${WORKSPACE}/ 中
+                        extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '']],
                         userRemoteConfigs: [[
                             credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
                             url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
                         ]]
                     ])
 
-                    List<String> changes = getChangedFilesList()
+                    def changes = getChangedFilesList()
                     println ("文件变更列表: " + changes)
 
-                    String gitCommitId = getGitcommitID()
+                    def gitCommitId = getGitcommitID()
                     println("CommitID: " + gitCommitID)
 
-                    String gitCommitAuthorName = getAuthorName()
+                    def gitCommitAuthorName = getAuthorName()
                     println("提交人: " + gitCommitAuthorName)
 
-                    String gitCommitMessage = getCommitMessage()
+                    def gitCommitMessage = getCommitMessage()
                     println("提交信息: " + gitCommitMessage)
 
                     sh '''
@@ -73,7 +74,7 @@ pipeline {
                         sh 'sshpass -p "$AS_PWD" ssh "$AS_USERNAME"@"$AS_HOST" "cd $SAAS_PATH/dev;sudo docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com;docker compose stop && docker compose up -d"'
                         // 通知
                         sh '''
-                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST 'sh $SAAS_PATH/dev/robot.sh "'${branch}'" "$gitCommitAuthorName" "ops-admin" "dev环境构建、打包、传输成功" "green"'
+                            sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh '${branch}' '${gitCommitAuthorName}' 'ops-admin' 'dev环境构建、打包、传输成功' 'green'"
                         '''
 
                     } else if (branch.startsWith('sit-')) {
