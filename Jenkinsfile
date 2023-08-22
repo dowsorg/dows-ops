@@ -57,15 +57,15 @@ pipeline {
                     def gitCommitMessage = getCommitMessage()
                     println("提交信息: " + gitCommitMessage)
 
-                    sh '''
-                        /usr/local/mvn/bin/mvn -v
-                        /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
-                        docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
-                    '''
+
 
                     if (branch.startsWith('dev-')) {
                         echo "Building for development environment for ${branch}"
-
+                        sh '''
+                            /usr/local/mvn/bin/mvn -v
+                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
+                        '''
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
 
@@ -79,7 +79,11 @@ pipeline {
 
                     } else if (branch.startsWith('sit-')) {
                         echo 'Building for sit environment for ${branch}'
-
+                        sh '''
+                            /usr/local/mvn/bin/mvn -v
+                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
+                        '''
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
 
