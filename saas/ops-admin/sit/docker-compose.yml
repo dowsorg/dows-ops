@@ -1,6 +1,6 @@
 version: '3'
 services:
-  hep-admin-sit:
+  ops-admin-sit:
     image: registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$TAG
     restart: unless-stopped
     container_name: ops-admin-sit
