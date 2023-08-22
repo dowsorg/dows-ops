@@ -89,7 +89,7 @@ pipeline {
                         sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/sit && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
 
                         // 通知
-                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh '${branch}' '${gitCommitAuthorName}' 'ops-admin' 'sit环境构建、打包、传输成功' 'green'"
+                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh ${branch} ${gitCommitAuthorName} 'ops-admin' 'sit环境构建、打包、传输成功' 'green'"
 
                     } else if (branch.startsWith('uat-')) {
                         echo "Building for uat environment for ${branch}"
@@ -105,7 +105,7 @@ pipeline {
                             sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST "sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName 'ops-admin' 'dev环境构建、打包、传输成功'" 'green'
                         '''
                     } else if (branch.startsWith('prd-')){
-                        echo 'Building for production environment for ${branch}'
+                        echo "Building for production environment for ${branch}"
 
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
