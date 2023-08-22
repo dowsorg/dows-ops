@@ -57,15 +57,16 @@ pipeline {
                     def gitCommitMessage = getCommitMessage()
                     println("提交信息: " + gitCommitMessage)
 
+                    sh '''
+                        /usr/local/mvn/bin/mvn -v
+                        /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
+                        docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
+                    '''
 
 
                     if (branch.startsWith('dev-')) {
                         echo "Building for development environment for ${branch}"
-                        sh '''
-                            /usr/local/mvn/bin/mvn -v
-                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
-                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
-                        '''
+
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
 
@@ -78,12 +79,8 @@ pipeline {
                         '''
 
                     } else if (branch.startsWith('sit-')) {
-                        echo 'Building for sit environment for ${branch}'
-                        sh '''
-                            /usr/local/mvn/bin/mvn -v
-                            /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
-                            docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com
-                        '''
+                        echo "Building for sit environment for $branch"
+
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
 
@@ -95,7 +92,7 @@ pipeline {
                         sh 'sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh "'${branch}'" "'${gitCommitAuthorName}'" "ops-admin" "sit环境构建、打包、传输成功" "green"'
 
                     } else if (branch.startsWith('uat-')) {
-                        echo 'Building for uat environment for ${branch}'
+                        echo "Building for uat environment for ${branch}"
 
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
