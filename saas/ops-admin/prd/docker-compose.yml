@@ -15,9 +15,9 @@ services:
       - ./logs:/dows/saas/ops-admin/logs
       - /dows/hep/paas/skywalking-agent:/dows/hep/paas/skywalking-agent
     networks:
-      - hep_prod
+      - prd_net
 
 networks:
-  hep_prod:
+  prd_net:
     external:
       true
