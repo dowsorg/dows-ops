@@ -15,7 +15,7 @@ pipeline {
         JAVA_HOME = '/usr/local/jdk17'
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
-        SAAS_PATH = '/dows/saas/hep-admin'
+        SAAS_PATH = '/dows/saas/ops-admin'
         AS_HOST='192.168.1.60'
         AS_USERNAME='root'
         AS_PWD='findsoft2022!@#'
@@ -37,7 +37,7 @@ pipeline {
                         extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '']],// 下载代码放到 ${WORKSPACE}/ 中
                         userRemoteConfigs: [[
                             credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
-                            url: 'http://192.168.1.21/dows/dows-hep.git' // gitlab链接
+                            url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
                         ]]
                     ])
 
@@ -62,8 +62,8 @@ pipeline {
                     if (branch.startsWith('dev-')) {
                         echo "Building for development environment for ${branch}"
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-dev:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-dev:$ver"
+                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
+                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
 
                         sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/dev"'
                         sh 'sshpass -p "$AS_PWD" scp -r saas/hep-admin/dev "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
