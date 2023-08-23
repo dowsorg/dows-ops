@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  undertow:
+    buffer-size: 1024
+    direct-buffers: true
+    threads:
+      io: 4
+      worker: 32
+  servlet:
+    context-path: /ops
+
+
+spring:
+  application:
+    name: dows-user
+  profiles:
+    include: ops-mysql,ops-mybatis
+    active: dev
+
+
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
