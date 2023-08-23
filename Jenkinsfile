@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script {
                     def branch = detect_branch()
-                    echo  "=============当前分支为:${branch}=============="
+                    echo  "==当前分支为:${branch}=="
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
 
@@ -47,13 +47,10 @@ pipeline {
 
                     def changes = getChangedFilesList()
                     println ("文件变更列表: " + changes)
-
                     def gitCommitId = getGitcommitID()
                     println("CommitID: " + gitCommitID)
-
                     def gitCommitAuthorName = getAuthorName()
                     println("提交人: " + gitCommitAuthorName)
-
                     def gitCommitMessage = getCommitMessage()
                     println("提交信息: " + gitCommitMessage)
 
@@ -82,9 +79,9 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
 
-                        sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/sit"'
-                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/sit root@192.168.1.60:$SAAS_PATH"
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/sit && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
+                        sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/sit"'
+                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/sit "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
+                        sh 'sshpass -p "$AS_PWD" ssh root@192.168.1.60 "cd $SAAS_PATH/sit && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
 
                         sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'sit环境构建、打包、传输成功' 'green'"
 
@@ -94,8 +91,8 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
 
-                        sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/uat"'
-                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/uat root@192.168.1.60:$SAAS_PATH"
+                        sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/uat"'
+                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/uat "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
                         sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/uat && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
 
                         sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'uat环境构建、打包、传输成功' 'green'"
@@ -105,8 +102,8 @@ pipeline {
                         sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
                         sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
 
-                        sh 'sshpass -p "findsoft2022!@#" ssh -o StrictHostKeyChecking=no root@192.168.1.60 "mkdir -p $SAAS_PATH/prd"'
-                        sh "sshpass -p 'findsoft2022!@#' scp -r saas/ops-admin/prd root@192.168.1.60:$SAAS_PATH"
+                        sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/prd"'
+                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/prd "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
                         sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/prd && docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
 
                         sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'prd环境构建、打包、传输成功' 'green'"
