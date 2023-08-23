@@ -6,7 +6,7 @@ services:
     container_name: ops-admin-prd
     environment:
       - JVM_OPTS=-server -Xms1024m -Xmx1024m -XX:MaxGCPauseMillis=500 -XX:+UseParallelGC -XX:+HeapDumpBeforeFullGC -XX:HeapDumpPath=/dows/hep/hep-tenant/logs/dump
-      - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.profiles.active=prd
+      - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.config.location=/dows/saas/hep-admin/configs -Dspring.profiles.active=dev
       - APM=-javaagent:/dows/hep/paas/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=ops-admin-prd
     ports:
       - $EHP:8080

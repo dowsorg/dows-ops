@@ -126,7 +126,7 @@
                 <filtering>true</filtering>
             </resource>
 
-            <resource>
+            <!--<resource>
                 <directory>configs</directory>
                 <includes>
                     <include>**/*.*</include>
@@ -138,7 +138,7 @@
                     <include>**/*.sql</include>
                 </includes>
                 <filtering>true</filtering>
-            </resource>
+            </resource>-->
         </resources>
         <plugins>
 
