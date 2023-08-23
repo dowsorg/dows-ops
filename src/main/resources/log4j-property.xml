@@ -10,18 +10,17 @@
     <!--日志编码-->
     <property name="CHARSET" value="utf-8"/>
     <!--单个日志文件大小-->
-    <property name="MAX_FILE_SIZE" value="200MB"/>
+    <property name="MAX_FILE_SIZE" value="3MB"/>
     <!--日志保存时间-->
     <property name="MAX_HISTORY" value="P30D"/>
 
-  <!--  <property name="BASE_LOG_PATH" value="/dows/dxz"/>-->
     <!--日志应用名，例如/data/logs/app/app-info.log-->
-    <property name="APP_NAME" value="ops-admin"/>
-    <!--日志根路径-->
+    <property name="SERVER_NAME" value="ops-admin"/>
+
     <property name="LOG_HOME" value="/dows/saas/ops-admin/logs"/>
 
-<!--    <property name="LOG_NAME" value="spring"/>
-    <property name="LOG_FILE" value="${LOG_HOME}/${LOG_NAME}-%d{yyyy-MM-dd}.%i.log"/>
-    <property name="LOG_ERROR_FILE" value="${LOG_HOME}/${LOG_NAME}-%d{yyyy-MM-dd}.err.%i.log"/>
-    <property name="SPRING" resource="application.yml"/>-->
+    <property name="LOG_FILE" value="${LOG_HOME}/%d{yyyy-MM-dd}.%i.log"/>
+
+    <property name="LOG_ERROR_FILE" value="${LOG_HOME}/%d{yyyy-MM-dd}.err.%i.log"/>
+
 </properties>
