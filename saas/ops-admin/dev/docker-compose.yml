@@ -13,8 +13,8 @@ services:
       - $EWP:80
     volumes:
       - ./logs:/dows/saas/ops-admin/logs
+      - /dows/saas/ops-admin/dev/configs:/dows/saas/ops-admin/configs
       - /dows/paas/apm/skywalking-agent-8.16.0:/dows/paas/apm/skywalking-agent
-      #- ../../../../skywalking-agent:/dows/hep/paas/skywalking-agent
     networks:
       - dev_net
 
