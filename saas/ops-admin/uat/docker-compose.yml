@@ -5,6 +5,7 @@ services:
     restart: unless-stopped
     container_name: ops-admin-uat
     environment:
+      - TZ=$TZ
       - JVM_OPTS=-server -Xms1024m -Xmx1024m -XX:MaxGCPauseMillis=500 -XX:+UseParallelGC -XX:+HeapDumpBeforeFullGC -XX:HeapDumpPath=/dows/saas/ops-admin/logs/dump
       - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.config.location=file:/dows/saas/ops-admin/configs/ -Dspring.profiles.active=uat
       - APM=-javaagent:/dows/paas/apm/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=ops-admin-uat -Dskywalking.collector.backend_service=192.168.1.60:11800
