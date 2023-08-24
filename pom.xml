@@ -100,6 +100,16 @@
             <version>3.0.5</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-trace</artifactId>
+            <version>8.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-log4j-2.x</artifactId>
+            <version>8.16.0</version>
+        </dependency>
 
     </dependencies>
 
@@ -126,8 +136,8 @@
                 <filtering>true</filtering>
             </resource>
 
-            <!--<resource>
-                <directory>configs</directory>
+            <resource>
+                <directory>saas/ops-admin/dev/configs</directory>
                 <includes>
                     <include>**/*.*</include>
                     <include>**/*.*</include>
@@ -138,7 +148,7 @@
                     <include>**/*.sql</include>
                 </includes>
                 <filtering>true</filtering>
-            </resource>-->
+            </resource>
         </resources>
         <plugins>
 
