@@ -13,7 +13,7 @@
     <Property name="APP_ENV">${sys:appEnv}</Property>
     <Property name="POD_IP">${sys:podIp}</Property>
     <Property name="logging.pattern">
-        [%date{yyyy-MM-dd HH:mm:ss.SSS}][${appEnv}][${moduleName}][${podIp}][%level][%traceId][%thread][%C][%M][%line][%X{X-B3-TraceId} %X{X-B3-SpanId} %X{X-B3-ParentSpanId}]-%m%n
+        [%date{yyyy-MM-dd HH:mm:ss.SSS}][${appEnv}][${appName}][${podIp}][%level][%traceId][%thread][%C][%M][%line][%X{X-B3-TraceId} %X{X-B3-SpanId} %X{X-B3-ParentSpanId}]-%m%n
     </Property>
 
     <!--日志编码-->
