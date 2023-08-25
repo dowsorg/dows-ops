@@ -1,45 +1,81 @@
-version: "3.7"
+version: "3"
 services:
-  hep-mysql-sit: #mysql容器
-    image: mysql
-    container_name: hep-mysql-sit
+  mysql-sit:
+    # 指定镜像和版本
+    image: mariadb
+    # 指定容器的名称
+    container_name: mysql-sit
     restart: always
     command:
       --max_connections=1000
       --character-set-server=utf8mb4
       --default-authentication-plugin=mysql_native_password
     environment:
+      TZ: "Asia/Shanghai"
       MYSQL_ROOT_PASSWORD: "123456"
+    # 容器日志大小配置
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5g'
     volumes:
-      - ./hep-mysql-sit/my.cnf:/etc/my.cnf
-      - ./hep-mysql-sit/data:/var/lib/mysql
+      # 挂载数据目录
+      - ./sit/mysql/data:/var/lib/mysql:rw
+      # 挂载配置文件目录
+      - ./sit/mysql/mariadb.cnf:/etc/mariadb.cnf:rw
+      #- ./dows/hep/hep-mysql-sit/conf:/etc/mysql/conf.d:rw
     ports:
-      - "3306:3306"
+      - "43306:3306"
     networks:
-      - hep_sit
+      - sit_net
 
-  hep-redis:
+  minio-sit:
+    image: minio/minio:latest
+    container_name: minio-sit
+    restart: always
+    volumes:
+      - "./sit/minio/data:/data"
+      - "./sit/minio/minio:/minio"
+      - "./sit/minio/config:/root/.minio"
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      MINIO_PROMETHEUS_AUTH_TYPE: "public"
+      MINIO_ACCESS_KEY: "root"
+      MINIO_SECRET_KEY: "password"
+    command: server /data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+    ports: # 映射端口
+      - "49000:9000"
+      - "42330:42330"
+    networks:
+      - sit_net
+
+  redis-sit:
     image: redis
-    container_name: hep-redis-sit
+    container_name: redis-sit
     restart: always
     privileged: true
     environment:
       TZ: Asia/Shanghai
     volumes:
-      - ./hep-redis-sit/data:/data
-      - ./hep-redis-sit/conf/redis.conf:/etc/redis/redis.conf
-      - ./hep-redis-sit/logs:/logs
+      - ./sit/redis/data:/data
+      - ./sit/redis/conf/redis.conf:/etc/redis/redis.conf
+      - ./sit/redis/logs:/logs
     command: [ "redis-server","/etc/redis/redis.conf" ]
     ports:
-      - "6379:6379"
+      - 46379:6379
     networks:
-      - hep_sit
+      - sit_net
 
 
 
 networks:
   # 定义上面的服务用到的网络的名称，默认是驱动属于 bridge，自定义的网络名称，在实际中会变为 项目名(或所在文件目录名)
-  hep_sit:
+  sit_net:
     # 使用外部指定的网络，为 true 就标识网络必须存在
     external:
       # docker network create -d bridge 网络名称

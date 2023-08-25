@@ -1,103 +1,81 @@
-version: "3.7"
+version: "3"
 services:
-  hep-mysql-uat: #mysql容器
+  mysql-uat:
+    # 指定镜像和版本
     image: mariadb
-    container_name: hep-mysql-uat
+    # 指定容器的名称
+    container_name: mysql-uat
     restart: always
-    privileged: true
-    environment:
-      MYSQL_ROOT_PASSWORD: "123456"
-      TZ: "Asia/Shanghai"
     command:
       --max_connections=1000
       --character-set-server=utf8mb4
       --default-authentication-plugin=mysql_native_password
-      --lower_case_table_names=1
+    environment:
+      TZ: "Asia/Shanghai"
+      MYSQL_ROOT_PASSWORD: "123456"
+    # 容器日志大小配置
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5g'
     volumes:
-      - "/etc/localtime:/etc/localtime"
-#      - "./hep-mysql-uat/log:/var/log/mysql"
-#      - "./hep-mysql-uat/my.cnf:/etc/mysql/my.cnf"
-      - "./hep-mysql-uat/mariadb.cnf:/etc/mariadb.cnf:rw"
-      - "./hep-mysql-uat/data:/var/lib/mysql:rw"
+      # 挂载数据目录
+      - ./uat/mysql/data:/var/lib/mysql:rw
+      # 挂载配置文件目录
+      - ./uat/mysql/mariadb.cnf:/etc/mariadb.cnf:rw
+      #- ./dows/hep/hep-mysql-uat/conf:/etc/mysql/conf.d:rw
     ports:
-      - "3307:3306"
-    user: "0"
+      - "43306:3306"
     networks:
-      - hep_uat
+      - uat_net
 
-  hep-adminer-uat:
-    image: adminer
-    container_name: hep-adminer-uat
+  minio-uat:
+    image: minio/minio:latest
+    container_name: minio-uat
     restart: always
-    ports:
-      - 7033:8080
+    volumes:
+      - "./uat/minio/data:/data"
+      - "./uat/minio/minio:/minio"
+      - "./uat/minio/config:/root/.minio"
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      MINIO_PROMETHEUS_AUTH_TYPE: "public"
+      MINIO_ACCESS_KEY: "root"
+      MINIO_SECRET_KEY: "password"
+    command: server /data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+    ports: # 映射端口
+      - "49000:9000"
+      - "42330:42330"
     networks:
-      - hep_uat
+      - uat_net
 
-  hep-redis-uat:
+  redis-uat:
     image: redis
-    container_name: hep-redis-uat
+    container_name: redis-uat
     restart: always
     privileged: true
     environment:
       TZ: Asia/Shanghai
     volumes:
-      - "./hep-redis-uat/data:/data"
-      - "./hep-redis-uat/conf/redis.conf:/etc/redis/redis.conf"
-      - "./hep-redis-uat/logs:/logs"
+      - ./uat/redis/data:/data
+      - ./uat/redis/conf/redis.conf:/etc/redis/redis.conf
+      - ./uat/redis/logs:/logs
     command: [ "redis-server","/etc/redis/redis.conf" ]
     ports:
-      - "6380:6379"
+      - 46379:6379
     networks:
-      - hep_uat
+      - uat_net
 
-  elasticsearch-uat:
-    image: elasticsearch:7.11.1
-    restart: "no"
-    container_name: elasticsearch-uat
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    environment:
-      - "http.cors.enabled=true"
-      - "http.cors.allow-origin=*"
-      - "discovery.type=single-node"
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    networks:
-      - hep_uat
 
-  skywalking-oap-uat:
-    image: apache/skywalking-oap-server:9.2.0
-    restart: "no"
-    container_name: skywalking-oap-uat
-    ports:
-      - "1234:1234"
-      - "11800:11800"
-      - "12800:12800"
-    depends_on:
-      - elasticsearch-uat
-    environment:
-      SW_STORAGE: "elasticsearch"
-      SW_STORAGE_ES_CLUSTER_NODES: "elasticsearch-uat:9200"
-    networks:
-      - hep_uat
-
-  skywalking-ui-uat:
-      image: apache/skywalking-ui
-      restart: "no"
-      container_name: skywalking-ui-uat
-      ports:
-        - "8080:8080"
-      depends_on:
-        - skywalking-oap-uat
-      environment:
-        SW_OAP_ADDRESS: "http://skywalking-oap-uat:12800"
-      networks:
-        - hep_uat
 
 networks:
   # 定义上面的服务用到的网络的名称，默认是驱动属于 bridge，自定义的网络名称，在实际中会变为 项目名(或所在文件目录名)
-  hep_uat:
+  uat_net:
     # 使用外部指定的网络，为 true 就标识网络必须存在
     external:
       # docker network create -d bridge 网络名称
