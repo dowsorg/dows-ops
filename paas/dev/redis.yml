@@ -1,0 +1,22 @@
+version: "3"
+services:
+
+  redis-dev:
+    image: redis
+    container_name: redis-dev
+    restart: always
+    privileged: true
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./redis/data:/data
+      - ./redis/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis/logs:/logs
+    command: [ "redis-server","/etc/redis/redis.conf" ]
+    ports:
+      - 16379:6379
+
+networks:
+  default:
+    external:
+      name: dev_net

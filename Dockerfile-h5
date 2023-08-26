@@ -1,6 +1,6 @@
 FROM node:lts-alpine as build-stage
 # 设置工作区
-WORKDIR application
+WORKDIR dows
 
 COPY . .
 # 读取环境变量 用于配置nginx
@@ -35,10 +35,10 @@ ENV TZ=$TZ
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-WORKDIR application
+WORKDIR dows
 # 拷贝dist文件夹到nginx的html目录
-COPY  --from=build-stage application/dist /usr/share/nginx/html
+COPY  --from=build-stage dows/dist /usr/share/nginx/html
 # 拷贝nginx配置文件到nginx的conf.d目录
-COPY  --from=build-stage application/nginx/nginx.conf /etc/nginx/
+COPY  --from=build-stage dows/nginx/nginx.conf /etc/nginx/
 
 
