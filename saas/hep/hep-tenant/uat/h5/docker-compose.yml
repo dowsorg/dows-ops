@@ -1,0 +1,26 @@
+version: '3'
+services:
+  h5-hep-admin-uat:
+    image: registry.cn-hangzhou.aliyuncs.com/findsoft/h5-hep-admin-uat:$TAG
+    restart: unless-stopped
+    container_name: h5-hep-admin-uat
+    environment:
+      - TZ=$TZ
+      - NGINX_PORT=10001
+      - NGINX_HOST=192.168.1.60
+    ports:
+      - $EHP:3000
+      - $EWP:80
+    volumes:
+      - /dows/saas/hep/h5-hep-admin/uat/logs:/dows/saas/hep/h5-admin/logs
+      - /dows/saas/hep/h5-hep-admin/uat/configs:/dows/saas/hep/h5-admin/configs
+      - /dows/saas/hep/h5-hep-admin/uat/resources:/dows/saas/hep/h5-admin/resources
+    networks:
+      - uat_net
+
+networks:
+  uat_net:
+    # 使用外部指定的网络，为 true 就标识网络必须存在
+    external:
+      # docker network create -d bridge 网络名称
+      true

@@ -137,7 +137,7 @@
             </resource>
 
             <resource>
-                <directory>saas/ops-admin/dev/api/configs</directory>
+                <directory>saas/ops/ops-admin/dev/api/configs</directory>
                 <includes>
                     <include>**/*.*</include>
                     <include>**/*.*</include>
