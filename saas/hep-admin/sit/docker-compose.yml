@@ -1,0 +1,26 @@
+version: '3'
+services:
+  h5-hep-admin-sit:
+    image: registry.cn-hangzhou.aliyuncs.com/findsoft/h5-hep-admin-sit:$TAG
+    restart: unless-stopped
+    container_name: h5-hep-admin-sit
+    environment:
+      - TZ=$TZ
+      - NGINX_PORT=10001
+      - NGINX_HOST=192.168.1.60
+    ports:
+      - $EHP:3000
+      - $EWP:80
+    volumes:
+      - /dows/saas/hep/h5-hep-admin/sit/logs:/dows/saas/hep/h5-admin/logs
+      - /dows/saas/hep/h5-hep-admin/sit/configs:/dows/saas/hep/h5-admin/configs
+      - /dows/saas/hep/h5-hep-admin/sit/resources:/dows/saas/hep/h5-admin/resources
+    networks:
+      - sit_net
+
+networks:
+  sit_net:
+    # 使用外部指定的网络，为 true 就标识网络必须存在
+    external:
+      # docker network create -d bridge 网络名称
+      true
