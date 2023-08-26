@@ -1,10 +1,10 @@
 version: "3"
 services:
-  mysql-prd:
+  mysql-dev:
     # 指定镜像和版本
     image: mariadb
     # 指定容器的名称
-    container_name: mysql-prd
+    container_name: mysql-dev
     restart: always
     command:
       --max_connections=1000
@@ -19,68 +19,70 @@ services:
       options:
         max-size: '5g'
     volumes:
-      - /etc/localtime:/etc/localtime
-      # 数据库目录映射,挂载数据目录
-      - /dows/paas/prd/mysql/data:/var/lib/mysql
+      # 挂载数据目录
+      - ./mysql/data:/var/lib/mysql:rw
       # 挂载配置文件目录
-      # （推荐）如果要使用自定义的MySQL配置，则可以在主机上的目录中创建备用配置文件，然后将该目录位置/etc/mysql/conf.d安装在mariadb容器内。自己所需的配置文件可以放在自己服务器./config/data/mariadb-config里面
-      - /dows/paas/prd/mysql/conf.d:/etc/mysql/conf.d
-      #- ./dows/hep/hep-mysql-prd/conf:/etc/mysql/conf.d:rw
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      #- ./dows/hep/hep-mysql-dev/conf:/etc/mysql/conf.d:rw
     ports:
-      - "43306:3306"
-    networks:
-      - prd_net
+      - "13306:3306"
 
 
-  minio-prd:
+  minio-dev:
     image: minio/minio:latest
+    container_name: minio-dev
     restart: always
-    container_name: minio-prd
-    command: server /data --console-address :9200
-    ports:
-      - "9002:9000"
-      - "9200:9200"
+    volumes:
+      - "./prd/minio/data:/data"
+      - "./prd/minio/minio:/minio"
+      - "./prd/minio/config:/root/.minio"
     environment:
       TZ: Asia/Shanghai
       LANG: en_US.UTF-8
       MINIO_PROMETHEUS_AUTH_TYPE: "public"
       MINIO_ACCESS_KEY: "root"
       MINIO_SECRET_KEY: "password"
+    command: server /data
     logging:
+      driver: "json-file"
       options:
-        max-size: "10M"
-        max-file: "10"
-      driver: json-file
-    volumes:
-      - ./prd/minio/data:/data
-      - ./prd/minio/config:/root/.minio
-      - ./prd/minio/minio:/minio
-    networks:
-      - prd_net
+        max-size: "100m"
+    ports: # 映射端口
+      - "19000:9000"
+      - "12330:42330"
 
-  redis-prd:
+
+  redis-dev:
     image: redis
-    container_name: redis-prd
+    container_name: redis-dev
     restart: always
     privileged: true
     environment:
       TZ: Asia/Shanghai
     volumes:
-      - ./prd/redis/data:/data
-      - ./prd/redis/conf/redis.conf:/etc/redis/redis.conf
-      - ./prd/redis/logs:/logs
+      - ./redis/data:/data
+      - ./redis/conf/redis.conf:/etc/redis/redis.conf
+      - ./redis/logs:/logs
     command: [ "redis-server","/etc/redis/redis.conf" ]
     ports:
-      - 46379:6379
-    networks:
-      - prd_net
+      - 16379:6379
 
 
-
+  nginx-dev:
+    image: nginx
+    restart: unless-stopped
+    container_name: nginx-dev
+    ports:
+      - 180:80
+    volumes:
+      - ./nginx/conf:/etc/nginx
+      - ./nginx/cert/:/etc/cert/                   # ssl证书
+      - ./nginx/www/:/usr/share/nginx/html/         # 默认显示的index网页
+      - ./nginx/logs/:/var/log/nginx/               # 日志文件
 networks:
   # 定义上面的服务用到的网络的名称，默认是驱动属于 bridge，自定义的网络名称，在实际中会变为 项目名(或所在文件目录名)
-  prd_net:
+  default:
     # 使用外部指定的网络，为 true 就标识网络必须存在
     external:
       # docker network create -d bridge 网络名称
-      true
+      name: dev_net
