@@ -18,7 +18,10 @@ services:
       - ./nginx/logs/:/usr/local/nginx/logs/
       - ./nginx/conf:/usr/local/nginx/conf.d
 
+    networks:
+      prd_net:
+        ipv4_address: 172.18.0.8
+
 networks:
-  default:
-    external:
-      name: prd_net
+  prd_net:
+    external: true
