@@ -50,19 +50,19 @@ docker network create --driver bridge --subnet 172.18.0.0/16 --gateway 172.18.0.
 
 #启动paas
 sudo echo -e "\033[32m 2.running paas docker-compose  \033[0m"
-sudo docker compose -f ${project_path}/paas/prd/mysql.yml up -d
-sudo docker compose -f ${project_path}/paas/prd/redis.yml up -d
-sudo docker compose -f ${project_path}/paas/prd/pdf.yml up -d
+sudo docker compose -f ./paas/mysql.yml up -d
+sudo docker compose -f ./paas/redis.yml up -d
+sudo docker compose -f ./paas/pdf.yml up -d
 
 #启动saas
 sudo echo -e "\033[32m 3.running saas docker-compose  \033[0m"
-docker compose -f ${project_path}/saas/prd/api/admin/docker-compose.yml down
-docker compose -f ${project_path}/saas/prd/h5/admin/docker-compose.yml down
-docker compose -f ${project_path}/saas/prd/h5/user/docker-compose.yml down
+docker compose -f ./saas/api/admin/docker-compose.yml down
+docker compose -f ./saas/h5/admin/docker-compose.yml down
+docker compose -f ./saas/h5/user/docker-compose.yml down
 
-docker compose -f ${project_path}/saas/prd/api/admin/docker-compose.yml up -d
-docker compose -f ${project_path}/saas/prd/h5/admin/docker-compose.yml up -d
-docker compose -f ${project_path}/saas/prd/h5/user/docker-compose.yml up -d
+docker compose -f ./saas/api/admin/docker-compose.yml up -d
+docker compose -f ./saas/h5/admin/docker-compose.yml up -d
+docker compose -f ./saas/h5/user/docker-compose.yml up -d
 
 #查看
 sudo docker ps -a

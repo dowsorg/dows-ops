@@ -43,9 +43,9 @@ services:
         max-file: "10"
       driver: json-file
     volumes:
-      - ./prd/minio/data:/data
-      - ./prd/minio/config:/root/.minio
-      - ./prd/minio/minio:/minio
+      - ./minio/data:/data
+      - ./minio/config:/root/.minio
+      - ./minio/minio:/minio
     networks:
       prd_net:
         ipv4_address: 172.18.0.4

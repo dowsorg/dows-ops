@@ -33,29 +33,29 @@ sudo docker login --username=$docker_username --password=$docker_password ${dock
 
 sudo echo -e "\033[32m 1.remove old tag images \033[0m"
 ## api
-#sudo docker rmi -f "$docker_registry/findsoft/hep-admin-dev:1.0.230821"
+#sudo docker rmi -f "$docker_registry/findsoft/hep-admin-sit:1.0.230821"
 ## h5教师端
-#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-admin-dev:1.0.230826"
+#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-admin-sit:1.0.230826"
 ## h5学生端
-#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-user-dev:1.0.230826"
+#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-user-sit:1.0.230826"
 
 sudo docker images
 
 #启动paas
 sudo echo -e "\033[32m 2.running paas docker-compose  \033[0m"
-sudo docker compose -f ./paas/dev/mysql.yml up -d
-sudo docker compose -f ./paas/dev/redis.yml up -d
-sudo docker compose -f ./paas/dev/pdf.yml up -d
+sudo docker compose -f /findsoft/hep/paas/sit/mysql.yml up -d
+sudo docker compose -f /findsoft/hep/paas/sit/redis.yml up -d
+sudo docker compose -f /findsoft/hep/paas/sit/pdf.yml up -d
 
 #启动saas
 sudo echo -e "\033[32m 3.running saas docker-compose  \033[0m"
-docker compose -f ./saas/dev/api/admin/docker-compose.yml down
-docker compose -f ./saas/dev/h5/admin/docker-compose.yml down
-docker compose -f ./saas/dev/h5/user/docker-compose.yml down
+docker compose -f /findsoft/hep/saas/sit/api/admin/docker-compose.yml down
+docker compose -f /findsoft/hep/saas/sit/h5/admin/docker-compose.yml down
+docker compose -f /findsoft/hep/saas/sit/h5/user/docker-compose.yml down
 
-docker compose -f ./saas/dev/api/admin/docker-compose.yml up -d
-docker compose -f ./saas/dev/h5/admin/docker-compose.yml up -d
-docker compose -f ./saas/dev/h5/user/docker-compose.yml up -d
+docker compose -f /findsoft/hep/saas/sit/api/admin/docker-compose.yml up -d
+docker compose -f /findsoft/hep/saas/sit/h5/admin/docker-compose.yml up -d
+docker compose -f /findsoft/hep/saas/sit/h5/user/docker-compose.yml up -d
 
 #查看
 sudo docker ps -a
