@@ -98,7 +98,7 @@ spring:
           retryInterval: 1500
           subscriptionsPerConnection: 5
           clientName: null
-          address: redis://172.18.0.3:6379
+          address: redis://redis-prd:6379
           subscriptionConnectionMinimumIdleSize: 1
           subscriptionConnectionPoolSize: 50
           connectionMinimumIdleSize: 32

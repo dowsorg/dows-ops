@@ -1,0 +1,13 @@
+version: '3'
+services:
+  cxs-jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    ports:
+      - "8090:8080"
+      - "8091:50000"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./jenkins_home:/var/jenkins_home
+      - ./apache-maven:/usr/local/apache-maven-3.6.3
+      - ./jdk17:/usr/local/jdk17

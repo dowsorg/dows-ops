@@ -1,0 +1,2115 @@
+2023-08-19_13:21:41.91282 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:41.91376 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:41.91445 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:41.91506 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:41.91555 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:41.91604 This private key will be ignored.
+2023-08-19_13:21:41.91648 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:41.92044 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:41.92266 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:41.93133 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:41.93184 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:41.93236 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:41.93285 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:41.93332 This private key will be ignored.
+2023-08-19_13:21:41.93384 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:41.93428 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:41.93478 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:41.93525 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:41.93571 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:41.93622 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:41.93668 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:41.93711 This private key will be ignored.
+2023-08-19_13:21:41.93755 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:41.93954 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:41.93996 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:43.01934 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:43.01978 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:43.02025 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:43.02064 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:43.02108 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:43.02152 This private key will be ignored.
+2023-08-19_13:21:43.02199 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:43.02699 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:43.02884 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:43.02926 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:43.02971 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:43.03017 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:43.03060 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:43.03104 This private key will be ignored.
+2023-08-19_13:21:43.03152 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:43.03572 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:43.03751 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:43.03803 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:43.03850 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:43.03895 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:43.03941 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:43.03987 This private key will be ignored.
+2023-08-19_13:21:43.04021 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:43.04497 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:43.04537 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:44.05330 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:44.05373 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:44.05422 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:44.05470 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:44.05508 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:44.05552 This private key will be ignored.
+2023-08-19_13:21:44.05592 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:44.06081 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:44.06276 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:44.06320 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:44.06365 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:44.06414 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:44.06467 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:44.06537 This private key will be ignored.
+2023-08-19_13:21:44.06577 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:44.07076 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:44.07284 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:44.07334 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:44.07385 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:44.07432 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:44.07474 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:44.07514 This private key will be ignored.
+2023-08-19_13:21:44.07557 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:44.08004 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:44.08054 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:45.08784 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:45.08833 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:45.08883 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:45.08923 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:45.08970 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:45.09017 This private key will be ignored.
+2023-08-19_13:21:45.09065 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:45.09531 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:45.09752 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:45.09793 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:45.09839 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:45.09876 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:45.09920 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:45.09966 This private key will be ignored.
+2023-08-19_13:21:45.10018 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:45.10522 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:45.10730 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:45.10773 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:45.10825 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:45.10868 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:45.10915 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:45.10959 This private key will be ignored.
+2023-08-19_13:21:45.11004 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:45.11454 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:45.11498 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:46.12247 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:46.12289 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:46.12333 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:46.12376 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:46.12420 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:46.12470 This private key will be ignored.
+2023-08-19_13:21:46.12519 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:46.12976 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:46.13132 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:46.13172 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:46.13211 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:46.13246 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:46.13283 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:46.13319 This private key will be ignored.
+2023-08-19_13:21:46.13372 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:46.13861 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:46.14070 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:46.14124 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:46.14181 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:46.14228 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:46.14271 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:46.14313 This private key will be ignored.
+2023-08-19_13:21:46.14354 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:46.14783 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:46.14828 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:47.15558 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:47.15608 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:47.15651 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:47.15691 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:47.15729 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:47.15773 This private key will be ignored.
+2023-08-19_13:21:47.15821 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:47.16287 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:47.16478 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:47.16524 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:47.16568 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:47.16611 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:47.16652 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:47.16692 This private key will be ignored.
+2023-08-19_13:21:47.16733 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:47.17155 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:47.17357 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:47.17396 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:47.17432 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:47.17471 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:47.17509 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:47.17548 This private key will be ignored.
+2023-08-19_13:21:47.17580 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:47.17991 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:47.18032 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:54.74856 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:54.74904 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:54.74948 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:54.75007 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:54.75067 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:54.75117 This private key will be ignored.
+2023-08-19_13:21:54.75161 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:54.75563 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:54.75738 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:54.75783 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:54.75829 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:54.75873 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:54.75913 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:54.75957 This private key will be ignored.
+2023-08-19_13:21:54.76006 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:54.76399 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:54.76578 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:54.76627 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:54.76672 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:54.76714 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:54.76753 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:54.76793 This private key will be ignored.
+2023-08-19_13:21:54.76835 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:54.77222 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:54.77264 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:55.78015 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:55.78061 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:55.78117 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:55.78164 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:55.78213 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:55.78254 This private key will be ignored.
+2023-08-19_13:21:55.78307 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:55.78812 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:55.79042 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:55.79093 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:55.79136 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:55.79182 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:55.79227 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:55.79276 This private key will be ignored.
+2023-08-19_13:21:55.79330 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:55.79828 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:55.80031 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:55.80077 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:55.80125 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:55.80172 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:55.80217 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:55.80262 This private key will be ignored.
+2023-08-19_13:21:55.80314 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:55.80750 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:55.80799 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:56.81577 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:56.81616 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:56.81657 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:56.81698 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:56.81741 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:56.81782 This private key will be ignored.
+2023-08-19_13:21:56.81827 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:56.82338 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:56.82551 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:56.82593 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:56.82643 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:56.82685 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:56.82733 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:56.82777 This private key will be ignored.
+2023-08-19_13:21:56.82812 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:56.83277 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:56.83488 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:56.83534 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:56.83578 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:56.83631 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:56.83673 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:56.83713 This private key will be ignored.
+2023-08-19_13:21:56.83757 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:56.84225 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:56.84269 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:57.84973 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:57.85019 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:57.85058 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:57.85099 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:57.85137 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:57.85183 This private key will be ignored.
+2023-08-19_13:21:57.85226 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:57.85590 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:57.85781 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:57.85831 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:57.85877 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:57.85921 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:57.85971 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:57.86020 This private key will be ignored.
+2023-08-19_13:21:57.86060 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:57.86441 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:57.86600 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:57.86645 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:57.86682 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:57.86720 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:57.86758 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:57.86799 This private key will be ignored.
+2023-08-19_13:21:57.86842 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:57.87194 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:57.87234 sshd: no hostkeys available -- exiting.
+2023-08-19_13:21:58.87987 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:58.88035 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:58.88090 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:58.88151 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:21:58.88198 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:58.88237 This private key will be ignored.
+2023-08-19_13:21:58.88285 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:21:58.88736 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:21:58.88919 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:58.88965 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:58.89003 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:58.89050 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:21:58.89094 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:58.89137 This private key will be ignored.
+2023-08-19_13:21:58.89183 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:21:58.89733 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:21:58.89932 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:58.89977 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:21:58.90015 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:21:58.90061 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:21:58.90104 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:21:58.90148 This private key will be ignored.
+2023-08-19_13:21:58.90193 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:21:58.90627 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:21:58.90670 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:05.32282 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:05.32339 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:05.32380 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:05.32425 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:05.32462 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:05.32508 This private key will be ignored.
+2023-08-19_13:22:05.32543 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:05.32864 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:05.33056 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:05.33113 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:05.33165 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:05.33218 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:05.33266 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:05.33311 This private key will be ignored.
+2023-08-19_13:22:05.33359 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:05.33851 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:05.34055 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:05.34098 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:05.34141 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:05.34186 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:05.34230 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:05.34273 This private key will be ignored.
+2023-08-19_13:22:05.34320 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:05.34763 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:05.34806 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:06.35605 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:06.35651 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:06.35690 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:06.35735 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:06.35786 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:06.35826 This private key will be ignored.
+2023-08-19_13:22:06.35881 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:06.36253 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:06.36421 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:06.36468 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:06.36509 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:06.36549 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:06.36587 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:06.36632 This private key will be ignored.
+2023-08-19_13:22:06.36671 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:06.37051 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:06.37264 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:06.37305 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:06.37349 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:06.37409 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:06.37451 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:06.37491 This private key will be ignored.
+2023-08-19_13:22:06.37532 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:06.38030 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:06.38071 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:07.88804 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:08.08205 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:08.08891 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:08.09027 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:08.09164 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:08.09207 This private key will be ignored.
+2023-08-19_13:22:08.09278 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:08.09312 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:08.09348 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:08.09386 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:08.09429 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:08.09470 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:08.09506 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:08.09548 This private key will be ignored.
+2023-08-19_13:22:08.09586 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:08.09626 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:08.09664 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:08.09699 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:08.09739 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:08.09782 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:08.09825 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:08.09873 This private key will be ignored.
+2023-08-19_13:22:08.09918 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:08.09970 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:08.10014 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:09.10391 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:09.10433 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:09.10483 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:09.10526 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:09.10568 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:09.10617 This private key will be ignored.
+2023-08-19_13:22:09.10669 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:09.11119 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:09.11319 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:09.11362 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:09.11408 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:09.11460 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:09.11506 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:09.11549 This private key will be ignored.
+2023-08-19_13:22:09.11595 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:09.12028 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:09.12240 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:09.12295 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:09.12341 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:09.12385 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:09.12433 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:09.12473 This private key will be ignored.
+2023-08-19_13:22:09.12517 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:09.12980 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:09.13026 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:10.13756 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:10.13803 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:10.13844 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:10.13891 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:10.13935 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:10.13984 This private key will be ignored.
+2023-08-19_13:22:10.14023 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:10.14527 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:10.14687 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:10.14731 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:10.14765 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:10.14798 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:10.14830 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:10.14863 This private key will be ignored.
+2023-08-19_13:22:10.14896 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:10.15279 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:10.15412 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:10.15451 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:10.15491 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:10.15526 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:10.15562 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:10.15598 This private key will be ignored.
+2023-08-19_13:22:10.15641 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:10.16012 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:10.16047 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:17.69146 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:17.69197 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:17.69251 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:17.69299 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:17.69343 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:17.69385 This private key will be ignored.
+2023-08-19_13:22:17.69431 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:17.69783 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:17.69973 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:17.70014 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:17.70060 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:17.70100 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:17.70145 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:17.70189 This private key will be ignored.
+2023-08-19_13:22:17.70238 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:17.70599 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:17.70778 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:17.70817 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:17.70858 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:17.70899 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:17.70942 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:17.70982 This private key will be ignored.
+2023-08-19_13:22:17.71023 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:17.71470 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:17.71510 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:18.72243 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:18.72283 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:18.72322 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:18.72373 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:18.72411 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:18.72457 This private key will be ignored.
+2023-08-19_13:22:18.72507 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:18.72913 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:18.73097 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:18.73147 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:18.73191 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:18.73238 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:18.73282 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:18.73338 This private key will be ignored.
+2023-08-19_13:22:18.73384 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:18.73759 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:18.73940 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:18.73981 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:18.74026 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:18.74080 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:18.74118 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:18.74165 This private key will be ignored.
+2023-08-19_13:22:18.74209 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:18.74530 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:18.74566 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:19.75332 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:19.75373 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:19.75445 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:19.75486 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:19.75538 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:19.75591 This private key will be ignored.
+2023-08-19_13:22:19.75643 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:19.76100 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:19.76286 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:19.76325 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:19.76364 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:19.76402 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:19.76442 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:19.76480 This private key will be ignored.
+2023-08-19_13:22:19.76518 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:19.77004 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:19.77211 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:19.77253 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:19.77289 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:19.77334 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:19.77371 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:19.77406 This private key will be ignored.
+2023-08-19_13:22:19.77447 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:19.77863 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:19.77904 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:20.78619 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:20.78663 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:20.78708 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:20.78749 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:20.78792 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:20.78829 This private key will be ignored.
+2023-08-19_13:22:20.78874 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:20.79262 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:20.79443 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:20.79490 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:20.79526 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:20.79573 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:20.79616 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:20.79662 This private key will be ignored.
+2023-08-19_13:22:20.79705 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:20.80172 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:20.80371 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:20.80417 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:20.80460 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:20.80501 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:20.80542 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:20.80588 This private key will be ignored.
+2023-08-19_13:22:20.80631 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:20.81073 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:20.81117 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:21.81858 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:21.81911 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:21.81961 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:21.82004 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:21.82065 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:21.82117 This private key will be ignored.
+2023-08-19_13:22:21.82164 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:21.82651 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:21.82836 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:21.82875 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:21.82914 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:21.82956 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:21.82994 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:21.83030 This private key will be ignored.
+2023-08-19_13:22:21.83073 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:21.83482 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:21.83673 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:21.83718 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:21.83757 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:21.83797 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:21.83839 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:21.83881 This private key will be ignored.
+2023-08-19_13:22:21.83927 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:21.84352 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:21.84400 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:28.68001 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:28.68044 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:28.68092 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:28.68132 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:28.68168 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:28.68204 This private key will be ignored.
+2023-08-19_13:22:28.68236 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:28.68677 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:28.68880 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:28.68918 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:28.68960 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:28.69000 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:28.69048 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:28.69089 This private key will be ignored.
+2023-08-19_13:22:28.69133 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:28.69655 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:28.69826 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:28.69863 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:28.69902 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:28.69942 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:28.69979 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:28.70021 This private key will be ignored.
+2023-08-19_13:22:28.70062 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:28.70506 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:28.70546 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:29.71247 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:29.71290 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:29.71333 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:29.71384 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:29.71421 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:29.71467 This private key will be ignored.
+2023-08-19_13:22:29.71506 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:29.71913 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:29.72108 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:29.72146 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:29.72188 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:29.72225 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:29.72261 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:29.72305 This private key will be ignored.
+2023-08-19_13:22:29.72346 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:29.72751 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:29.72955 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:29.73006 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:29.73045 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:29.73085 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:29.73120 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:29.73163 This private key will be ignored.
+2023-08-19_13:22:29.73205 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:29.73658 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:29.73708 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:30.74463 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:30.74507 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:30.74548 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:30.74589 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:30.74632 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:30.74682 This private key will be ignored.
+2023-08-19_13:22:30.74726 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:30.75213 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:30.75400 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:30.75436 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:30.75472 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:30.75513 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:30.75556 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:30.75597 This private key will be ignored.
+2023-08-19_13:22:30.75646 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:30.76148 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:30.76348 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:30.76386 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:30.76424 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:30.76467 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:30.76508 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:30.76547 This private key will be ignored.
+2023-08-19_13:22:30.76590 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:30.77045 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:30.77083 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:31.77827 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:31.77867 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:31.77914 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:31.77960 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:31.78006 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:31.78058 This private key will be ignored.
+2023-08-19_13:22:31.78102 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:31.78587 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:31.78781 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:31.78821 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:31.78861 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:31.78905 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:31.78947 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:31.78987 This private key will be ignored.
+2023-08-19_13:22:31.79031 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:31.79509 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:31.79685 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:31.79719 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:31.79758 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:31.79799 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:31.79839 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:31.79883 This private key will be ignored.
+2023-08-19_13:22:31.79923 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:31.80343 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:31.80378 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:32.81146 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:32.81190 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:32.81236 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:32.81279 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:32.81319 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:32.81368 This private key will be ignored.
+2023-08-19_13:22:32.81408 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:32.81780 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:32.81965 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:32.82004 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:32.82047 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:32.82084 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:32.82128 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:32.82173 This private key will be ignored.
+2023-08-19_13:22:32.82222 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:32.82595 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:32.82783 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:32.82819 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:32.82855 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:32.82899 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:32.82933 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:32.82968 This private key will be ignored.
+2023-08-19_13:22:32.83008 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:32.83485 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:32.83546 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:39.77248 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:39.77303 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:39.77356 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:39.77401 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:39.77448 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:39.77494 This private key will be ignored.
+2023-08-19_13:22:39.77537 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:39.77989 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:39.78202 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:39.78257 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:39.78312 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:39.78356 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:39.78400 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:39.78449 This private key will be ignored.
+2023-08-19_13:22:39.78495 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:39.78932 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:39.79135 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:39.79175 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:39.79219 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:39.79264 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:39.79309 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:39.79353 This private key will be ignored.
+2023-08-19_13:22:39.79394 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:39.79833 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:39.79879 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:40.80615 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:40.80652 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:40.80695 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:40.80731 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:40.80775 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:40.80817 This private key will be ignored.
+2023-08-19_13:22:40.80860 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:40.81351 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:40.81561 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:40.81600 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:40.81644 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:40.81686 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:40.81721 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:40.81762 This private key will be ignored.
+2023-08-19_13:22:40.81808 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:40.82297 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:40.82502 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:40.82538 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:40.82577 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:40.82619 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:40.82663 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:40.82703 This private key will be ignored.
+2023-08-19_13:22:40.82751 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:40.83229 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:40.83268 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:41.84003 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:41.84050 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:41.84093 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:41.84133 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:41.84167 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:41.84201 This private key will be ignored.
+2023-08-19_13:22:41.84248 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:41.84716 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:41.84874 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:41.84914 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:41.84950 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:41.84992 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:41.85046 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:41.85097 This private key will be ignored.
+2023-08-19_13:22:41.85133 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:41.85503 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:41.85652 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:41.85698 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:41.85738 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:41.85785 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:41.85819 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:41.85863 This private key will be ignored.
+2023-08-19_13:22:41.85915 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:41.86271 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:41.86306 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:42.87054 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:42.87100 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:42.87143 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:42.87194 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:42.87241 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:42.87286 This private key will be ignored.
+2023-08-19_13:22:42.87332 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:42.87784 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:42.87954 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:42.87998 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:42.88045 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:42.88086 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:42.88127 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:42.88173 This private key will be ignored.
+2023-08-19_13:22:42.88217 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:42.88534 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:42.88687 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:42.88734 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:42.88775 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:42.88818 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:42.88869 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:42.88910 This private key will be ignored.
+2023-08-19_13:22:42.88951 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:42.89395 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:42.89428 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:43.90200 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:43.90246 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:43.90289 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:43.90334 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:43.90370 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:43.90416 This private key will be ignored.
+2023-08-19_13:22:43.90482 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:43.90864 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:43.91039 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:43.91080 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:43.91124 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:43.91156 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:43.91194 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:43.91229 This private key will be ignored.
+2023-08-19_13:22:43.91262 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:43.91745 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:43.91945 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:43.91992 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:43.92042 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:43.92088 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:43.92133 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:43.92176 This private key will be ignored.
+2023-08-19_13:22:43.92217 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:43.92689 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:43.92734 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:52.41323 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:52.41376 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:52.41423 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:52.41468 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:52.41519 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:52.41567 This private key will be ignored.
+2023-08-19_13:22:52.41612 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:52.42035 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:52.42199 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:52.42241 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:52.42284 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:52.42328 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:52.42372 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:52.42411 This private key will be ignored.
+2023-08-19_13:22:52.42459 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:52.42866 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:52.43044 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:52.43087 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:52.43139 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:52.43185 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:52.43229 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:52.43272 This private key will be ignored.
+2023-08-19_13:22:52.43314 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:52.43727 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:52.43767 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:53.44582 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:53.44632 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:53.44681 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:53.44730 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:53.44778 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:53.44826 This private key will be ignored.
+2023-08-19_13:22:53.44874 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:53.45362 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:53.45561 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:53.45599 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:53.45638 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:53.45685 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:53.45722 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:53.45765 This private key will be ignored.
+2023-08-19_13:22:53.45806 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:53.46302 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:53.46505 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:53.46542 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:53.46583 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:53.46623 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:53.46665 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:53.46700 This private key will be ignored.
+2023-08-19_13:22:53.46744 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:53.47255 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:53.47323 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:54.48330 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:54.48478 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:54.48688 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:54.48834 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:54.48898 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:54.49091 This private key will be ignored.
+2023-08-19_13:22:54.49158 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:54.49623 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:54.49833 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:54.49887 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:54.49925 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:54.49980 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:54.50026 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:54.50066 This private key will be ignored.
+2023-08-19_13:22:54.50118 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:54.50750 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:54.51036 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:54.51071 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:54.51110 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:54.51154 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:54.51197 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:54.51239 This private key will be ignored.
+2023-08-19_13:22:54.51285 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:54.51756 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:54.51790 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:55.52504 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:55.52544 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:55.52584 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:55.52630 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:55.52668 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:55.52710 This private key will be ignored.
+2023-08-19_13:22:55.52754 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:55.53187 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:55.53362 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:55.53405 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:55.53448 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:55.53495 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:55.53548 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:55.53591 This private key will be ignored.
+2023-08-19_13:22:55.53636 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:55.53969 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:55.54134 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:55.54182 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:55.54235 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:55.54278 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:55.54325 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:55.54365 This private key will be ignored.
+2023-08-19_13:22:55.54408 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:55.54795 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:55.54836 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:56.55600 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:56.55649 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:56.55717 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:56.55759 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:56.55798 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:56.55838 This private key will be ignored.
+2023-08-19_13:22:56.55878 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:56.56288 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:56.56466 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:56.56506 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:56.56543 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:56.56579 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:56.56621 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:56.56662 This private key will be ignored.
+2023-08-19_13:22:56.56709 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:22:56.57061 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:22:56.57251 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:56.57303 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:56.57344 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:56.57387 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:22:56.57427 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:56.57472 This private key will be ignored.
+2023-08-19_13:22:56.57509 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:22:56.57970 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:22:56.58015 sshd: no hostkeys available -- exiting.
+2023-08-19_13:22:57.58779 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:57.58845 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:57.58887 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:57.58928 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:22:57.58962 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:57.59000 This private key will be ignored.
+2023-08-19_13:22:57.59043 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:22:57.59516 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:22:57.59719 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:57.59758 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:22:57.59799 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:22:57.59841 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:22:57.59882 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:22:57.59922 This private key will be ignored.
+2023-08-19_13:22:57.59962 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:08.97108 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:08.97154 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:08.97195 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:08.97234 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:08.97280 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:08.97318 This private key will be ignored.
+2023-08-19_13:23:08.97359 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:08.97660 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:08.97833 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:08.97872 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:08.97912 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:08.97952 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:08.97991 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:08.98027 This private key will be ignored.
+2023-08-19_13:23:08.98068 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:08.98508 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:08.98684 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:08.98729 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:08.98760 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:08.98793 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:08.98832 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:08.98864 This private key will be ignored.
+2023-08-19_13:23:08.98901 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:08.99203 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:08.99238 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:09.99958 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:10.00003 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:10.00056 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:10.00100 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:10.00152 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:10.00202 This private key will be ignored.
+2023-08-19_13:23:10.00243 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:10.00753 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:10.00975 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:10.01033 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:10.01080 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:10.01114 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:10.01149 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:10.01189 This private key will be ignored.
+2023-08-19_13:23:10.01245 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:10.01683 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:10.01875 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:10.01918 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:10.01970 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:10.02016 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:10.02062 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:10.02098 This private key will be ignored.
+2023-08-19_13:23:10.02142 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:10.02609 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:10.02673 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:11.03367 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:11.03405 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:11.03438 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:11.03473 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:11.03506 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:11.03547 This private key will be ignored.
+2023-08-19_13:23:11.03580 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:11.03909 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:11.04056 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:11.04090 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:11.04128 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:11.04162 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:11.04221 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:11.04288 This private key will be ignored.
+2023-08-19_13:23:11.04390 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:11.04855 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:11.05114 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:11.05171 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:11.05226 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:11.05284 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:11.05368 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:11.05410 This private key will be ignored.
+2023-08-19_13:23:11.05460 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:11.05987 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:11.06035 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:12.06735 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:12.06782 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:12.06822 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:12.06872 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:12.06918 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:12.06959 This private key will be ignored.
+2023-08-19_13:23:12.06997 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:12.07353 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:12.07533 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:12.07574 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:12.07621 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:12.07666 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:12.07714 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:12.07763 This private key will be ignored.
+2023-08-19_13:23:12.07808 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:12.08280 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:12.08466 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:12.08510 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:12.08543 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:12.08588 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:12.08627 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:12.08671 This private key will be ignored.
+2023-08-19_13:23:12.08711 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:12.09112 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:12.09156 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:13.09894 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:13.09940 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:13.09989 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:13.10038 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:13.10084 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:13.10132 This private key will be ignored.
+2023-08-19_13:23:13.10179 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:13.10681 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:13.10871 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:13.10929 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:13.10977 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:13.11022 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:13.11065 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:13.11105 This private key will be ignored.
+2023-08-19_13:23:13.11139 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:13.11615 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:13.11807 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:13.11845 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:13.11886 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:13.11926 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:13.11966 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:13.12008 This private key will be ignored.
+2023-08-19_13:23:13.12050 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:13.12551 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:13.12599 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:31.76929 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:31.76984 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:31.77033 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:31.77080 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:31.77128 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:31.77171 This private key will be ignored.
+2023-08-19_13:23:31.77216 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:31.77577 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:31.77770 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:31.77808 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:31.77851 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:31.77894 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:31.77941 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:31.77982 This private key will be ignored.
+2023-08-19_13:23:31.78038 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:31.78536 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:31.78718 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:31.78755 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:31.78793 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:31.78829 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:31.78869 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:31.78909 This private key will be ignored.
+2023-08-19_13:23:31.78952 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:31.79422 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:31.79460 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:32.80183 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:32.80220 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:32.80268 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:32.80307 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:32.80349 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:32.80385 This private key will be ignored.
+2023-08-19_13:23:32.80426 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:32.80899 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:32.81204 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:32.81251 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:32.81289 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:32.81337 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:32.81376 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:32.81415 This private key will be ignored.
+2023-08-19_13:23:32.81464 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:32.81973 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:32.82168 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:32.82219 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:32.82260 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:32.82294 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:32.82329 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:32.82364 This private key will be ignored.
+2023-08-19_13:23:32.82422 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:32.82958 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:32.83003 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:33.83685 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:33.83720 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:33.83761 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:33.83790 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:33.83829 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:33.83867 This private key will be ignored.
+2023-08-19_13:23:33.83899 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:33.84292 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:33.84461 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:33.84505 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:33.84542 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:33.84586 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:33.84630 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:33.84662 This private key will be ignored.
+2023-08-19_13:23:33.84706 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:33.85153 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:33.85339 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:33.85407 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:33.85499 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:33.85543 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:33.85605 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:33.85639 This private key will be ignored.
+2023-08-19_13:23:33.85677 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:33.86064 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:33.86100 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:34.86851 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:34.86890 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:34.86932 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:34.86973 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:34.87014 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:34.87054 This private key will be ignored.
+2023-08-19_13:23:34.87099 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:34.87598 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:34.87817 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:34.87863 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:34.87904 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:34.87953 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:34.88005 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:34.88048 This private key will be ignored.
+2023-08-19_13:23:34.88093 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:34.88567 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:34.88764 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:34.88802 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:34.88841 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:34.88882 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:34.88923 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:34.88962 This private key will be ignored.
+2023-08-19_13:23:34.89007 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:34.89505 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:34.89555 sshd: no hostkeys available -- exiting.
+2023-08-19_13:23:35.90288 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:35.90331 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:35.90369 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:35.90417 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:23:35.90466 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:35.90515 This private key will be ignored.
+2023-08-19_13:23:35.90562 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:23:35.91069 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:23:35.91288 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:35.91332 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:35.91372 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:35.91416 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:23:35.91463 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:35.91504 This private key will be ignored.
+2023-08-19_13:23:35.91545 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:23:35.91957 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:23:35.92120 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:35.92155 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:23:35.92198 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:23:35.92234 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:23:35.92273 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:23:35.92313 This private key will be ignored.
+2023-08-19_13:23:35.92346 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:23:35.92771 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:23:35.92819 sshd: no hostkeys available -- exiting.
+2023-08-19_13:24:07.39550 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:07.39623 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:07.39669 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:07.39712 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:24:07.39756 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:07.39799 This private key will be ignored.
+2023-08-19_13:24:07.39851 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:24:07.40275 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:24:07.40462 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:07.40502 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:07.40541 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:07.40580 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:24:07.40623 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:07.40664 This private key will be ignored.
+2023-08-19_13:24:07.40704 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:24:07.41269 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:24:07.41455 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:07.41498 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:07.41538 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:07.41576 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:24:07.41630 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:07.41669 This private key will be ignored.
+2023-08-19_13:24:07.41702 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:24:07.42124 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:24:07.42168 sshd: no hostkeys available -- exiting.
+2023-08-19_13:24:08.42875 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:08.42921 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:08.42969 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:08.43010 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:24:08.43064 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:08.43107 This private key will be ignored.
+2023-08-19_13:24:08.43168 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:24:08.43668 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:24:08.43866 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:08.43911 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:08.43950 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:08.43996 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:24:08.44046 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:08.44095 This private key will be ignored.
+2023-08-19_13:24:08.44143 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:24:08.44629 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:24:08.44826 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:08.44869 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:08.44918 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:08.44964 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:24:08.45008 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:08.45053 This private key will be ignored.
+2023-08-19_13:24:08.45103 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:24:08.45540 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:24:08.45585 sshd: no hostkeys available -- exiting.
+2023-08-19_13:24:09.46454 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:09.46498 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:09.46541 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:09.46584 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:24:09.46626 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:09.46667 This private key will be ignored.
+2023-08-19_13:24:09.46708 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:24:09.47199 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:24:09.47394 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:09.47433 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:09.47491 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:09.47536 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:24:09.47576 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:09.47616 This private key will be ignored.
+2023-08-19_13:24:09.47657 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:24:09.48271 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:24:09.48477 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:09.48520 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:09.48566 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:09.48609 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:24:09.48654 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:09.48699 This private key will be ignored.
+2023-08-19_13:24:09.48738 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:24:09.49228 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:24:09.49269 sshd: no hostkeys available -- exiting.
+2023-08-19_13:24:10.50119 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:10.50167 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:10.50217 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:10.50263 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:24:10.50313 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:10.50360 This private key will be ignored.
+2023-08-19_13:24:10.50405 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:24:10.50855 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:24:10.51036 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:10.51079 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:10.51123 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:10.51168 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:24:10.51218 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:10.51301 This private key will be ignored.
+2023-08-19_13:24:10.51342 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:24:10.51819 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:24:10.51987 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:10.52028 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:10.52073 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:10.52138 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:24:10.52185 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:10.52228 This private key will be ignored.
+2023-08-19_13:24:10.52295 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:24:10.52660 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:24:10.52705 sshd: no hostkeys available -- exiting.
+2023-08-19_13:24:11.53415 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:11.53468 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:11.53516 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:11.53559 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:24:11.53602 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:11.53641 This private key will be ignored.
+2023-08-19_13:24:11.53684 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:24:11.54142 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:24:11.54320 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:11.54360 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:11.54396 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:11.54433 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:24:11.54471 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:11.54512 This private key will be ignored.
+2023-08-19_13:24:11.54556 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:24:11.55054 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:24:11.55249 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:11.55291 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:24:11.55324 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:24:11.55362 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:24:11.55401 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:24:11.55439 This private key will be ignored.
+2023-08-19_13:24:11.55481 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:24:11.55917 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:24:11.55956 sshd: no hostkeys available -- exiting.
+2023-08-19_13:25:08.12859 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:08.12908 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:08.12953 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:08.13001 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:25:08.13051 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:08.13093 This private key will be ignored.
+2023-08-19_13:25:08.13134 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:25:08.13495 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:25:08.13690 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:08.13735 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:08.13776 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:08.13823 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:25:08.13869 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:08.13913 This private key will be ignored.
+2023-08-19_13:25:08.13986 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:25:08.14485 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:25:08.14678 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:08.14718 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:08.14761 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:08.14803 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:25:08.14845 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:08.14889 This private key will be ignored.
+2023-08-19_13:25:08.14934 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:25:08.15385 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:25:08.15428 sshd: no hostkeys available -- exiting.
+2023-08-19_13:25:09.16161 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:09.16209 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:09.16254 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:09.16300 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:25:09.16347 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:09.16394 This private key will be ignored.
+2023-08-19_13:25:09.16443 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:25:09.16884 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:25:09.17058 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:09.17100 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:09.17139 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:09.17178 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:25:09.17218 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:09.17261 This private key will be ignored.
+2023-08-19_13:25:09.17306 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:25:09.17751 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:25:09.17957 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:09.18001 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:09.18044 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:09.18086 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:25:09.18128 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:09.18173 This private key will be ignored.
+2023-08-19_13:25:09.18235 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:25:09.18640 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:25:09.18676 sshd: no hostkeys available -- exiting.
+2023-08-19_13:25:10.19391 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:10.19435 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:10.19471 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:10.19518 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:25:10.19572 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:10.19619 This private key will be ignored.
+2023-08-19_13:25:10.19669 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:25:10.20038 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:25:10.20199 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:10.20239 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:10.20278 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:10.20321 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:25:10.20363 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:10.20405 This private key will be ignored.
+2023-08-19_13:25:10.20450 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:25:10.20852 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:25:10.21033 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:10.21077 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:10.21121 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:10.21175 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:25:10.21222 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:10.21266 This private key will be ignored.
+2023-08-19_13:25:10.21305 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:25:10.21637 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:25:10.21673 sshd: no hostkeys available -- exiting.
+2023-08-19_13:25:11.22435 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:11.22481 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:11.22528 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:11.22575 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:25:11.22616 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:11.22667 This private key will be ignored.
+2023-08-19_13:25:11.22709 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:25:11.23060 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:25:11.23203 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:11.23243 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:11.23284 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:11.23327 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:25:11.23371 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:11.23411 This private key will be ignored.
+2023-08-19_13:25:11.23455 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:25:11.23763 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:25:11.23943 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:11.23999 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:11.24043 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:11.24094 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:25:11.24133 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:11.24181 This private key will be ignored.
+2023-08-19_13:25:11.24223 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:25:11.24577 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:25:11.24608 sshd: no hostkeys available -- exiting.
+2023-08-19_13:25:12.25333 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:12.25389 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:12.25429 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:12.25482 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:25:12.25531 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:12.25580 This private key will be ignored.
+2023-08-19_13:25:12.25625 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:25:12.26034 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:25:12.26237 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:12.26277 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:12.26323 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:12.26365 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:25:12.26413 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:12.26460 This private key will be ignored.
+2023-08-19_13:25:12.26507 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:25:12.27051 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:25:12.27315 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:12.27374 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:12.27415 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:12.27452 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:25:12.27495 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:12.27540 This private key will be ignored.
+2023-08-19_13:25:12.27585 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:25:12.27986 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:25:12.28030 sshd: no hostkeys available -- exiting.
+2023-08-19_13:25:13.28796 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:13.28847 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:13.28894 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:13.28936 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:25:13.28982 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:13.29021 This private key will be ignored.
+2023-08-19_13:25:13.29069 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:25:13.29463 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:25:13.29648 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:13.29688 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:13.29739 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:13.29785 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:25:13.29833 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:13.29879 This private key will be ignored.
+2023-08-19_13:25:13.29923 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:25:13.30435 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:25:13.30617 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:13.30665 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:25:13.30707 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:25:13.30754 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:25:13.30802 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:25:13.30842 This private key will be ignored.
+2023-08-19_13:25:13.30894 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:25:13.31376 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:25:13.31430 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:00.27140 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:00.27193 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:00.27266 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:00.27326 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:00.27386 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:00.27443 This private key will be ignored.
+2023-08-19_13:26:00.27500 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:00.28023 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:00.28215 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:00.28272 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:00.28311 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:00.28359 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:00.28412 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:00.28454 This private key will be ignored.
+2023-08-19_13:26:00.28498 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:00.29047 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:00.29295 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:00.29366 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:00.29423 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:00.29483 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:00.29548 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:00.29605 This private key will be ignored.
+2023-08-19_13:26:00.29669 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:00.30115 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:00.30167 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:01.30931 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:01.30983 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:01.31025 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:01.31069 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:01.31117 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:01.31168 This private key will be ignored.
+2023-08-19_13:26:01.31211 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:01.31620 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:01.31816 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:01.31865 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:01.31914 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:01.31963 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:01.32008 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:01.32055 This private key will be ignored.
+2023-08-19_13:26:01.32099 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:01.32562 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:01.32754 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:01.32803 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:01.32870 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:01.32913 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:01.32959 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:01.33008 This private key will be ignored.
+2023-08-19_13:26:01.33055 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:01.33487 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:01.33534 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:02.34283 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:02.34334 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:02.34376 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:02.34416 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:02.34458 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:02.34506 This private key will be ignored.
+2023-08-19_13:26:02.34550 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:02.34961 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:02.35120 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:02.35167 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:02.35219 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:02.35259 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:02.35303 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:02.35339 This private key will be ignored.
+2023-08-19_13:26:02.35382 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:02.35826 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:02.36001 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:02.36034 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:02.36069 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:02.36103 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:02.36144 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:02.36176 This private key will be ignored.
+2023-08-19_13:26:02.36213 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:02.36596 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:02.36629 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:03.37405 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:03.37445 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:03.37486 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:03.37544 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:03.37591 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:03.37639 This private key will be ignored.
+2023-08-19_13:26:03.37685 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:03.38191 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:03.38383 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:03.38423 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:03.38464 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:03.38506 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:03.38547 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:03.38592 This private key will be ignored.
+2023-08-19_13:26:03.38637 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:03.39258 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:03.39454 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:03.39494 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:03.39533 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:03.39579 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:03.39623 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:03.39663 This private key will be ignored.
+2023-08-19_13:26:03.39717 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:03.40274 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:03.40318 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:04.41062 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:04.41131 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:04.41200 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:04.41262 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:04.41309 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:04.41353 This private key will be ignored.
+2023-08-19_13:26:04.41400 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:04.41963 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:04.42158 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:04.42202 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:04.42240 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:04.42283 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:04.42322 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:04.42362 This private key will be ignored.
+2023-08-19_13:26:04.42418 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:04.42952 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:04.43141 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:04.43183 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:04.43234 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:04.43278 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:04.43320 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:04.43361 This private key will be ignored.
+2023-08-19_13:26:04.43398 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:04.43825 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:04.43873 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:11.82089 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:11.82140 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:11.82190 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:11.82254 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:11.82299 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:11.82342 This private key will be ignored.
+2023-08-19_13:26:11.82384 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:11.82846 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:11.83035 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:11.83075 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:11.83112 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:11.83153 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:11.83192 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:11.83238 This private key will be ignored.
+2023-08-19_13:26:11.83281 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:11.83832 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:11.84067 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:11.84114 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:11.84161 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:11.84196 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:11.84232 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:11.84279 This private key will be ignored.
+2023-08-19_13:26:11.84319 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:11.84727 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:11.84763 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:12.85511 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:12.85555 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:12.85596 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:12.85637 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:12.85671 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:12.85714 This private key will be ignored.
+2023-08-19_13:26:12.85760 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:12.86280 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:12.86475 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:12.86513 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:12.86549 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:12.86586 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:12.86619 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:12.86659 This private key will be ignored.
+2023-08-19_13:26:12.86691 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:12.87157 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:12.87367 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:12.87405 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:12.87447 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:12.87479 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:12.87525 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:12.87569 This private key will be ignored.
+2023-08-19_13:26:12.87615 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:12.88141 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:12.88173 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:13.88912 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:13.88952 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:13.88991 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:13.89037 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:13.89081 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:13.89121 This private key will be ignored.
+2023-08-19_13:26:13.89169 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:13.89713 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:13.89926 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:13.89963 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:13.90005 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:13.90054 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:13.90099 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:13.90140 This private key will be ignored.
+2023-08-19_13:26:13.90185 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:13.90700 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:13.90955 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:13.91026 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:13.91065 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:13.91108 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:13.91149 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:13.91189 This private key will be ignored.
+2023-08-19_13:26:13.91229 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:13.91642 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:13.91687 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:14.92507 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:14.92544 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:14.92587 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:14.92634 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:14.92683 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:14.92728 This private key will be ignored.
+2023-08-19_13:26:14.92771 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:14.93213 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:14.93431 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:14.93485 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:14.93526 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:14.93569 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:14.93608 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:14.93644 This private key will be ignored.
+2023-08-19_13:26:14.93691 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:14.94236 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:14.94440 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:14.94483 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:14.94524 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:14.94571 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:14.94636 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:14.94684 This private key will be ignored.
+2023-08-19_13:26:14.94723 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:14.95158 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:14.95201 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:15.95973 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:15.96014 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:15.96066 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:15.96110 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:15.96151 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:15.96199 This private key will be ignored.
+2023-08-19_13:26:15.96247 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:15.96667 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:15.96866 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:15.96960 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:15.97005 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:15.97050 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:15.97093 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:15.97137 This private key will be ignored.
+2023-08-19_13:26:15.97178 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:15.97618 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:15.97808 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:15.97851 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:15.97894 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:15.97938 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:15.97978 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:15.98014 This private key will be ignored.
+2023-08-19_13:26:15.98064 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:15.98522 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:15.98572 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:23.13547 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:23.13595 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:23.13636 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:23.13676 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:23.13718 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:23.13756 This private key will be ignored.
+2023-08-19_13:26:23.13799 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:23.14306 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:23.14503 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:23.14554 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:23.14594 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:23.14628 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:23.14671 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:23.14736 This private key will be ignored.
+2023-08-19_13:26:23.14790 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:23.15184 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:23.15363 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:23.15422 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:23.15473 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:23.15536 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:23.15570 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:23.15609 This private key will be ignored.
+2023-08-19_13:26:23.15647 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:23.16059 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:23.16111 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:24.16879 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:24.16928 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:24.16968 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:24.17014 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:24.17057 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:24.17099 This private key will be ignored.
+2023-08-19_13:26:24.17146 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:24.17650 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:24.17853 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:24.17902 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:24.17946 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:24.17992 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:24.18038 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:24.18078 This private key will be ignored.
+2023-08-19_13:26:24.18125 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:24.18598 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:24.18759 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:24.18807 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:24.18858 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:24.18899 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:24.18932 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:24.18962 This private key will be ignored.
+2023-08-19_13:26:24.18994 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:24.19456 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:24.19492 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:25.20202 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:25.20241 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:25.20286 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:25.20329 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:25.20366 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:25.20407 This private key will be ignored.
+2023-08-19_13:26:25.20451 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:25.20866 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:25.21046 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:25.21089 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:25.21125 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:25.21164 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:25.21200 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:25.21239 This private key will be ignored.
+2023-08-19_13:26:25.21284 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:25.21713 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:25.21898 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:25.21950 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:25.21992 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:25.22028 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:25.22064 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:25.22108 This private key will be ignored.
+2023-08-19_13:26:25.22149 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:25.22550 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:25.22591 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:26.23304 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:26.23350 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:26.23389 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:26.23428 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:26.23468 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:26.23516 This private key will be ignored.
+2023-08-19_13:26:26.23558 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:26.23954 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:26.24138 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:26.24171 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:26.24212 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:26.24250 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:26.24290 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:26.24326 This private key will be ignored.
+2023-08-19_13:26:26.24364 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:26.24752 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:26.24926 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:26.24966 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:26.25010 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:26.25048 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:26.25090 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:26.25135 This private key will be ignored.
+2023-08-19_13:26:26.25176 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:26.25513 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:26.25558 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:27.26321 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:27.26369 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:27.26414 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:27.26452 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:27.26489 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:27.26527 This private key will be ignored.
+2023-08-19_13:26:27.26571 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:27.26938 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:27.27110 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:27.27154 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:27.27195 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:27.27235 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:27.27278 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:27.27326 This private key will be ignored.
+2023-08-19_13:26:27.27365 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:27.27791 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:27.27970 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:27.28009 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:27.28061 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:27.28105 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:27.28153 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:27.28194 This private key will be ignored.
+2023-08-19_13:26:27.28234 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:27.28640 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:27.28674 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:34.20283 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:34.20352 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:34.20415 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:34.20472 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:34.20532 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:34.20590 This private key will be ignored.
+2023-08-19_13:26:34.20658 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:34.21106 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:34.21312 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:34.21360 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:34.21437 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:34.21490 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:34.21547 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:34.21610 This private key will be ignored.
+2023-08-19_13:26:34.21685 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:34.22177 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:34.22406 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:34.22456 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:34.22503 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:34.22559 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:34.22614 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:34.22662 This private key will be ignored.
+2023-08-19_13:26:34.22718 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:34.23296 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:34.23343 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:35.24123 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:35.24165 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:35.24201 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:35.24244 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:35.24285 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:35.24323 This private key will be ignored.
+2023-08-19_13:26:35.24362 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:35.24774 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:35.24952 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:35.24993 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:35.25030 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:35.25067 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:35.25103 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:35.25141 This private key will be ignored.
+2023-08-19_13:26:35.25181 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:35.25656 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:35.25865 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:35.25918 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:35.25963 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:35.26010 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:35.26055 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:35.26101 This private key will be ignored.
+2023-08-19_13:26:35.26144 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:35.26559 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:35.26601 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:36.27349 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:36.27400 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:36.27440 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:36.27479 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:36.27517 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:36.27556 This private key will be ignored.
+2023-08-19_13:26:36.27592 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:36.28016 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:36.28200 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:36.28251 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:36.28290 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:36.28328 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:36.28374 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:36.28423 This private key will be ignored.
+2023-08-19_13:26:36.28465 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:36.28917 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:36.29110 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:36.29158 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:36.29204 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:36.29244 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:36.29277 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:36.29318 This private key will be ignored.
+2023-08-19_13:26:36.29360 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:36.29780 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:36.29822 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:37.30553 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:37.30608 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:37.30663 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:37.30704 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:37.30769 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:37.30827 This private key will be ignored.
+2023-08-19_13:26:37.30884 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:37.31339 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:37.31527 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:37.31578 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:37.31636 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:37.31685 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:37.31730 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:37.31780 This private key will be ignored.
+2023-08-19_13:26:37.31831 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:37.32273 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:37.32509 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:37.32586 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:37.32625 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:37.32662 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:37.32701 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:37.32739 This private key will be ignored.
+2023-08-19_13:26:37.32778 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:37.33280 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:37.33318 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:38.34062 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:38.34103 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:38.34149 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:38.34190 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:38.34231 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:38.34271 This private key will be ignored.
+2023-08-19_13:26:38.34319 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:38.34737 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:38.34930 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:38.34986 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:38.35039 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:38.35082 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:38.35129 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:38.35169 This private key will be ignored.
+2023-08-19_13:26:38.35209 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:38.35539 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:38.35706 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:38.35747 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:38.35782 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:38.35821 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:38.35861 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:38.35905 This private key will be ignored.
+2023-08-19_13:26:38.35947 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:38.36343 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:38.36383 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:45.44658 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:45.44712 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:45.44775 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:45.44823 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:45.44879 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:45.44929 This private key will be ignored.
+2023-08-19_13:26:45.44976 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:45.45396 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:45.45595 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:45.45641 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:45.45686 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:45.45732 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:45.45777 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:45.45825 This private key will be ignored.
+2023-08-19_13:26:45.45895 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:45.46380 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:45.46572 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:45.46616 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:45.46657 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:45.46702 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:45.46748 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:45.46792 This private key will be ignored.
+2023-08-19_13:26:45.46846 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:45.47335 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:45.47386 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:46.48151 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:46.48196 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:46.48238 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:46.48279 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:46.48322 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:46.48368 This private key will be ignored.
+2023-08-19_13:26:46.48411 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:46.48844 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:46.49047 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:46.49097 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:46.49135 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:46.49197 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:46.49236 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:46.49282 This private key will be ignored.
+2023-08-19_13:26:46.49325 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:46.49740 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:46.49907 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:46.49955 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:46.49993 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:46.50043 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:46.50091 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:46.50125 This private key will be ignored.
+2023-08-19_13:26:46.50168 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:46.50584 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:46.50630 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:47.51347 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:47.51385 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:47.51422 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:47.51467 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:47.51509 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:47.51548 This private key will be ignored.
+2023-08-19_13:26:47.51581 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:47.52077 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:47.52262 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:47.52300 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:47.52339 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:47.52381 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:47.52419 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:47.52457 This private key will be ignored.
+2023-08-19_13:26:47.52504 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:47.52964 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:47.53148 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:47.53187 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:47.53225 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:47.53261 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:47.53298 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:47.53342 This private key will be ignored.
+2023-08-19_13:26:47.53377 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:47.53831 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:47.53870 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:48.54592 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:48.54633 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:48.54677 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:48.54722 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:48.54763 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:48.54806 This private key will be ignored.
+2023-08-19_13:26:48.54848 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:48.55340 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:48.55542 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:48.55585 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:48.55630 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:48.55672 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:48.55717 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:48.55760 This private key will be ignored.
+2023-08-19_13:26:48.55806 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:48.56294 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:48.56497 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:48.56562 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:48.56611 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:48.56658 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:48.56699 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:48.56736 This private key will be ignored.
+2023-08-19_13:26:48.56781 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:48.57232 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:48.57269 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:49.57975 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:49.58020 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:49.58056 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:49.58089 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:49.58126 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:49.58163 This private key will be ignored.
+2023-08-19_13:26:49.58202 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:49.58609 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:49.58784 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:49.58824 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:49.58869 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:49.58913 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:49.58952 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:49.58998 This private key will be ignored.
+2023-08-19_13:26:49.59034 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:49.59506 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:49.59691 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:49.59727 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:49.59762 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:49.59803 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:49.59840 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:49.59877 This private key will be ignored.
+2023-08-19_13:26:49.59917 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:49.60395 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:49.60429 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:50.61194 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:50.61240 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:50.61282 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:50.61321 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:50.61363 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:50.61408 This private key will be ignored.
+2023-08-19_13:26:50.61448 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:50.61919 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:50.62116 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:50.62155 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:50.62194 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:50.62236 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:50.62282 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:50.62323 This private key will be ignored.
+2023-08-19_13:26:50.62368 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:50.62842 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:50.63060 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:50.63097 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:50.63135 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:50.63175 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:50.63213 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:50.63250 This private key will be ignored.
+2023-08-19_13:26:50.63290 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:50.63756 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:50.63795 sshd: no hostkeys available -- exiting.
+2023-08-19_13:26:57.02077 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:57.02131 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:57.02173 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:57.02214 Permissions 0777 for '/etc/gitlab/ssh_host_rsa_key' are too open.
+2023-08-19_13:26:57.02257 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:57.02295 This private key will be ignored.
+2023-08-19_13:26:57.02336 Unable to load host key "/etc/gitlab/ssh_host_rsa_key": bad permissions
+2023-08-19_13:26:57.02727 Unable to load host key: /etc/gitlab/ssh_host_rsa_key
+2023-08-19_13:26:57.02914 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:57.02956 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:57.03004 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:57.03051 Permissions 0777 for '/etc/gitlab/ssh_host_ecdsa_key' are too open.
+2023-08-19_13:26:57.03090 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:57.03129 This private key will be ignored.
+2023-08-19_13:26:57.03175 Unable to load host key "/etc/gitlab/ssh_host_ecdsa_key": bad permissions
+2023-08-19_13:26:57.03591 Unable to load host key: /etc/gitlab/ssh_host_ecdsa_key
+2023-08-19_13:26:57.03781 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:57.03821 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+2023-08-19_13:26:57.03858 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+2023-08-19_13:26:57.03896 Permissions 0777 for '/etc/gitlab/ssh_host_ed25519_key' are too open.
+2023-08-19_13:26:57.03937 It is required that your private key files are NOT accessible by others.
+2023-08-19_13:26:57.03979 This private key will be ignored.
+2023-08-19_13:26:57.04022 Unable to load host key "/etc/gitlab/ssh_host_ed25519_key": bad permissions
+2023-08-19_13:26:57.04423 Unable to load host key: /etc/gitlab/ssh_host_ed25519_key
+2023-08-19_13:26:57.04468 sshd: no hostkeys available -- exiting.
