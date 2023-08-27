@@ -136,8 +136,8 @@
                 <filtering>true</filtering>
             </resource>
 
-            <resource>
-                <directory>dows/ops/dev/saas/ops/ops-admin/dev/api/configs</directory>
+           <!-- <resource>
+                <directory>cd/ops/dev/saas/ops/ops-admin/dev/api/configs</directory>
                 <includes>
                     <include>**/*.*</include>
                     <include>**/*.*</include>
@@ -148,7 +148,7 @@
                     <include>**/*.sql</include>
                 </includes>
                 <filtering>true</filtering>
-            </resource>
+            </resource>-->
         </resources>
         <plugins>
 
