@@ -8,10 +8,12 @@
 docker_username="findsoft@dows"
 docker_password="findsoft123456"
 docker_version=""
+project_path="/findsoft/hep"
 docker_registry="registry.cn-hangzhou.aliyuncs.com"
 
 sudo echo -e "\033[32m --start-- \033[0m"
 
+#手动输入
 #sudo echo -e "\033[33m please input username: \033[0m"
 #read -r docker_username
 #sudo echo -e "\033[33m please input password: \033[0m"
@@ -20,42 +22,47 @@ sudo echo -e "\033[32m --start-- \033[0m"
 #read -r docker_version
 #sudo echo -e "\033[33m docker_username:${docker_username}  docker_password:${docker_password} docker_version:${docker_version} \033[0m"
 
-
+#登录私仓(自动)
 sudo docker login --username=$docker_username --password=$docker_password ${docker_registry}
 
+#拉取
 #sudo echo -e "\033[32m 1.pull image from route \033[0m"
-#sudo docker pull "$docker_registry/findsoft/openjdk:11-jre-slim"
-#sudo docker pull "$docker_registry/findsoft/odc-order:$docker_version"
-
+#sudo docker pull "$docker_registry/openjdk:11-jre-slim"
+#sudo docker pull "$docker_registry/odc-order:$docker_version"
+#
 #sudo echo -e "\033[32m 2.tag images \033[0m"
-#sudo docker tag "$docker_registry/findsoft/openjdk:17-jre-slim" openjdk:11-jre-slim
-#sudo docker tag "$docker_registry/findsoft/odc-order:$docker_version" odc-order:$docker_version
+#sudo docker tag "$docker_registry/openjdk:17-jre-slim" openjdk:11-jre-slim
+#sudo docker tag "$docker_registry/odc-order:$docker_version" odc-order:$docker_version
 
 sudo echo -e "\033[32m 1.remove old tag images \033[0m"
+## todo脚本动态判断
 ## api
-#sudo docker rmi -f "$docker_registry/findsoft/hep-admin-prd:1.0.230821"
+#sudo docker rmi -f "$docker_registry/hep-admin-prd:1.0.230821"
 ## h5教师端
-#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-admin-prd:1.0.230826"
+#sudo docker rmi -f "$docker_registry/h5-hep-admin-prd:1.0.230826"
 ## h5学生端
-#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-user-prd:1.0.230826"
+#sudo docker rmi -f "$docker_registry/h5-hep-user-prd:1.0.230826"
 
 sudo docker images
 
+#创建prd网络
+docker network create --driver bridge --subnet 172.18.0.0/16 --gateway 172.18.0.1 prd_net
+
 #启动paas
 sudo echo -e "\033[32m 2.running paas docker-compose  \033[0m"
-sudo docker compose -f /findsoft/hep/paas/prd/mysql.yml up -d
-sudo docker compose -f /findsoft/hep/paas/prd/redis.yml up -d
-sudo docker compose -f /findsoft/hep/paas/prd/pdf.yml up -d
+sudo docker compose -f ${project_path}/paas/prd/mysql.yml up -d
+sudo docker compose -f ${project_path}/paas/prd/redis.yml up -d
+sudo docker compose -f ${project_path}/paas/prd/pdf.yml up -d
 
 #启动saas
 sudo echo -e "\033[32m 3.running saas docker-compose  \033[0m"
-docker compose -f /findsoft/hep/saas/prd/api/admin/docker-compose.yml down
-docker compose -f /findsoft/hep/saas/prd/h5/admin/docker-compose.yml down
-docker compose -f /findsoft/hep/saas/prd/h5/user/docker-compose.yml down
+docker compose -f ${project_path}/saas/prd/api/admin/docker-compose.yml down
+docker compose -f ${project_path}/saas/prd/h5/admin/docker-compose.yml down
+docker compose -f ${project_path}/saas/prd/h5/user/docker-compose.yml down
 
-docker compose -f /findsoft/hep/saas/prd/api/admin/docker-compose.yml up -d
-docker compose -f /findsoft/hep/saas/prd/h5/admin/docker-compose.yml up -d
-docker compose -f /findsoft/hep/saas/prd/h5/user/docker-compose.yml up -d
+docker compose -f ${project_path}/saas/prd/api/admin/docker-compose.yml up -d
+docker compose -f ${project_path}/saas/prd/h5/admin/docker-compose.yml up -d
+docker compose -f ${project_path}/saas/prd/h5/user/docker-compose.yml up -d
 
 #查看
 sudo docker ps -a

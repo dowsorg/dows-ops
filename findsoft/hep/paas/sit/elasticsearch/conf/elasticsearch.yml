@@ -1,3 +1,0 @@
-network.host: 0.0.0.0
-
-indices.breaker.total.use_real_memory: false

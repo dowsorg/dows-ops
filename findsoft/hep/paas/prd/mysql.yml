@@ -19,16 +19,17 @@ services:
       options:
         max-size: '5g'
     volumes:
-      # 挂载数据目录
-      - ./mysql/data:/var/lib/mysql:rw
+      - /etc/localtime:/etc/localtime
+      # 数据库目录映射,挂载数据目录
+      - ./mysql/data:/var/lib/mysql
       # 挂载配置文件目录
       - ./mysql/conf.d:/etc/mysql/conf.d
-      #- ./dows/hep/hep-mysql-dev/conf:/etc/mysql/conf.d:rw
     ports:
       - "43306:3306"
-
+    networks:
+      prd_net:
+        ipv4_address: 172.18.0.2
 
 networks:
-  default:
-    external:
-      name: prd_net
+  prd_net:
+    external: true
