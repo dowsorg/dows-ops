@@ -24,6 +24,7 @@ services:
       - ./mysql/data:/var/lib/mysql
       # 挂载配置文件目录
       - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./mysql/init:/docker-entrypoint-initdb.d
     ports:
       - "13306:3306"
     networks:
