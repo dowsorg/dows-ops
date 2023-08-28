@@ -1,0 +1,19 @@
+version: '3'
+services:
+  pdf-generator:
+    image: registry.cn-hangzhou.aliyuncs.com/findsoft/pdf-generator:1.0.230825
+    restart: unless-stopped
+    container_name: pdf-generator
+    environment:
+      - TZ=$TZ
+    ports:
+      - 48080:8080
+    networks:
+      - dev_net
+#    networks:
+#      prd_net:
+#        ipv4_address: 172.18.0.5
+
+networks:
+  dev_net:
+    external: true
