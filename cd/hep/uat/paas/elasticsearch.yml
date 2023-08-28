@@ -4,8 +4,8 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.4.2
     container_name: elasticsearch842-uat
     ports:
-      - 9200:9200
-      - 9300:9300
+      - 39200:9200
+      - 39300:9300
     environment:
       - node.name=elasticsearch
       - cluster.name=elasticsearch

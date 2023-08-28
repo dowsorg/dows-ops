@@ -1,9 +1,9 @@
 version: "3"
 services:
-  nginx-prd:
+  nginx-dev:
     image: nginx
     restart: unless-stopped
-    container_name: nginx-prd
+    container_name: nginx-dev
     ports:
       - 480:80
     volumes:

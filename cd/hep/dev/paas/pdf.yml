@@ -11,7 +11,7 @@ services:
     networks:
       - dev_net
 #    networks:
-#      prd_net:
+#      dev_net:
 #        ipv4_address: 172.18.0.5
 
 networks:

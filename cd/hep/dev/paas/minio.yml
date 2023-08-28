@@ -1,9 +1,9 @@
 version: "3"
 services:
-  minio-prd:
+  minio-dev:
     image: minio/minio:latest
     restart: always
-    container_name: minio-prd
+    container_name: minio-dev
     command: server /data --console-address :9200
     ports:
       - "19002:9000"
@@ -26,7 +26,7 @@ services:
     networks:
       - dev_net
 #    networks:
-#      prd_net:
+#      dev_net:
 #        ipv4_address: 172.18.0.4
 
 networks:

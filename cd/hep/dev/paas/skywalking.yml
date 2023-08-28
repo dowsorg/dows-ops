@@ -53,4 +53,4 @@ networks:
 #networks:
 #  default:
 #    external:
-#      name: prd_net
+#      name: dev_net
