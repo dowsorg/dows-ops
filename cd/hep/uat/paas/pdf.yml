@@ -7,13 +7,13 @@ services:
     environment:
       - TZ=$TZ
     ports:
-      - 18080:8080
+      - 48080:8080
     networks:
-      - dev_net
+      - uat_net
 #    networks:
-#      prd_net:
+#      uat_net:
 #        ipv4_address: 172.18.0.5
 
 networks:
-  dev_net:
+  uat_net:
     external: true

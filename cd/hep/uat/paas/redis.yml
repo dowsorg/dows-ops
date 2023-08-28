@@ -1,9 +1,9 @@
 version: "3"
 services:
 
-  redis-prd:
+  redis-uat:
     image: redis
-    container_name: redis-prd
+    container_name: redis-uat
     restart: always
     privileged: true
     environment:
@@ -14,13 +14,13 @@ services:
       - ./redis/logs:/logs
     command: [ "redis-server","/etc/redis/redis.conf" ]
     ports:
-      - 16379:6379
+      - 46379:6379
     networks:
-      - dev_net
+      - uat_net
 #    networks:
-#      prd_net:
+#      uat_net:
 #        ipv4_address: 172.18.0.3
 
 networks:
-  dev_net:
+  uat_net:
     external: true

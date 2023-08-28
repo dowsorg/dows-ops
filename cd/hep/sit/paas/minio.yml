@@ -1,13 +1,13 @@
 version: "3"
 services:
-  minio-prd:
+  minio-sit:
     image: minio/minio:latest
     restart: always
-    container_name: minio-prd
+    container_name: minio-sit
     command: server /data --console-address :9200
     ports:
-      - "19002:9000"
-      - "19200:9200"
+      - "9002:9000"
+      - "9200:9200"
     environment:
       TZ: Asia/Shanghai
       LANG: en_US.UTF-8
@@ -24,11 +24,11 @@ services:
       - ./minio/config:/root/.minio
       - ./minio/minio:/minio
     networks:
-      - dev_net
+      - sit_net
 #    networks:
-#      prd_net:
+#      sit_net:
 #        ipv4_address: 172.18.0.4
 
 networks:
-  dev_net:
+  sit_net:
     external: true

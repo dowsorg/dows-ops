@@ -1,10 +1,10 @@
 version: "3"
 services:
-  mysql-prd:
+  mysql-sit:
     # 指定镜像和版本
     image: mariadb
     # 指定容器的名称
-    container_name: mysql-prd
+    container_name: mysql-sit
     restart: always
     command:
       --max_connections=1000
@@ -25,13 +25,13 @@ services:
       # 挂载配置文件目录
       - ./mysql/conf.d:/etc/mysql/conf.d
     ports:
-      - "13306:3306"
+      - "43306:3306"
     networks:
-      - dev_net
+      - sit_net
 #    networks:
-#      prd_net:
+#      sit_net:
 #        ipv4_address: 172.18.0.2
 
 networks:
-  dev_net:
+  sit_net:
     external: true
