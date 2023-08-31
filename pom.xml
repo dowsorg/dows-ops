@@ -25,7 +25,7 @@
     <dependencies>
 
 
-        <dependency>
+<!--        <dependency>
             <groupId>org.dows.framework</groupId>
             <artifactId>framework-api</artifactId>
             <version>20220701-SNAPSHOT</version>
@@ -45,7 +45,7 @@
         </dependency>
 
 
-        <!--database-->
+        &lt;!&ndash;database&ndash;&gt;
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
@@ -55,14 +55,14 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!--api 接口文档-->
+        &lt;!&ndash;api 接口文档&ndash;&gt;
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.0.4</version>
         </dependency>
 
-        <!--web -->
+        &lt;!&ndash;web &ndash;&gt;
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -83,7 +83,7 @@
         </dependency>
 
 
-        <!--异步日志-->
+        &lt;!&ndash;异步日志&ndash;&gt;
         <dependency>
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
@@ -109,7 +109,7 @@
             <groupId>org.apache.skywalking</groupId>
             <artifactId>apm-toolkit-log4j-2.x</artifactId>
             <version>8.16.0</version>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
