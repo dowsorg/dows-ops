@@ -87,7 +87,7 @@ pipeline {
                         //sh 'sshpass -p "$AS_PWD" ssh "$AS_USERNAME"@"$AS_HOST" "cd $SAAS_PATH/sit;sudo docker login --username=findsoft@dows --password=xxx registry.cn-hangzhou.aliyuncs.com;docker compose stop && docker compose up -d"'
 
 
-                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/sit/robot.sh '\"$branch\"' '\"$gitCommitAuthorName\"' 'api-hep-admin' 'SIT环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
+                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/sit/robot.sh \'$branch' \'$gitCommitAuthorName\' 'api-hep-admin' 'SIT环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
 
                         //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/sit/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'sit环境构建、打包、传输成功' 'green'"
 
