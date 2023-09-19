@@ -4,28 +4,21 @@
 #!/bin/bash
 
 #分支名
-BRANCH_NAME=$1
+BRANCH_NAME="$1"
 #触发者
-AUTHOR_NAME=$2
+AUTHOR_NAME="$2"
 #项目名
-PROJECT_NAME=$3
-#环境
-PROJECT_ENV=$4
+PROJECT_NAME="$3"
+#描述
+TITLE="$4"
 #提交信息
-COMMIT=$5
-CHANGES=$6
+COMMIT="$5"
+CHANGES="$6"
 #颜色
-COLOR=$7
+COLOR="$7"
 
-echo "p5:$COMMIT"
-echo "p6:$CHANGES"
-
-IFS=',' read -ra arr <<< "$6"
-result=""
-for item in "${arr[@]}"; do
-    result="$result$item"$'\n'
-done
-echo "$result"
+echo "p5:"$COMMIT
+echo "p6:"$CHANGES
 
 title='应用发布'
 time="$(date "+%Y-%m-%d")"
@@ -35,27 +28,28 @@ ip=$(ifconfig | grep inet | awk 'NR==3{print $2}')
 lsblk=$(df -h / | awk '{print $5}' | tail -n 1 )
 mem=$(free | grep Mem | awk '{print $3/$2 * 100.0}')
 cpu=$(top -b -n1 | grep "Cpu(s)" | awk '{print $2}')
-url="https://oapi.dingtalk.com/robot/send?access_token=936103586e804f6f8dd6eb648990851153826ab5d55037ae8fe3bd9469ee5631"
+url="https://oapi.dingtalk.com/robot/send?access_token=21d6e9818d74556dd52f8021bcf94080136cb065c51bcf29f9b42c0513f19095"
 
 
 curl $url \
 -H 'Content-Type: application/json' \
 -d "{
-  'msgtype': 'text',
+    'msgtype': 'text',
     'text': {
-      'content': '
-        时间: $time $times $xingqi
-        项目: $PROJECT_NAME
-        分支名: $BRANCH_NAME
-        环境: $PROJECT_ENV
-        发布者: $AUTHOR_NAME
-        提交信息: $COMMIT
-        CHANGES:$result
-        HOST: $ip
-        DISK: $lsblk
-        MEM: $mem%
-        CPU: $cpu%
-      '
+        'content': '
+          项目: $TITLE
+          发布时间: $time $times $xingqi
+          项目名: $PROJECT_NAME
+          分支名: $BRANCH_NAME
+          发布者: $AUTHOR_NAME
+          COMMIT: $COMMIT
+          CHANGES:
+          $CHANGES
+          HOST: $ip
+          DISK: $lsblk
+          MEM: $mem%
+          CPU: $cpu%
+        '
     }
 }"
 
