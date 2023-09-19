@@ -1,7 +1,7 @@
 
 def detect_branch() {
     def RESULT = sh(returnStdout: true, script: '''
-        for branch in `git branch -r | grep -v HEAD`; do echo -e `git show --format="%ci %cr" $branch | head -n 1` "\\t" $branch; done | sort -r |head -n 1 |awk \'{print $NF}\'
+        git for-each-ref --sort=-committerdate --format="%(refname:short)" refs/remotes/ | head -n 1
     ''')
     def content = "RESULT=$RESULT\n"
     RESULT=sh(returnStdout: true, script: content+'echo $RESULT|sed "s#origin/##g"') // 删除 origin
@@ -15,10 +15,40 @@ pipeline {
         JAVA_HOME = '/usr/local/jdk17'
         MAVEN_HOME = '/usr/local/mvn/bin/mvn'
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
-        SAAS_PATH = '/dows/saas/ops-admin'
-        AS_HOST='192.168.1.60'
-        AS_USERNAME='root'
-        AS_PWD='findsoft2022!@#'
+
+        FORM_LTE_CD_PATH = 'cd/ops/lte/saas/api/admin'
+        TO_LTE_CD_PATH = '/findsoft/ops/lte/saas/api'
+
+        FORM_DEV_CD_PATH = 'cd/ops/dev/saas/api/admin'
+        TO_DEV_CD_PATH = '/findsoft/ops/dev/saas/api'
+
+        FORM_SIT_CD_PATH = 'cd/ops/sit/saas/api/admin'
+        TO_SIT_CD_PATH = '/findsoft/ops/sit/saas/api'
+
+        FORM_UAT_CD_PATH = 'cd/ops/uat/saas/api/admin'
+        TO_UAT_CD_PATH = '/findsoft/ops/uat/saas/api'
+
+        FORM_PRD_CD_PATH = 'cd/ops/prd/saas/api/admin'
+        TO_PRD_CD_PATH = '/findsoft/ops/prd/saas/api'
+
+        DOCKER_OFFLINE_LOGIN = 'docker login --username=admin --password=findsoft_harbor http://192.168.1.60:7080'
+        DOCKER_OFFLINE_BUILD = 'docker build . --file Dockerfile -t 192.168.1.60:7080/ops/api-ops-admin'
+        DOCKER_OFFLINE_PUSH = 'docker push 192.168.1.60:7080/ops/api-ops-admin'
+
+        DOCKER_ONLINE_LOGIN = 'docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com'
+        DOCKER_ONLINE_BUILD  = 'docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin'
+        DOCKER_ONLINE_PUSH  = 'docker push registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin'
+
+        DOCKER_CONTAINER_START = "docker compose down && docker compose up -d"
+
+        OFFLINE_AS_HOST='192.168.1.60'
+        OFFLINE_AS_USERNAME='root'
+        OFFLINE_AS_PWD='findsoft2022!@#'
+
+        ONLINE_AS_HOST='139.186.208.204'
+        ONLINE_AS_USERNAME='root'
+        ONLINE_AS_PWD='Findsoft20232023'
+
         BRANCH="${env.BRANCH_NAME.split('/')[1]}"
         RTE="${BRANCH.split('-')[0]}"
         VER="${BRANCH.split('-')[1]}"
@@ -29,9 +59,9 @@ pipeline {
             steps {
                 script {
                     def branch = detect_branch()
-                    echo  "======================"
-                    echo  "**当前分支为:${branch}**"
-                    echo  "======================"
+                    echo  '===================================='
+                    echo  "         当前分支为:$branch           "
+                    echo  '===================================='
                     def rte = branch.split('-')[0]
                     def ver = branch.split('-')[1]
 
@@ -42,77 +72,96 @@ pipeline {
                         //extensions: [],
                         extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: '']],
                         userRemoteConfigs: [[
-                            credentialsId: 'dows-gitlab', // credentialsId 在jenkins 凭据管理处获得
-                            url: 'http://192.168.1.21/dows/dows-ops.git' // gitlab链接
+                            credentialsId: 'dows-gitlab',
+                            url: 'http://192.168.1.21/dows/dows-ops.git'
                         ]]
                     ])
 
                     def changes = getChangedFilesList()
                     println ("文件变更列表: " + changes)
+
                     def gitCommitId = getGitcommitID()
                     println("CommitID: " + gitCommitID)
+
                     def gitCommitAuthorName = getAuthorName()
                     println("提交人: " + gitCommitAuthorName)
+
                     def gitCommitMessage = getCommitMessage()
                     println("提交信息: " + gitCommitMessage)
 
                     sh '''
                         /usr/local/mvn/bin/mvn -v
                         /usr/local/mvn/bin/mvn -Dmaven.test.skip=true clean package -U
-
                     '''
-                    //docker login --username=findsoft@dows --password=xxx registry.cn-hangzhou.aliyuncs.com
+                    if (branch.startsWith('lte-')) {
+                        echo "Building for sit environment for $branch"
+                        sh "$DOCKER_OFFLINE_LOGIN"
+                        sh "docker build . --file Dockerfile -t 192.168.1.60:7080/ops/api-ops-admin-lte:$ver"
+                        sh "docker push 192.168.1.60:7080/ops/api-ops-admin-lte:$ver"
 
-                    if (branch.startsWith('dev-')) {
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh -o StrictHostKeyChecking=no $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST mkdir -p $TO_LTE_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD scp -r $FORM_LTE_CD_PATH $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST:$TO_LTE_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST 'cd $TO_LTE_CD_PATH/admin;$DOCKER_OFFLINE_LOGIN;$DOCKER_CONTAINER_START'"
+
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST 'sh $TO_LTE_CD_PATH/admin/robot.sh "$branch" "$gitCommitAuthorName" "api-ops-admin" "LTE环境发布" "$gitCommitMessage" "$changes" "green"'"
+
+                    } else if (branch.startsWith('dev-')) {
                         echo "Building for development environment for ${branch}"
+                        sh "$DOCKER_OFFLINE_LOGIN"
+                        sh "$DOCKER_OFFLINE_BUILD'-dev':$ver"
+                        sh "$DOCKER_OFFLINE_PUSH'-dev':$ver"
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-dev:$ver"
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh -o StrictHostKeyChecking=no $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST mkdir -p $TO_DEV_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD scp -r $FORM_DEV_CD_PATH $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST:$TO_DEV_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST 'cd $TO_DEV_CD_PATH/admin;$DOCKER_OFFLINE_LOGIN;$DOCKER_CONTAINER_START'"
 
-                        sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/dev"'
-                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/dev "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
-                        sh 'sshpass -p "$AS_PWD" ssh "$AS_USERNAME@$AS_HOST cd $SAAS_PATH/dev;sudo docker login --username=findsoft@dows --password=xxx registry.cn-hangzhou.aliyuncs.com;docker compose stop && docker compose up -d"'
-
-                        sh 'sshpass -p "$AS_PWD" ssh "$AS_USERNAME@$AS_HOST sh $SAAS_PATH/dev/robot.sh $branch $gitCommitAuthorName ops-admin dev环境构建、打包、传输成功 green"'
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST sh $TO_DEV_CD_PATH/admin/robot.sh '\"$branch\"' \"$gitCommitAuthorName\" 'api-ops-admin' 'DEV环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
 
                     } else if (branch.startsWith('sit-')) {
                         echo "Building for sit environment for $branch"
 
-                        //sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
-                        //sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-sit:$ver"
+                        sh "$DOCKER_OFFLINE_LOGIN"
+                        sh "$DOCKER_OFFLINE_BUILD'-sit':$ver"
+                        sh "$DOCKER_OFFLINE_PUSH'-sit':$ver"
 
-                        //sh "sshpass -p $AS_PWD ssh -o StrictHostKeyChecking=no $AS_USERNAME@$AS_HOST mkdir -p $TO_SIT_CD_PATH"
-                        //sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/sit"'
-                        //sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/sit "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
-                        //sh 'sshpass -p "$AS_PWD" ssh "$AS_USERNAME"@"$AS_HOST" "cd $SAAS_PATH/sit;sudo docker login --username=findsoft@dows --password=xxx registry.cn-hangzhou.aliyuncs.com;docker compose stop && docker compose up -d"'
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh -o StrictHostKeyChecking=no $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST mkdir -p $TO_SIT_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD scp -r $FORM_SIT_CD_PATH $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST:$TO_SIT_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST 'cd $TO_SIT_CD_PATH/admin;$DOCKER_OFFLINE_LOGIN;$DOCKER_CONTAINER_START'"
 
-
-                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/sit/robot.sh '\"$branch $gitCommitAuthorName\"' 'api-hep-admin' 'SIT环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
-
-                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/sit/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'sit环境构建、打包、传输成功' 'green'"
+                        sh "sshpass -p $OFFLINE_AS_USERNAME ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST sh $TO_SIT_CD_PATH/admin/robot.sh '\"$branch\"' \"$gitCommitAuthorName\" 'api-ops-admin' 'SIT环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
+                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $TO_SIT_CD_PATH/admin/robot.sh '"$branch"' '"$gitCommitAuthorName"' 'api-ops-admin' 'SIT环境发布' '"$gitCommitMessage"' '"$changes"' 'green'"
 
                     } else if (branch.startsWith('uat-')) {
                         echo "Building for uat environment for ${branch}"
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$ver"
+                        sh "$DOCKER_OFFLINE_LOGIN"
+                        sh "$DOCKER_OFFLINE_BUILD'-uat':$ver"
+                        sh "$DOCKER_OFFLINE_PUSH'-uat':$ver"
 
-                        sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/uat"'
-                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/uat "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/uat && docker login --username=findsoft@dows --password=xxx registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh -o StrictHostKeyChecking=no $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST mkdir -p $TO_UAT_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD scp -r $FORM_UAT_CD_PATH $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST:$TO_UAT_CD_PATH"
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST 'cd $TO_UAT_CD_PATH/admin;$DOCKER_OFFLINE_LOGIN;$DOCKER_CONTAINER_START'"
 
-                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/uat/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'uat环境构建、打包、传输成功' 'green'"
+                        sh "sshpass -p $OFFLINE_AS_USERNAME ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST sh $TO_UAT_CD_PATH/admin/robot.sh '\"$branch\"' \"$gitCommitAuthorName\" 'api-ops-admin' 'UAT环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
+                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $TO_UAT_CD_PATH/admin/robot.sh '$branch' '$gitCommitAuthorName' 'api-ops-admin' 'UAT环境发布' '$gitCommitMessage' '$changes' 'green'"
+                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $TO_UAT_CD_PATH/admin/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'api-ops-admin' 'UAT环境构建、打包、传输成功' 'green' '\"${gitCommitMessage}\"'"
                     } else if (branch.startsWith('prd-')){
                         echo "Building for production environment for ${branch}"
+                        // 只做推送处理
+                        sh "$DOCKER_ONLINE_LOGIN"
+                        sh "$DOCKER_ONLINE_BUILD'-prd':$ver"
+                        sh "$DOCKER_ONLINE_PUSH'-prd':$ver"
 
-                        sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
-                        sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-prd:$ver"
+                        //sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin-prd:$ver"
+                        //sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin-prd:$ver"
 
-                        sh 'sshpass -p "$AS_PWD" ssh -o StrictHostKeyChecking=no "$AS_USERNAME"@"$AS_HOST" "mkdir -p $SAAS_PATH/prd"'
-                        sh 'sshpass -p "$AS_PWD" scp -r saas/ops-admin/prd "$AS_USERNAME"@"$AS_HOST":"$SAAS_PATH"'
-                        sh 'sshpass -p "findsoft2022!@#" ssh root@192.168.1.60 "cd $SAAS_PATH/prd && docker login --username=findsoft@dows --password=xxx registry.cn-hangzhou.aliyuncs.com && docker compose stop && docker compose up -d"'
+                        //sh "sshpass -p $PRD_AS_PWD ssh -o StrictHostKeyChecking=no $PRD_AS_USERNAME@$PRD_AS_HOST mkdir -p $TO_PRD_CD_PATH"
+                        //sh "sshpass -p $PRD_AS_PWD scp -r $FORM_PRD_CD_PATH $AS_USERNAME@$AS_HOST:$TO_PRD_CD_PATH"
+                        //sh "sshpass -p $PRD_AS_PWD ssh $PRD_AS_USERNAME@$PRD_AS_HOST 'cd $TO_PRD_CD_PATH/admin;$LOGIN_ONLINE_DOCKER;$DOCKER_CONTAINER_START'"
 
-                        sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $SAAS_PATH/prd/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'ops-admin' 'prd环境构建、打包、传输成功' 'green'"
+                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $TO_PRD_CD_PATH/admin/robot.sh '\"$branch\"' \"$gitCommitAuthorName\" 'api-ops-admin' 'PRD环境发布' '\"$gitCommitMessage\"' '\"$changes\"' 'green'"
+                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $TO_PRD_CD_PATH/admin/robot.sh '$branch' '$gitCommitAuthorName' 'api-ops-admin' 'PRD环境发布' '$gitCommitMessage' '$changes' 'green'"
+                        //sh "sshpass -p $AS_PWD ssh $AS_USERNAME@$AS_HOST sh $TO_PRD_CD_PATH/admin/robot.sh '\"${branch}\"' '\"${gitCommitAuthorName}\"' 'api-ops-admin' 'PRD环境构建、打包、传输成功' 'green' '\"${gitCommitMessage}\"'"
                     }
                 }
             }

@@ -1,7 +1,7 @@
 version: '3'
 services:
   api-hep-admin-prd:
-    image: registry.cn-hangzhou.aliyuncs.com/findsoft/hep-admin-prd:$TAG
+    image: registry.cn-hangzhou.aliyuncs.com/findsoft/api-hep-admin-prd:$TAG
     restart: on-failure:3
     container_name: api-hep-admin-prd
     environment:
