@@ -46,8 +46,8 @@ curl $url \
         'content': '
           时间: $time $times $xingqi
           项目: $PROJECT_NAME
-          环境: $PROJECT_ENV
           分支名: $BRANCH_NAME
+          环境: $PROJECT_ENV
           发布者: $AUTHOR_NAME
           提交信息: $COMMIT
           CHANGES:
