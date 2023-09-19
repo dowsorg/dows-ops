@@ -2,23 +2,36 @@
 
 
 #!/bin/bash
-
-#分支名
-BRANCH_NAME=$1
-#触发者
-AUTHOR_NAME=$2
+#api-ops-admin LTE环境 $branch $gitCommitAuthorName $gitCommitMessage $changes
 #项目名
-PROJECT_NAME=$3
+project_name=$1
 #环境
-PROJECT_ENV=$4
+project_env=$2
+#分支名
+project_branch=$3
+#提交者
+project_pusher=$4
 #提交信息
-COMMIT=$5
-CHANGES=$6
-#颜色
-COLOR=$7
+project_commit=$5
+#提交变更
+project_changes=$6
 
-echo "p5:$COMMIT"
-echo "p6:$CHANGES"
+##分支名
+#BRANCH_NAME=$1
+##触发者
+#AUTHOR_NAME=$2
+##项目名
+#PROJECT_NAME=$3
+##环境
+#PROJECT_ENV=$4
+##提交信息
+#COMMIT=$5
+#CHANGES=$6
+##颜色
+#COLOR=$7
+
+echo "p5:$project_commit"
+echo "p6:$project_changes"
 
 IFS=',' read -ra arr <<< "$6"
 result=""
@@ -45,11 +58,11 @@ curl $url \
     'text': {
       'content': '
         时间: $time $times $xingqi
-        发布者: $AUTHOR_NAME
-        项目: $PROJECT_NAME
-        分支: $BRANCH_NAME
-        环境: $PROJECT_ENV
-        说明: $COMMIT
+        发布者: $project_pusher
+        项目: $project_name
+        分支: $project_branch
+        环境: $project_env
+        说明: $project_commit
         变化列表:
         $result
         HOST: $ip

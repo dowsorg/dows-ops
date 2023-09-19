@@ -104,7 +104,7 @@ pipeline {
                         sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST 'cd $TO_LTE_CD_PATH/admin;$DOCKER_OFFLINE_LOGIN;$DOCKER_CONTAINER_START'"
 
                         //sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST sh $TO_LTE_CD_PATH/admin/robot.sh '\"$branch\" \"$gitCommitAuthorName\" \"api-ops-admin\" \"LTE环境\" \"$gitCommitMessage\" \"$changes\" \"green\"'"
-                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST sh $TO_LTE_CD_PATH/admin/robot.sh '$branch $gitCommitAuthorName api-ops-admin LTE环境 $gitCommitMessage $changes green'"
+                        sh "sshpass -p $OFFLINE_AS_PWD ssh $OFFLINE_AS_USERNAME@$OFFLINE_AS_HOST sh $TO_LTE_CD_PATH/admin/robot.sh 'api-ops-admin LTE环境 $branch $gitCommitAuthorName $gitCommitMessage $changes'"
 
                     } else if (branch.startsWith('dev-')) {
                         echo "Building for development environment for ${branch}"
