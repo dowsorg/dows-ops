@@ -1,9 +1,9 @@
 version: '3'
 services:
-  h5-hep-admin-sit:
-    image: registry.cn-hangzhou.aliyuncs.com/findsoft/h5-hep-admin-sit:$TAG
+  h5-dxz-admin-sit:
+    image: registry.cn-hangzhou.aliyuncs.com/wozth/h5-dxz-admin-sit:$TAG
     restart: unless-stopped
-    container_name: h5-hep-admin-sit
+    container_name: h5-dxz-admin-sit
     environment:
       - TZ=$TZ
       - NGINX_PORT=10001
@@ -12,9 +12,9 @@ services:
       - $EHP:3000
       - $EWP:80
     volumes:
-      - /dows/saas/hep/h5-hep-admin/sit/logs:/dows/saas/hep/h5-admin/logs
-      - /dows/saas/hep/h5-hep-admin/sit/configs:/dows/saas/hep/h5-admin/configs
-      - /dows/saas/hep/h5-hep-admin/sit/resources:/dows/saas/hep/h5-admin/resources
+      - /dows/saas/dxz/h5-dxz-admin/sit/logs:/dows/saas/dxz/h5-admin/logs
+      - /dows/saas/dxz/h5-dxz-admin/sit/configs:/dows/saas/dxz/h5-admin/configs
+      - /dows/saas/dxz/h5-dxz-admin/sit/resources:/dows/saas/dxz/h5-admin/resources
     networks:
       - sit_net
 

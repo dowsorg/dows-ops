@@ -16,7 +16,7 @@ spring:
           subscriptionsPerConnection: 5
           clientName: null
           address: redis://192.168.1.60:6379
-          password: findsoft_redis7
+          password: wozth_redis7
           subscriptionConnectionMinimumIdleSize: 1
           subscriptionConnectionPoolSize: 50
           connectionMinimumIdleSize: 32
@@ -42,7 +42,7 @@ spring:
           subscriptionsPerConnection: 5
           clientName: null
           address: redis://192.168.1.60:6389
-          password: findsoft_redis7
+          password: wozth_redis7
           subscriptionConnectionMinimumIdleSize: 1
           subscriptionConnectionPoolSize: 50
           connectionMinimumIdleSize: 32
@@ -70,7 +70,7 @@ spring:
           subscriptionsPerConnection: 5
           clientName: null
           address: redis://192.168.1.60:6399
-          password: findsoft_redis7
+          password: wozth_redis7
           subscriptionConnectionMinimumIdleSize: 1
           subscriptionConnectionPoolSize: 50
           connectionMinimumIdleSize: 32

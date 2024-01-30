@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  undertow:
+    buffer-size: 1024
+    direct-buffers: true
+    threads:
+      io: 4
+      worker: 32
+  servlet:
+    context-path: /ops
+
+
+spring:
+  application:
+    name: ops
+  profiles:
+    include: version,ssh
+    active: sit
+  servlet:
+    multipart:
+      max-request-size: 512MB
+      max-file-size: 512MB
+
+---
+spring:
+  servlet:
+    multipart:
+      max-request-size: 512MB
+      max-file-size: 512MB
+
+
+order:
+  url: http://81.69.171.79:9011/order
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    password: dows

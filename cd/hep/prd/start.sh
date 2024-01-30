@@ -5,10 +5,10 @@
 #echo $var | sh
 
 
-docker_username="findsoft@dows"
-docker_password="findsoft123456"
+docker_username="wozth@dows"
+docker_password="wozth123456"
 docker_version=""
-project_path="/findsoft/hep"
+project_path="/wozth/dxz"
 docker_registry="registry.cn-hangzhou.aliyuncs.com"
 
 sudo echo -e "\033[32m --start-- \033[0m"
@@ -37,11 +37,11 @@ sudo docker login --username=$docker_username --password=$docker_password ${dock
 sudo echo -e "\033[32m 1.remove old tag images \033[0m"
 ## todo脚本动态判断
 ## api
-#sudo docker rmi -f "$docker_registry/hep-admin-prd:1.0.230821"
+#sudo docker rmi -f "$docker_registry/dxz-admin-prd:1.0.230821"
 ## h5教师端
-#sudo docker rmi -f "$docker_registry/h5-hep-admin-prd:1.0.230826"
+#sudo docker rmi -f "$docker_registry/h5-dxz-admin-prd:1.0.230826"
 ## h5学生端
-#sudo docker rmi -f "$docker_registry/h5-hep-user-prd:1.0.230826"
+#sudo docker rmi -f "$docker_registry/h5-dxz-user-prd:1.0.230826"
 
 sudo docker images
 

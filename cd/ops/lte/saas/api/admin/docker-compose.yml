@@ -1,22 +1,22 @@
 version: '3'
 services:
-  api-hep-admin-lte:
-    image: 192.168.1.60:7080/hep/api-hep-admin-lte:$TAG
+  api-dxz-admin-lte:
+    image: 192.168.1.60:7080/dxz/api-dxz-admin-lte:$TAG
     restart: on-failure:3
-    container_name: api-hep-admin-lte
+    container_name: api-dxz-admin-lte
     environment:
       - TZ=$TZ
       - JVM_OPTS=-server -Xms1024m -Xmx1024m
-      - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.config.location=/dows/saas/hep-admin/configs/ -Dspring.profiles.active=lte
-      #- APM=-javaagent:/dows/paas/apm/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=hep-admin-dev -Dskywalking.collector.backend_service=192.168.1.60:11800
+      - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.config.location=/dows/saas/dxz-admin/configs/ -Dspring.profiles.active=lte
+      #- APM=-javaagent:/dows/paas/apm/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=dxz-admin-dev -Dskywalking.collector.backend_service=192.168.1.60:11800
     ports:
       - 6666:8080
       - 666:80
       - 6006:5005
     volumes:
-      - ./logs:/dows/saas/hep-admin/logs
-      - ./configs:/dows/saas/hep-admin/configs
-      - ./resources:/data/resources/images/hep
+      - ./logs:/dows/saas/dxz-admin/logs
+      - ./configs:/dows/saas/dxz-admin/configs
+      - ./resources:/data/resources/images/dxz
       #- /dows/paas/apm/skywalking-agent-8.16.0:/dows/paas/apm/skywalking-agent
     networks:
       - sit_net

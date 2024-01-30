@@ -1,7 +1,7 @@
 version: '3'
 services:
   ops-tenant-uat:
-    image: registry.cn-hangzhou.aliyuncs.com/findsoft/ops-admin-uat:$TAG
+    image: registry.cn-hangzhou.aliyuncs.com/wozth/ops-admin-uat:$TAG
     restart: unless-stopped
     container_name: ops-admin-uat
     environment:

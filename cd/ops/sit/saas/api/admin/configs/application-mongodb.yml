@@ -8,7 +8,7 @@ spring:
     mongodb:
       username: admin
       password: "123456"
-      database: hep
+      database: dxz
       port: 17017
       host: 192.168.1.60
       #collection-name: user
@@ -23,7 +23,7 @@ spring:
     mongodb:
       username: admin
       password: "123456"
-      database: hep
+      database: dxz
       port: 17017
       host: 192.168.1.60
       #collection-name: user
@@ -39,7 +39,7 @@ spring:
       on-profile: sit
   data:
     mongodb:
-      uri: mongodb://test:123456@192.168.1.60:27017/hep
+      uri: mongodb://test:123456@192.168.1.60:27017/dxz
 
 ---
 #开发环境
@@ -49,7 +49,7 @@ spring:
       on-profile: uat
   data:
     mongodb:
-      uri: mongodb://uat:123456@192.168.1.60:37017/hep
+      uri: mongodb://uat:123456@192.168.1.60:37017/dxz
 ---
 #本地环境
 spring:
@@ -58,4 +58,4 @@ spring:
       on-profile: prd
   data:
     mongodb:
-      uri: mongodb://prd:123456@192.168.1.60:47017/hep
+      uri: mongodb://prd:123456@192.168.1.60:47017/dxz

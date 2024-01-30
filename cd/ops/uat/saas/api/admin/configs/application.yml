@@ -13,17 +13,17 @@ server:
             io: 4
             worker: 32
 #    servlet:
-#        context-path: /hep
+#        context-path: /dxz
 soft:
     info:
-        anonymous-paths: /login;/doc;/swagger;/api-docs;/hepapi;/report;/anonymous;/countdown;
+        anonymous-paths: /login;/doc;/swagger;/api-docs;/dxzapi;/report;/anonymous;/countdown;
 
 
 spring:
     application:
-        name: hep-admin
+        name: dxz-admin
     profiles:
-        include: hep-mysql,hep-mybatis,hep-mvc,hep-oss,hep-apidoc,hep-redisson,hep-findsoft,hep-websocket,hep-pdf
+        include: dxz-mysql,dxz-mybatis,dxz-mvc,dxz-oss,dxz-apidoc,dxz-redisson,dxz-wozth,dxz-websocket,dxz-pdf
         active: uat
 
     jackson:

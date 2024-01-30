@@ -1,9 +1,9 @@
 version: '3'
 services:
-  h5-hep-admin-uat:
-    image: registry.cn-hangzhou.aliyuncs.com/findsoft/h5-hep-admin-uat:$TAG
+  h5-dxz-admin-uat:
+    image: registry.cn-hangzhou.aliyuncs.com/wozth/h5-dxz-admin-uat:$TAG
     restart: unless-stopped
-    container_name: h5-hep-admin-uat
+    container_name: h5-dxz-admin-uat
     environment:
       - TZ=$TZ
       - NGINX_PORT=10001
@@ -12,9 +12,9 @@ services:
       - $EHP:3000
       - $EWP:80
     volumes:
-      - /dows/saas/hep/h5-hep-admin/uat/logs:/dows/saas/hep/h5-admin/logs
-      - /dows/saas/hep/h5-hep-admin/uat/configs:/dows/saas/hep/h5-admin/configs
-      - /dows/saas/hep/h5-hep-admin/uat/resources:/dows/saas/hep/h5-admin/resources
+      - /dows/saas/dxz/h5-dxz-admin/uat/logs:/dows/saas/dxz/h5-admin/logs
+      - /dows/saas/dxz/h5-dxz-admin/uat/configs:/dows/saas/dxz/h5-admin/configs
+      - /dows/saas/dxz/h5-dxz-admin/uat/resources:/dows/saas/dxz/h5-admin/resources
     networks:
       - uat_net
 

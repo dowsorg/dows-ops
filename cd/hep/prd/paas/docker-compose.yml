@@ -23,7 +23,7 @@ services:
       - ./mysql/data:/var/lib/mysql:rw
       # 挂载配置文件目录
       - ./mysql/conf.d:/etc/mysql/conf.d
-      #- ./dows/hep/hep-mysql-prd/conf:/etc/mysql/conf.d:rw
+      #- ./dows/dxz/dxz-mysql-prd/conf:/etc/mysql/conf.d:rw
     ports:
       - "13306:3306"
 

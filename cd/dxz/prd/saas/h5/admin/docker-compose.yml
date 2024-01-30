@@ -1,17 +1,17 @@
 version: '3'
 services:
-  h5-hep-admin-prd:
-    image: registry.cn-hangzhou.aliyuncs.com/findsoft/h5-hep-admin-prd:$TAG
+  h5-dxz-admin-prd:
+    image: registry.cn-hangzhou.aliyuncs.com/wozth/h5-dxz-admin-prd:$TAG
     restart: unless-stopped
-    container_name: h5-hep-admin-prd
+    container_name: h5-dxz-admin-prd
     environment:
       - TZ=$TZ
     ports:
       - 480:80
     volumes:
-      #- ./logs:/dows/saas/hep/h5-admin/logs
-      #- ./configs:/dows/saas/hep/h5-admin/configs
-      #- ./resources:/dows/saas/hep/h5-admin/resources
+      #- ./logs:/dows/saas/dxz/h5-admin/logs
+      #- ./configs:/dows/saas/dxz/h5-admin/configs
+      #- ./resources:/dows/saas/dxz/h5-admin/resources
       #- ./nginx/nginx.conf:/etc/nginx/nginx.conf
       #- ./nginx/cert/:/etc/cert/
       #-./nginx/www/:/usr/share/nginx/html/

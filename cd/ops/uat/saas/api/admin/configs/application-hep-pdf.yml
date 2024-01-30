@@ -6,7 +6,7 @@ spring:
       on-profile: dev
 pdf-server:
   server-url: http://192.168.1.60:8801/pdf
-  app-code: hep
+  app-code: dxz
   env: dev
   scheme-expt-view-url: http://192.168.1.60:1801/report_view/group/
   scheme-group-view-url: http://192.168.1.60:1801/report_view/group/
@@ -20,7 +20,7 @@ spring:
       on-profile: sit
 pdf-server:
   server-url: http://192.168.1.60:8001/pdf
-  app-code: hep
+  app-code: dxz
   env: sit
   scheme-expt-view-url: http://192.168.1.60:2801/report_view/group/
   scheme-group-view-url: http://192.168.1.60:2801/report_view/group/
@@ -34,7 +34,7 @@ spring:
       on-profile: uat
 pdf-server:
   server-url: http://192.168.1.60:8001/pdf
-  app-code: hep
+  app-code: dxz
   env: uat
   scheme-expt-view-url: http://192.168.1.60:3801/report_view/group/
   scheme-group-view-url: http://192.168.1.60:3801/report_view/group/
@@ -48,7 +48,7 @@ spring:
       on-profile: prd
 pdf-server:
   server-url: http://192.168.1.60:8001/pdf
-  app-code: hep
+  app-code: dxz
   env: prd
   scheme-expt-view-url: http://192.168.1.60:3801/report_view/group/
   scheme-group-view-url: http://192.168.1.60:3801/report_view/group/

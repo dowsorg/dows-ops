@@ -65,8 +65,8 @@
 //        InputStream inputStream = new FileInputStream("E:\\data\\test.xmind");
 //        //IWorkbook workbook = .openWorkbook();
 //
-///*        hep p0  4个
-//        // 实验状态  自动触发计算
+///*        dxz p0  4个
+//        // 状态  自动触发计算
 //        //
 //        // 1.
 //

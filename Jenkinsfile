@@ -17,37 +17,37 @@ pipeline {
         PATH = "${env.JAVA_HOME}/bin:${env.MAVEN_HOME}/bin:${env.PATH}"
 
         FORM_LTE_CD_PATH = 'cd/ops/lte/saas/api/admin'
-        TO_LTE_CD_PATH = '/findsoft/ops/lte/saas/api'
+        TO_LTE_CD_PATH = '/wozth/ops/lte/saas/api'
 
         FORM_DEV_CD_PATH = 'cd/ops/dev/saas/api/admin'
-        TO_DEV_CD_PATH = '/findsoft/ops/dev/saas/api'
+        TO_DEV_CD_PATH = '/wozth/ops/dev/saas/api'
 
         FORM_SIT_CD_PATH = 'cd/ops/sit/saas/api/admin'
-        TO_SIT_CD_PATH = '/findsoft/ops/sit/saas/api'
+        TO_SIT_CD_PATH = '/wozth/ops/sit/saas/api'
 
         FORM_UAT_CD_PATH = 'cd/ops/uat/saas/api/admin'
-        TO_UAT_CD_PATH = '/findsoft/ops/uat/saas/api'
+        TO_UAT_CD_PATH = '/wozth/ops/uat/saas/api'
 
         FORM_PRD_CD_PATH = 'cd/ops/prd/saas/api/admin'
-        TO_PRD_CD_PATH = '/findsoft/ops/prd/saas/api'
+        TO_PRD_CD_PATH = '/wozth/ops/prd/saas/api'
 
-        DOCKER_OFFLINE_LOGIN = 'docker login --username=admin --password=findsoft_harbor http://192.168.1.60:7080'
+        DOCKER_OFFLINE_LOGIN = 'docker login --username=admin --password=wozth_harbor http://192.168.1.60:7080'
         DOCKER_OFFLINE_BUILD = 'docker build . --file Dockerfile -t 192.168.1.60:7080/ops/api-ops-admin'
         DOCKER_OFFLINE_PUSH = 'docker push 192.168.1.60:7080/ops/api-ops-admin'
 
-        DOCKER_ONLINE_LOGIN = 'docker login --username=findsoft@dows --password=findsoft123456 registry.cn-hangzhou.aliyuncs.com'
-        DOCKER_ONLINE_BUILD  = 'docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin'
-        DOCKER_ONLINE_PUSH  = 'docker push registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin'
+        DOCKER_ONLINE_LOGIN = 'docker login --username=wozth@dows --password=wozth123456 registry.cn-hangzhou.aliyuncs.com'
+        DOCKER_ONLINE_BUILD  = 'docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/wozth/api-ops-admin'
+        DOCKER_ONLINE_PUSH  = 'docker push registry.cn-hangzhou.aliyuncs.com/wozth/api-ops-admin'
 
         DOCKER_CONTAINER_START = "docker compose down && docker compose up -d"
 
         OFFLINE_AS_HOST='192.168.1.60'
         OFFLINE_AS_USERNAME='root'
-        OFFLINE_AS_PWD='findsoft2022!@#'
+        OFFLINE_AS_PWD='wozth2022!@#'
 
         ONLINE_AS_HOST='139.186.208.204'
         ONLINE_AS_USERNAME='root'
-        ONLINE_AS_PWD='Findsoft20232023'
+        ONLINE_AS_PWD='wozth20232023'
 
         BRANCH="${env.BRANCH_NAME.split('/')[1]}"
         RTE="${BRANCH.split('-')[0]}"
@@ -154,8 +154,8 @@ pipeline {
                         sh "$DOCKER_ONLINE_BUILD'-prd':$ver"
                         sh "$DOCKER_ONLINE_PUSH'-prd':$ver"
 
-                        //sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin-prd:$ver"
-                        //sh "docker push registry.cn-hangzhou.aliyuncs.com/findsoft/api-ops-admin-prd:$ver"
+                        //sh "docker build . --file Dockerfile -t registry.cn-hangzhou.aliyuncs.com/wozth/api-ops-admin-prd:$ver"
+                        //sh "docker push registry.cn-hangzhou.aliyuncs.com/wozth/api-ops-admin-prd:$ver"
 
                         //sh "sshpass -p $PRD_AS_PWD ssh -o StrictHostKeyChecking=no $PRD_AS_USERNAME@$PRD_AS_HOST mkdir -p $TO_PRD_CD_PATH"
                         //sh "sshpass -p $PRD_AS_PWD scp -r $FORM_PRD_CD_PATH $AS_USERNAME@$AS_HOST:$TO_PRD_CD_PATH"

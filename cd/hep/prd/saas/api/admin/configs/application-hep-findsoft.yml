@@ -1,15 +1,15 @@
-findsoft:
-  name: 健康管理情景模拟沙盘对抗比赛平台
+wozth:
+  name: 管理情景模拟
   version: 3.2.0
-  copy-right: © 2023 findsoft 上海哲寻信息科技有限公司
-  abbreviation: 健康管理
+  copy-right: © 2023 wozth 
+  abbreviation: 管理
   score-audit: true
-  findsoftLogo: pdf/images/findsoft-logo.jpg
+  wozthLogo: pdf/images/wozth-logo.jpg
   cover: pdf/images/cover.png
   logo: pdf/images/logo.png
-  exptOverviewReportTitle: 健康管理实验总报告
-  exptSchemeReportTitle: 健康管理方案设计比赛平台
-  exptSandReportTitle: 健康管理情景模拟沙盘对抗比赛平台
+  exptOverviewReportTitle: 管理总报告
+  exptSchemeReportTitle: 管理方案设计
+  exptSandReportTitle: 管理情景模拟
   exptOverviewFtl: experiment-overview.ftl
   exptSchemeFtl: experiment-scheme.ftl
   exptSandFtl: experiment-sand.ftl

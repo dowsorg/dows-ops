@@ -5,8 +5,8 @@
 #echo $var | sh
 
 
-docker_username="findsoft@dows"
-docker_password="findsoft123456"
+docker_username="wozth@dows"
+docker_password="wozth123456"
 docker_version=""
 docker_registry="registry.cn-hangzhou.aliyuncs.com"
 
@@ -24,20 +24,20 @@ sudo echo -e "\033[32m --start-- \033[0m"
 sudo docker login --username=$docker_username --password=$docker_password ${docker_registry}
 
 #sudo echo -e "\033[32m 1.pull image from route \033[0m"
-#sudo docker pull "$docker_registry/findsoft/openjdk:11-jre-slim"
-#sudo docker pull "$docker_registry/findsoft/odc-order:$docker_version"
+#sudo docker pull "$docker_registry/wozth/openjdk:11-jre-slim"
+#sudo docker pull "$docker_registry/wozth/odc-order:$docker_version"
 
 #sudo echo -e "\033[32m 2.tag images \033[0m"
-#sudo docker tag "$docker_registry/findsoft/openjdk:17-jre-slim" openjdk:11-jre-slim
-#sudo docker tag "$docker_registry/findsoft/odc-order:$docker_version" odc-order:$docker_version
+#sudo docker tag "$docker_registry/wozth/openjdk:17-jre-slim" openjdk:11-jre-slim
+#sudo docker tag "$docker_registry/wozth/odc-order:$docker_version" odc-order:$docker_version
 
 sudo echo -e "\033[32m 1.remove old tag images \033[0m"
 ## api
-#sudo docker rmi -f "$docker_registry/findsoft/hep-admin-dev:1.0.230821"
+#sudo docker rmi -f "$docker_registry/wozth/dxz-admin-dev:1.0.230821"
 ## h5教师端
-#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-admin-dev:1.0.230826"
+#sudo docker rmi -f "$docker_registry/wozth/h5-dxz-admin-dev:1.0.230826"
 ## h5学生端
-#sudo docker rmi -f "$docker_registry/findsoft/h5-hep-user-dev:1.0.230826"
+#sudo docker rmi -f "$docker_registry/wozth/h5-dxz-user-dev:1.0.230826"
 
 sudo docker images
 

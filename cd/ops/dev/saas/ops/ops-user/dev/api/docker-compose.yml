@@ -1,9 +1,9 @@
 version: '3'
 services:
-  hep-user-dev:
-    image: registry.cn-hangzhou.aliyuncs.com/dows/hep-user:$TAG
+  dxz-user-dev:
+    image: registry.cn-hangzhou.aliyuncs.com/dows/dxz-user:$TAG
     restart: unless-stopped
-    container_name: hep-user-$RTE
+    container_name: dxz-user-$RTE
     environment:
       - RTE=$RTE
     ports:
@@ -12,4 +12,4 @@ services:
       #调式端口
 #      - "5005:5005"
     volumes:
-      - ./logs:/dows/hep/hep-user/logs
+      - ./logs:/dows/dxz/dxz-user/logs

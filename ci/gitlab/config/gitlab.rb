@@ -3084,7 +3084,7 @@
 # pgbouncer['client_tls_key_file'] = nil
 # pgbouncer['client_tls_cert_file'] = nil
 # pgbouncer['client_tls_protocols'] = 'all'
-# pgbouncer['client_tls_dheparams'] = 'auto'
+# pgbouncer['client_tls_ddxzarams'] = 'auto'
 # pgbouncer['client_tls_ecdhcurve'] = 'auto'
 #
 ## Pgbouncer server  TLS options

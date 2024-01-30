@@ -1,25 +1,25 @@
 version: '3'
 services:
-  hep-tenant-test:
-    image: registry.cn-hangzhou.aliyuncs.com/dows/hep-tenant:$TAG
+  dxz-tenant-test:
+    image: registry.cn-hangzhou.aliyuncs.com/dows/dxz-tenant:$TAG
     restart: unless-stopped
-    container_name: hep-tenant-test
+    container_name: dxz-tenant-test
     environment:
-      - JVM_OPTS=-server -Xms1024m -Xmx1024m -XX:MaxGCPauseMillis=500 -XX:+UseParallelGC -XX:+HeapDumpBeforeFullGC -XX:HeapDumpPath=/dows/hep/hep-tenant/logs/dump
+      - JVM_OPTS=-server -Xms1024m -Xmx1024m -XX:MaxGCPauseMillis=500 -XX:+UseParallelGC -XX:+HeapDumpBeforeFullGC -XX:HeapDumpPath=/dows/dxz/dxz-tenant/logs/dump
       - JAVA_OPTS=-Djasypt.encryptor.password=02700083-9fd9-4b82-a4b4-9177e0560e92 -Dspring.profiles.active=test
-      - APM=-javaagent:/dows/hep/paas/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=hep-tenant-test
+      - APM=-javaagent:/dows/dxz/paas/skywalking-agent/skywalking-agent.jar -Dskywalking.agent.service_name=dxz-tenant-test
     ports:
       - $EHP:8080
       - $EWP:80
     volumes:
-      - ./logs:/dows/hep/hep-tenant/logs
-      - /dows/hep/paas/skywalking-agent:/dows/hep/paas/skywalking-agent
-      #- ../../../../skywalking-agent:/dows/hep/paas/skywalking-agent
+      - ./logs:/dows/dxz/dxz-tenant/logs
+      - /dows/dxz/paas/skywalking-agent:/dows/dxz/paas/skywalking-agent
+      #- ../../../../skywalking-agent:/dows/dxz/paas/skywalking-agent
     networks:
-      - hep_test
+      - dxz_test
 
 networks:
-  hep_test:
+  dxz_test:
     # 使用外部指定的网络，为 true 就标识网络必须存在
     external:
       # docker network create -d bridge 网络名称

@@ -5,10 +5,10 @@
 #echo $var | sh
 
 
-docker_username="findsoft@dows"
-docker_password="findsoft123456"
+docker_username="wozth@dows"
+docker_password="wozth123456"
 docker_registry="registry.cn-hangzhou.aliyuncs.com"
-docker_images=("$docker_registry/findsoft/api-hep-admin-uat" "$docker_registry/findsoft/h5-hep-admin-uat" "$docker_registry/findsoft/h5-hep-user-uat")
+docker_images=("$docker_registry/wozth/api-dxz-admin-uat" "$docker_registry/wozth/h5-dxz-admin-uat" "$docker_registry/wozth/h5-dxz-user-uat")
 docker_network="uat_net"
 
 
@@ -64,11 +64,11 @@ sudo docker login --username=$docker_username --password=$docker_password ${dock
 sudo echo -e "\033[32m 1.remove old tag images \033[0m"
 ## todo脚本动态判断
 ## api
-#sudo docker rmi -f "$docker_registry/hep-admin-uat:1.0.230821"
+#sudo docker rmi -f "$docker_registry/dxz-admin-uat:1.0.230821"
 ## h5教师端
-#sudo docker rmi -f "$docker_registry/h5-hep-admin-uat:1.0.230826"
+#sudo docker rmi -f "$docker_registry/h5-dxz-admin-uat:1.0.230826"
 ## h5学生端
-#sudo docker rmi -f "$docker_registry/h5-hep-user-uat:1.0.230826"
+#sudo docker rmi -f "$docker_registry/h5-dxz-user-uat:1.0.230826"
 
 sudo docker images
 
@@ -78,11 +78,11 @@ docker compose -f ./saas/h5/admin/docker-compose.yml down
 docker compose -f ./saas/h5/user/docker-compose.yml down
 
 ### api 教师端
-#docker rmi -f "$docker_registry/findsoft/api-hep-admin-uat:1.0.230821"
+#docker rmi -f "$docker_registry/wozth/api-dxz-admin-uat:1.0.230821"
 ### h5教师端
-#docker rmi -f "$docker_registry/findsoft/h5-hep-admin-uat:1.0.230826"
+#docker rmi -f "$docker_registry/wozth/h5-dxz-admin-uat:1.0.230826"
 ### h5学生端
-#docker rmi -f "$docker_registry/findsoft/h5-hep-user-uat:1.0.230826"
+#docker rmi -f "$docker_registry/wozth/h5-dxz-user-uat:1.0.230826"
 
 #for di in "${docker_images[@]}"; do
 #    if docker image inspect $di >/dev/null 2>&1; then
@@ -92,7 +92,7 @@ docker compose -f ./saas/h5/user/docker-compose.yml down
 #        echo "......image '$di' does not exist......"
 #    fi
 #done
-containerId=`docker images | grep hep-* | awk '{print $3}'`
+containerId=`docker images | grep dxz-* | awk '{print $3}'`
 echo $containerId
 for str in $containerId
 do

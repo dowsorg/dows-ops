@@ -13,14 +13,14 @@ server:
             io: 4
             worker: 32
 #    servlet:
-#        context-path: /hep
+#        context-path: /dxz
 
 
 spring:
     application:
-        name: dows-hep
+        name: dows-dxz
     profiles:
-        include: hep-mysql,hep-mybatis,hep-mvc,hep-oss,hep-apidoc,hep-redisson,hep-findsoft,hep-websocket
+        include: dxz-mysql,dxz-mybatis,dxz-mvc,dxz-oss,dxz-apidoc,dxz-redisson,dxz-wozth,dxz-websocket
         active: prd
 
     jackson:
