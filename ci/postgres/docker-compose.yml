@@ -1,0 +1,121 @@
+# version: '3'
+# services:
+#   postgres:  
+#     container_name: postgres
+#     restart: always
+#     image: postgres:latest
+#     privileged: true
+#     ports:
+#       - 5432:5432
+#     environment:
+#       PGDATA: /var/lib/postgresql/data
+#       TZ: Asia/Shanghai
+#       LANG: en_US.UTF-8
+#       POSTGRES_DB: postgres
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: 123456
+#       ALLOW_IP_RANGE: 0.0.0.0/0
+#     volumes:
+#       - "dbdata:/var/lib/postgresql/data"
+#       # - ./data/pgdata:/data/postgres:rw
+
+#   # adminer:
+#   #   image: adminer
+#   #   restart: always
+#   #   ports:
+#   #     - 18080:8080
+
+#   pgadmin:
+#     container_name: pgadmin
+#     image: dpage/pgadmin4
+#     environment:
+#       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+#       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+#       PGADMIN_CONFIG_SERVER_MODE: "False"
+#     volumes:
+#       # The local folder owner and group must be set to 5050
+#       # for the volume to work. Otherwise pgadmin is not able to
+#       # write to the local folder
+#       # sudo chown -R 5050:5050 pgadmin_data
+#       - ./data/pgadmin_data:/var/lib/pgadmin
+#     ports:
+#       - "${PGADMIN_PORT:-5050}:80"
+#     # networks:
+#     #   - postgres
+#     restart: unless-stopped
+
+# volumes:
+#   dbdata:
+
+
+# version: '3.3'
+# services:
+#   postgres:
+#     image: postgres:latest
+#     ports:
+#       - 127.0.0.1:5432:5432
+#     volumes:
+#       - ./volumes/postgres:/var/lib/postgresql/data
+#       - /etc/passwd:/etc/passwd:ro
+#     environment:
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=123456
+#     user: $UID:$UID
+#     restart: always
+    
+#   pgadmin4:
+#     image: dpage/pgadmin4
+#     ports:
+#       - 8001:80
+#     environment:
+#       PGADMIN_DEFAULT_EMAIL: xxx@qq.com
+#       PGADMIN_DEFAULT_PASSWORD: 123456
+
+
+
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      ALLOW_IP_RANGE: 0.0.0.0/0
+      POSTGRES_DB: postgres
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-123456}
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+       - postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+   
+  
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:8.3
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-123456}
+    volumes:
+      - pgadmin:/root/.pgadmin:rw
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - postgres
+    user: root
+    
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres:
+  pgadmin:

@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  rainbond-allinone:
+    container_name: rainbond-allinone
+    restart: unless-stopped
+    image: rainbond/rainbond:v5.15.3-dind-allinone
+    eveverments:
+      - EIP=127.0.0.1
+      - UUID=52ce3f6a1c3e1c714ec4257769ff417b
+    ports: 
+      - 80:80
+      - 7070:7070
+      - 443:443
+      - 6060:6060
+      - 10000-10010:10000-10010 
+    volumes:
+      - ./.ssh:/root/.ssh
+      - ./rainbonddata:/app/data
+      - /opt/rainbond:/opt/rainbond

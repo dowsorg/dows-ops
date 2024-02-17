@@ -1,119 +1,59 @@
-version: "3"
+# version: '3.6'
+# services:
+#   gitlab-jh:
+#     container_name: gitlab-jh
+#     image: 'registry.gitlab.cn/omnibus/gitlab-jh:latest'
+#     restart: always
+#     privileged: true
+#     hostname: 'gitlab.example.com'
+#     environment:
+#       GITLAB_ROOT_PASSWORD: jihuz135246
+#       GITLAB_OMNIBUS_CONFIG: |
+#         external_url 'http://gitlab.example.com:8929'
+#         gitlab_rails['gitlab_shell_ssh_port'] = 2224
+#     ports:
+#       - '8929:8929'
+#       - '2222:22'
+#     volumes:
+#       - gitlab_config:/etc/gitlab:rw
+#       - gitlab_logs:/var/log/gitlab:rw
+#       - gitlab_data:/var/opt/gitlab:rw
+#     shm_size: '512m'
+
+# volumes:
+#   gitlab_config:
+#   gitlab_logs:
+#   gitlab_data:
+
+version: '3.6'
 services:
-  # nginx:
-  #   build:
-  #     context: ./services/nginx
-  #     args:
-  #       NGINX_VERSION: ${NGINX_VERSION}
-  #       CONTAINER_PACKAGE_URL: ${CONTAINER_PACKAGE_URL}
-  #       NGINX_INSTALL_APPS: ${NGINX_INSTALL_APPS}
-  #   container_name: nginx
-  #   ports:
-  #     - "${NGINX_HTTP_HOST_PORT}:80"
-  #     - "${NGINX_HTTPS_HOST_PORT}:443"
-  #   volumes:
-  #     - ${SOURCE_DIR}:/www/:rw
-  #     - ${NGINX_SSL_CERTIFICATE_DIR}:/ssl:rw
-  #     - ${NGINX_CONFD_DIR}:/etc/nginx/conf.d/:rw
-  #     - ${NGINX_CONF_FILE}:/etc/nginx/nginx.conf:ro
-  #     - ${NGINX_FASTCGI_PHP_CONF}:/etc/nginx/fastcgi-php.conf:ro
-  #     - ${NGINX_FASTCGI_PARAMS}:/etc/nginx/fastcgi_params:ro
-  #     - ${NGINX_LOG_DIR}:/var/log/nginx/:rw
-  #   environment:
-  #     TZ: "${TZ}"
-  #   restart: always
-  #   networks:
-  #     - default
-
-  jenkins:
-    image: jenkins/jenkins:${JENKINS_VERSION}
-    container_name: jenkins
-    restart: always
-    ports:
-      - "${JENKINS_HOST_PORT_B}:8080"
-      - "${JENKINS_HOST_PORT_P}:50000"
-    volumes:
-      - "${DATA_DIR}/jenkins/home:/var/jenkins_home"
-      - "${SERVICES_DIR}/jenkins/docker.sock:/var/run/docker.sock"
-
   gitlab:
-    image: gitlab/gitlab-ce:${GITLAB_VERSION}
     container_name: gitlab
-    hostname: gitlab
+    image: gitlab/gitlab-ce:16.9.0-ce.0
     restart: always
+    privileged: true
+    hostname: 'gitlab.example.com'
     environment:
-      TZ: "$TZ"
+      GITLAB_ROOT_PASSWORD: git135246
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://gitlab.example.com:8929'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
     ports:
-      - "${GITLAB_HOST_PORT_P}:443"
-      - "${GITLAB_HOST_PORT_B}:80"
-      - "${GITLAB_HOST_PORT_S}:22"
+      - '8929:8929'
+      - '2222:22'
     volumes:
-      - "${DATA_DIR}/gitlab:/var/data/gitlab"
-      - "${LOGS_DIR}/gitlab:/var/log/gitlab"
-      - "${SERVICES_DIR}/gitlab/config:/etc/gitlab"
+      - gitlab_config:/etc/gitlab:rw
+      - gitlab_logs:/var/log/gitlab:rw
+      - gitlab_data:/var/opt/gitlab:rw
+    shm_size: '512m'
+    networks: 
+      - postgres_postgres
 
-  gerrit:
-    image: gerritcodereview/gerrit
-    container_name: gerrit
-    environment:
-      - CANONICAL_WEB_URL=http://localhost:${GERRIT_HOST_PORT_B}
-    depends_on:
-      - ldap
-    ports:
-      - "${GERRIT_HOST_PORT_P}:29418"
-      - "${GERRIT_HOST_PORT_B}:8080"
-    volumes:
-      - "${DATA_DIR}/gerrit/etc:/var/gerrit/etc"
-      - "${DATA_DIR}/gerrit/git:/var/gerrit/git"
-      - "${DATA_DIR}/gerrit/db:/var/gerrit/db"
-      - "${DATA_DIR}/gerrit/index:/var/gerrit/index"
-      - "${DATA_DIR}/gerrit/cache:/var/gerrit/cache"
-      - "${LOGS_DIR}/gerrit:/var/gerrit/logs"
-
-  ldap:
-    image: osixia/openldap
-    container_name: openldap
-    environment:
-      - LDAP_ADMIN_PASSWORD=secret
-    ports:
-      - "${OPENLDAP_HOST_PORT_B}:389"
-      - "${OPENLDAP_HOST_PORT_P}:636"
-    volumes:
-      - "${DATA_DIR}/openldap/var:/var/lib/ldap"
-      - "${DATA_DIR}/openldap/etc:/etc/ldap/slapd.d"
-
-  ldap-admin:
-    image: osixia/phpldapadmin
-    container_name: phpldapadmin
-    depends_on:
-      - ldap
-    environment:
-      - PHPLDAPADMIN_LDAP_HOSTS=ldap
-    ports:
-      - "${PHPLDAPADMIN_HOST_PORT_P}:443"
+volumes:
+  gitlab_config:
+  gitlab_logs:
+  gitlab_data:
 
 networks:
-  default:
-
-#version: '3.6'
-#services:
-#  gitlab:
-#    image: gitlab/gitlab-ce
-#    restart: always
-#    hostname: gitlab-docker
-#    privileged: true
-#    environment:
-#      GITLAB_OMNIBUS_CONFIG: |
-#        external_url 'http://gitlab.abc.com'
-#        gitlab_rails['gitlab_shell_ssh_port'] = 22
-#        prometheus_monitoring['enable'] = false
-#    ports:
-#      - '8080:80'
-#      - '23:22'
-#    volumes:
-#      - ./config:/etc/gitlab:z
-#      - ./logs:/var/log/gitlab:z
-#      - ./data:/var/opt/gitlab:z
-#      #- /etc/localtime:/etc/localtime:ro
-#    shm_size: '1024m'
-#    container_name: "gitlab"
+  postgres_postgres:
+    external: true
