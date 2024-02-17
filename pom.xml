@@ -185,7 +185,7 @@
                             <!--镜像名(含版本号)-->
                             <name>dows/dxz-user:V1-20230730</name>
                             <!--别名:用于容器命名和在docker-compose.yml文件只能找到对应名字的配置-->
-                            <alias>${image.alias}</alias>
+                            <!--<alias>${image.alias}</alias>-->
                             <!--镜像build相关配置-->
                             <build>
                                 <!--使用dockerFile文件-->
