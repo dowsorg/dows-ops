@@ -25,16 +25,6 @@
             <artifactId>framework-api</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.github.eljah</groupId>-->
-<!--            <artifactId>xmindjbehaveplugin</artifactId>-->
-<!--            <version>0.8</version>-->
-<!--        </dependency>-->
-
-        <!--database-->
-
-
-
         <!--api 接口文档-->
         <dependency>
             <groupId>org.springdoc</groupId>
@@ -63,15 +53,9 @@
             <artifactId>disruptor</artifactId>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
-        </dependency>
-
-<!--        <dependency>
-            <groupId>com.jcraft</groupId>
-            <artifactId>jsch</artifactId>
-            <version>0.1.55</version>
         </dependency>-->
 
         <dependency>
