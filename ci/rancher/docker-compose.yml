@@ -1,0 +1,21 @@
+version: '3'
+services:  
+  rancher:    
+    restart: always
+    privileged: true
+    image: rancher/rancher:v2.8-head    
+    container_name: rancher    
+    volumes:      
+      - ./data:/var/lib/rancher      
+      - ./etc:/etc
+    environment:      
+      - TZ=Asia/Shanghai
+      - CATTLE_BOOTSTRAP_PASSWORD=admin123456    
+    ports:
+      - 180:80      
+      - 1443:443    
+#     networks:      
+#       - bigdata
+# networks:  
+#   bigdata:    
+#     external: true

@@ -1,22 +1,59 @@
+# version: '3.6'
+# services:
+#   gitlab-jh:
+#     container_name: gitlab-jh
+#     image: 'registry.gitlab.cn/omnibus/gitlab-jh:latest'
+#     restart: always
+#     privileged: true
+#     hostname: 'gitlab.example.com'
+#     environment:
+#       GITLAB_ROOT_PASSWORD: jihuz135246
+#       GITLAB_OMNIBUS_CONFIG: |
+#         external_url 'http://gitlab.example.com:8929'
+#         gitlab_rails['gitlab_shell_ssh_port'] = 2224
+#     ports:
+#       - '8929:8929'
+#       - '2222:22'
+#     volumes:
+#       - gitlab_config:/etc/gitlab:rw
+#       - gitlab_logs:/var/log/gitlab:rw
+#       - gitlab_data:/var/opt/gitlab:rw
+#     shm_size: '512m'
+
+# volumes:
+#   gitlab_config:
+#   gitlab_logs:
+#   gitlab_data:
+
 version: '3.6'
 services:
   gitlab:
-    image: gitlab/gitlab-ce
+    container_name: gitlab
+    image: gitlab/gitlab-ce:16.9.0-ce.0
     restart: always
-    hostname: gitlab-docker
     privileged: true
+    hostname: 'gitlab.example.com'
     environment:
+      GITLAB_ROOT_PASSWORD: git135246
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://gitlab.abc.com'
-        gitlab_rails['gitlab_shell_ssh_port'] = 22
-        prometheus_monitoring['enable'] = false
+        external_url 'http://gitlab.example.com:8929'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
     ports:
-      - '8080:80'
-      - '23:22'
+      - '8929:8929'
+      - '2222:22'
     volumes:
-      - ./config:/etc/gitlab:z
-      - ./logs:/var/log/gitlab:z
-      - ./data:/var/opt/gitlab:z
-      #- /etc/localtime:/etc/localtime:ro
-    shm_size: '1024m'
-    container_name: "gitlab"
+      - gitlab_config:/etc/gitlab:rw
+      - gitlab_logs:/var/log/gitlab:rw
+      - gitlab_data:/var/opt/gitlab:rw
+    shm_size: '512m'
+    networks: 
+      - postgres_postgres
+
+volumes:
+  gitlab_config:
+  gitlab_logs:
+  gitlab_data:
+
+networks:
+  postgres_postgres:
+    external: true
