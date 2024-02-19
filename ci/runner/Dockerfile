@@ -14,20 +14,26 @@ COPY ./$JDK_GZ .
 COPY ./$MVN_GZ .
 COPY ./$SONAR_SCANNER_CLI_ZIP .
 
-RUN apt-get update && apt-get install -y locales && apt-get install -y unzip \
-    && locale-gen "en_US.UTF-8" && update-locale LC_ALL="en_US.UTF-8" \
+RUN apt-get update  \
+    && apt-get install -y locales  \
+    && apt-get install -y unzip \
+    && locale-gen "en_US.UTF-8"  \
+    && update-locale LC_ALL="en_US.UTF-8" \
     && export LANG="en_US.UTF-8" \
-    && tar zxf $JDK_GZ.tar.gz && tar zxf $MVN_GZ && unzip $SONAR_SCANNER_CLI_ZIP \
+    && tar zxf $JDK_GZ  \
+    && tar zxf $MVN_GZ  \
+    && unzip $SONAR_SCANNER_CLI_ZIP \
     && echo "export CLASSPATH=.:/home/$JDK_NAME/lib" >> /etc/profile \
     && echo "export CLASSPATH=.:/home/$JDK_NAME/lib" >> /root/.bashrc \
     && echo "export PATH=\$PATH:/home/$JDK_NAME/bin:/home/$MVN_NAME/bin:/home/$SONAR_SCANNER_CLI_NAME/bin" >> /etc/profile \
     && echo "export PATH=\$PATH:/home/$JDK_NAME/bin:/home/$MVN_NAME/bin:/home/$SONAR_SCANNER_CLI_NAME/bin" >> /root/.bashrc \
-    && . /etc/profile && . /root/.bashrc \
+    && . /etc/profile  \
+    && . /root/.bashrc \
     && rm -f /home/$JDK_GZ /home/$MVN_GZ /home/$SONAR_SCANNER_CLI_ZIP \
-    && apt-get clean -y \
     && rm -rf \
       /var/cache/debconf/* \
       /var/lib/apt/lists/* \
       /var/log/* \
       /var/tmp/* \
-    && rm -rf /tmp/*
+    && rm -rf /tmp/* \
+    && apt-get clean -y
