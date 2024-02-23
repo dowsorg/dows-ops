@@ -1,25 +1,30 @@
 version: '3.5'
 services:
-  gitlab-runner-jms-docker:
-    image: 192.168.111.103:88/cicd/gitlab-runner-jms-docker:16.8.1
-    container_name: gitlab-runner-jms-docker
+  gitlab-runner:
+    image: 192.168.111.103:88/cicd/gitlab-runner:16.8.1.j17m3s5
+    container_name: gitlab-runner
     privileged: true
-    restart: unless-stopped
+    restart:  always
     volumes:
       - maven-setting:/usr/share/maven/conf:z
       - sonar-scanner:/opt/sonar-scanner/conf:z
       - gitlab_runner:/etc/gitlab-runner:z
-#      - /var/run/docker.sock:/var/run/docker.sock
-volumes:
-  maven-setting:
-  sonar-scanner:
-  gitlab_runner:
-
-
-#    environment:
-#      - CI_SERVER_URL=http://192.168.23.19
-#      - REGISTRATION_TOKEN=glrt-hLVy1hN8jKpBiP7o7Bh3
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TZ=Asia/Shanghai
 #    command:
+#      - register
+#      - --non-interactive
+#      - --url="http://192.168.23.19"
+#      - --registration-token="Z6DZL2dtNDU8bBPfsJs9"
+#      - --executor="docker"
+#      - --docker-image="docker:latest"
+#      - --description="shdy docker executor"
+#      - --tag-list="shdy"
+#      - --run-untagged="false"
+#      - --locked="false"
+#      - --access-level="not_protected"
+
 #      - register
 #      - --non-interactive
 #      - --locked=false
@@ -27,9 +32,20 @@ volumes:
 #      - --executor=shell
 #      - --executor=docker
 #      - --docker-image=docker:20-dind
+#      - --docker-image=docker:latest
 #      - --docker-volumes=/var/run/docker.sock:/var/run/docker.sock
 #      - --docker-volumes=/home/gitlab-runner/.m2:/root/.m2
 #      - --docker-pull-policy=if-not-present
+
+volumes:
+  maven-setting:
+  sonar-scanner:
+  gitlab_runner:
+#networks:
+#  postgres_postgres:
+#    external: true
+#
+
 #version: '3.3'
 #services:
 #  gitlab-runner:
@@ -43,8 +59,4 @@ volumes:
 #      - /var/run/docker.sock:/var/run/docker.sock
 #    networks:
 #      - postgres_postgres
-#
-#networks:
-#  postgres_postgres:
-#    external: true
 #
