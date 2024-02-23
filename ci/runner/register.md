@@ -10,7 +10,7 @@ docker exec gitlab-runner gitlab-runner register \
 --access-level="not_protected"
 
 
-docker exec gitlab-runner gitlab-runner register \
+docker exec gitlab-runner-jms-docker gitlab-runner register \
 --non-interactive \
 --url "http://192.168.23.19/" \
 --registration-token "GR1348941JNi_b-KsdNZ4UcrxSqBt" \

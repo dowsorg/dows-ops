@@ -1,0 +1,58 @@
+FROM gitlab/gitlab-runner:v16.8.1
+
+# 安装 OpenJDK 17
+RUN apt-get update;
+RUN apt-get install -y openssh-server;
+RUN apt-get install -y openjdk-17-jdk;
+# 安装 Maven
+RUN apt-get install -y maven;
+# 安装 Sonar Scanner CLI
+RUN apt-get install -y unzip && \
+    wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip && \
+    unzip sonar-scanner-cli-5.0.1.3006-linux.zip -d /opt && \
+    rm sonar-scanner-cli-5.0.1.3006-linux.zip && \
+    mv /opt/sonar-scanner-5.0.1.3006-linux /opt/sonar-scanner && \
+    ln -s /opt/sonar-scanner/bin/sonar-scanner /usr/local/bin/sonar-scanner;
+RUN apt-get clean;
+
+# 配置环境变量
+ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
+ENV M2_HOME /usr/share/maven
+ENV MAVEN_HOME /usr/share/maven
+ENV SONAR_RUNNER_HOME /opt/sonar-scanner
+
+# 将 Maven 和 Sonar Scanner CLI 的 bin 目录加入 PATH
+ENV PATH $JAVA_HOME/bin:$M2_HOME/bin:$SONAR_RUNNER_HOME/bin:$PATH
+
+#FROM gitlab/gitlab-runner:v16.8.1
+#WORKDIR /home
+#
+#ENV JDK_GZ jdk-17_linux-x64_bin.tar.gz
+#ENV MVN_GZ apache-maven-3.9.6-bin.tar.gz
+#ENV SONAR_SCANNER_CLI_ZIP sonar-scanner-cli-5.0.1.3006-linux.zip
+#
+#COPY ./$JDK_GZ .
+#COPY ./$MVN_GZ .
+#COPY ./$SONAR_SCANNER_CLI_ZIP .
+#
+#RUN apt-get update && \
+#    apt-get install -y locales && \
+#    apt-get install -y unzip && \
+#    locale-gen "en_US.UTF-8" && \
+#    update-locale LC_ALL="en_US.UTF-8" && \
+#    export LANG="en_US.UTF-8" && \
+#    tar zxf $JDK_GZ && \
+#    rm -f $JDK_GZ && \
+#    tar zxf $MVN_GZ && \
+#    rm -f $MVN_GZ && \
+#    unzip $SONAR_SCANNER_CLI_ZIP && \
+#    rm -f $SONAR_SCANNER_CLI_ZIP
+#
+#ENV JAVA_HOME /home/jdk-17.0.10
+#ENV MAVEN_HOME /home/maven-3.9.6
+#ENV SONAR_SCANNER_CLI_HOME /home/sonar-scanner-cli-5.0.1.3006
+#
+#ENV JAVA_HOME /home/$JDK_VERSION
+#ENV MAVEN_HOME /home/$MVN_VERSION
+#ENV SONAR_SCANNER_HOME /home/$SONAR_SCANNER_CLI_VERSION
+#ENV PATH $$PATH:$$JAVA_HOME/bin:$$MAVEN_HOME/bin:$$SONAR_SCANNER_HOME/bin

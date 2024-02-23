@@ -1,39 +1,36 @@
 FROM gitlab/gitlab-runner:v16.8.1
 
-ENV JDK_GZ jdk-17_linux-x64_bin.tar.gz
-ENV MVN_GZ apache-maven-3.9.6-bin.tar.gz
-ENV SONAR_SCANNER_CLI_ZIP sonar-scanner-cli-5.0.1.3006-linux.zip
+RUN apt-get update;
+RUN apt-get install -y openssh sshpass net-tools;
+# 配置OpenSSH服务器
+RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config && \
+    echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config && \
+    mkdir /var/run/sshd
+# 设置root密码
+RUN echo 'root:pwd135246!' | chpasswd
 
-ENV JDK_NAME jdk-17.0.10
-ENV MVN_NAME maven-3.9.6
-ENV SONAR_SCANNER_CLI_NAME sonar-scanner-cli-5.0.1.3006
+# 安装 OpenJDK 17
+RUN apt-get install -y openjdk-17-jdk;
+# 安装 Maven
+RUN apt-get install -y maven;
+# 安装 Sonar Scanner CLI
+RUN apt-get install -y unzip && \
+    wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip && \
+    unzip sonar-scanner-cli-5.0.1.3006-linux.zip -d /opt && \
+    rm sonar-scanner-cli-5.0.1.3006-linux.zip && \
+    mv /opt/sonar-scanner-5.0.1.3006-linux /opt/sonar-scanner && \
+    ln -s /opt/sonar-scanner/bin/sonar-scanner /usr/local/bin/sonar-scanner;
 
-WORKDIR /home
+RUN apt-get clean;
 
-COPY ./$JDK_GZ .
-COPY ./$MVN_GZ .
-COPY ./$SONAR_SCANNER_CLI_ZIP .
-
-RUN apt-get update  \
-    && apt-get install -y locales  \
-    && apt-get install -y unzip \
-    && locale-gen "en_US.UTF-8"  \
-    && update-locale LC_ALL="en_US.UTF-8" \
-    && export LANG="en_US.UTF-8" \
-    && tar zxf $JDK_GZ  \
-    && tar zxf $MVN_GZ  \
-    && unzip $SONAR_SCANNER_CLI_ZIP \
-    && echo "export CLASSPATH=.:/home/$JDK_NAME/lib" >> /etc/profile \
-    && echo "export CLASSPATH=.:/home/$JDK_NAME/lib" >> /root/.bashrc \
-    && echo "export PATH=\$PATH:/home/$JDK_NAME/bin:/home/$MVN_NAME/bin:/home/$SONAR_SCANNER_CLI_NAME/bin" >> /etc/profile \
-    && echo "export PATH=\$PATH:/home/$JDK_NAME/bin:/home/$MVN_NAME/bin:/home/$SONAR_SCANNER_CLI_NAME/bin" >> /root/.bashrc \
-    && . /etc/profile  \
-    && . /root/.bashrc \
-    && rm -f /home/$JDK_GZ /home/$MVN_GZ /home/$SONAR_SCANNER_CLI_ZIP \
-    && rm -rf \
-      /var/cache/debconf/* \
-      /var/lib/apt/lists/* \
-      /var/log/* \
-      /var/tmp/* \
-    && rm -rf /tmp/* \
-    && apt-get clean -y
+# 配置环境变量
+ENV JAVA_HOME /usr/lib/jvm/java-17-openjdk-amd64
+ENV M2_HOME /usr/share/maven
+ENV MAVEN_HOME /usr/share/maven
+ENV SONAR_RUNNER_HOME /opt/sonar-scanner
+# 将 Maven 和 Sonar Scanner CLI 的 bin 目录加入 PATH
+ENV PATH $JAVA_HOME/bin:$M2_HOME/bin:$SONAR_RUNNER_HOME/bin:$PATH
+# 暴露SSH端口
+EXPOSE 22
+# 启动SSH服务
+CMD ["/usr/sbin/sshd", "-D"]

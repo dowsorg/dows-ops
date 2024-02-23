@@ -1,20 +1,50 @@
-version: '3.3'
+version: '3.5'
 services:
-  gitlab-runner:
-    # build:
-    container_name: gitlab-runner
-    image: gitlab/gitlab-runner:v16.9.0
+  gitlab-runner-jms-docker:
+    image: 192.168.111.103:88/cicd/gitlab-runner-jms-docker:16.8.1
+    container_name: gitlab-runner-jms-docker
     privileged: true
-    restart: always
+    restart: unless-stopped
     volumes:
-      - gitlab_runner_settings:/etc/gitlab-runner
-      - /var/run/docker.sock:/var/run/docker.sock
-    networks: 
-      - postgres_postgres
-      
-networks:
-  postgres_postgres:
-    external: true
-
+      - maven-setting:/usr/share/maven/conf:z
+      - sonar-scanner:/opt/sonar-scanner/conf:z
+      - gitlab_runner:/etc/gitlab-runner:z
+#      - /var/run/docker.sock:/var/run/docker.sock
 volumes:
-  gitlab_runner_settings:
+  maven-setting:
+  sonar-scanner:
+  gitlab_runner:
+
+
+#    environment:
+#      - CI_SERVER_URL=http://192.168.23.19
+#      - REGISTRATION_TOKEN=glrt-hLVy1hN8jKpBiP7o7Bh3
+#    command:
+#      - register
+#      - --non-interactive
+#      - --locked=false
+#      - --name=gitlab-runner-shdy
+#      - --executor=shell
+#      - --executor=docker
+#      - --docker-image=docker:20-dind
+#      - --docker-volumes=/var/run/docker.sock:/var/run/docker.sock
+#      - --docker-volumes=/home/gitlab-runner/.m2:/root/.m2
+#      - --docker-pull-policy=if-not-present
+#version: '3.3'
+#services:
+#  gitlab-runner:
+#    # build:
+#    container_name: gitlab-runner
+#    image: gitlab/gitlab-runner:v16.9.0
+#    privileged: true
+#    restart: always
+#    volumes:
+#      - gitlab_runner_settings:/etc/gitlab-runner
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    networks:
+#      - postgres_postgres
+#
+#networks:
+#  postgres_postgres:
+#    external: true
+#
