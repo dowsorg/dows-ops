@@ -74,7 +74,6 @@
 
 
 version: '3.5'
-
 services:
   postgres:
     container_name: postgres
@@ -93,7 +92,7 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - postgres
+      - cicd
    
   
   pgadmin:
@@ -108,13 +107,13 @@ services:
     ports:
       - "${PGADMIN_PORT:-5050}:80"
     networks:
-      - postgres
+      - cicd
     user: root
     
 
 networks:
-  postgres:
-    driver: bridge
+  cicd:
+    external: true
 
 volumes:
   postgres:

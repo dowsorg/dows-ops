@@ -1,35 +1,36 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * 通过公钥免密登录
+ */
 @Slf4j
-public class JSchConnect {
+public class JSchIdentity {
 
     public static void main(String[] args) {
 
         String username = "root";
-        String password = "123456";
         String host = "192.168.66.36";
         int port = 22;
 
-        // 创建JSch对象
-        JSch jsch = new JSch();
+        // 参加jsch对象
+        JSch jSch = new JSch();
         Session session = null;
         boolean result = false;
 
         try {
-            // 根据主机账号、ip、端口
-            session = jsch.getSession(username, host, port);
-            // 设置主机密码
-            session.setPassword(password);
+            jSch.setKnownHosts("~/.ssh/known_hosts");   // 信任的主机
+            jSch.addIdentity("~/.ssh/id_rsa");          // 私钥文件
+
+            session = jSch.getSession(username, host, port);
 
             // 去掉首次连接确认
-            session.setConfig("StrictHostKeyChecking", "on");
+            session.setConfig("StrictHostKeyChecking", "no");
 
-            // 超时连接时间为3秒
+            // 超时连接
             session.setTimeout(3000);
 
             // 进行连接
@@ -38,19 +39,18 @@ public class JSchConnect {
             // 获取连接结果
             result = session.isConnected();
 
-        } catch (JSchException e) {
-            log.warn(e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
-            // 关闭session流
             if (session != null && session.isConnected()) {
                 session.disconnect();
             }
         }
 
         if (result) {
-            log.error("【SSH连接】连接成功");
+            log.info("【SSH连接】连接成功");
         } else {
-            log.error("【SSH连接】连接失败");
+            log.info("【SSH连接】连接失败");
         }
     }
 }

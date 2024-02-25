@@ -1,0 +1,25 @@
+dows:
+  ops:
+    docker:
+      name: docker
+    maven:
+      name: maven
+    java:
+      name: java
+    gitlab:
+      name: gitlab
+
+    sonarqube:
+      name: sonarqube
+    nexus:
+      name: nexus
+    jenkins:
+      name: jenkins
+    gitlab-runner:
+      name: gitlab-runner
+    k8s:
+      name: k8s
+    helm:
+      name: helm
+
+

@@ -1,4 +1,4 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 import cn.hutool.core.io.FileUtil;
 import com.jcraft.jsch.ChannelExec;

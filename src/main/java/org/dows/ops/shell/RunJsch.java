@@ -1,4 +1,4 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 public class RunJsch {
     public static void main(String[] args) {

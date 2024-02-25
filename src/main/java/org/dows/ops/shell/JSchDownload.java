@@ -1,15 +1,15 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 import cn.hutool.core.util.CharsetUtil;
 import com.jcraft.jsch.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
-public class JSchUpload {
+@Slf4j
+public class JSchDownload {
 
-    private static final Logger log = LoggerFactory.getLogger(JSchUpload.class);
 
     public static void main(String[] args) {
+
         String username = "root";
         String password = "123456";
         String host = "192.168.66.36";
@@ -46,15 +46,15 @@ public class JSchUpload {
 
             /**
              * 说明：
-             * 1、当前文件上传信息没有任何反馈，如果没有异常则代表成功
+             * 1、当前上读取文件信息没有任何反馈，如果没有异常则代表成功
              * 2、如果需要判断是否读取成功的进度，可参考https://blog.csdn.net/coding99/article/details/52416373?locationNum=13&fps=1
-             * 3、将src文件上传到dst路径中
+             * 3、将src文件下载到dst路径中
              */
 
-            // 上传文件
-            ftp.put("d:\\123\\php-7.4.28.tar.gz", "/root/php.tar.gz");
+            // 下载文件
+            ftp.get("/root/php.tar.gz", "d:/123");
 
-            log.info("文件上传成功");
+            log.info("文件下载成功");
 
         } catch (SftpException | JSchException e) {
             log.warn(e.getMessage());

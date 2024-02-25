@@ -28,8 +28,10 @@ services:
       # 此设置用于集成gitlab时，回调地址设置
       #- -Dsonar.core.serverBaseURL=https://sonarqube.example.com
     networks: 
-      - postgres_postgres
+      - cicd
 
+#docker volume create --opt type=none --opt o=bind --opt device=/shdy/sonar my_volume
+#docker run -v my_volume:/shdy/sonar -d your_image_name
 volumes:
   sonarqube_data:
   sonarqube_logs:
@@ -42,6 +44,6 @@ volumes:
     #   device: /dows/paas/sonarqube/logs # 绑定的文件夹
 
 networks:
-  postgres_postgres:
+  cicd:
     external: true
 

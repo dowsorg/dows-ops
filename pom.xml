@@ -63,6 +63,11 @@
             <artifactId>jsch</artifactId>
             <version>0.2.16</version>
         </dependency>
+        <dependency>
+            <groupId>org.gitlab4j</groupId>
+            <artifactId>gitlab4j-api</artifactId>
+            <version>5.5.0</version>
+        </dependency>
 
 
         <!--<dependency>

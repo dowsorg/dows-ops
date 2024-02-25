@@ -1,4 +1,4 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 import com.jcraft.jsch.*;
 import java.util.Properties;

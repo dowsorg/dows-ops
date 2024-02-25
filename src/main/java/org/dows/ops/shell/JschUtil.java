@@ -1,4 +1,4 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 import com.jcraft.jsch.*;
 import lombok.extern.slf4j.Slf4j;

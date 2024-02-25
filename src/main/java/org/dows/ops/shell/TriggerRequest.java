@@ -1,4 +1,4 @@
-package org.dows.ops;
+package org.dows.ops.shell;
 
 import lombok.Data;
 
