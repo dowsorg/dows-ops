@@ -68,7 +68,7 @@ docker exec gitlab-runner gitlab-runner register \
 --locked "false" \
 --access-level "not_protected"
 
-
+# 注册shell
 docker exec gitlab-runner gitlab-runner register \
 --non-interactive \
 --url "http://192.168.23.19/" \
@@ -76,6 +76,20 @@ docker exec gitlab-runner gitlab-runner register \
 --executor "shell" \
 --description "shdy shell executor" \
 --tag-list "cicd" \
+--run-untagged="false" \
+--locked="false" \
+--access-level="not_protected"
+
+
+# 注册docker
+docker exec gitlab-runner gitlab-runner register \
+--non-interactive \
+--url "http://192.168.23.19/" \
+--registration-token "Z6DZL2dtNDU8bBPfsJs9" \
+--executor "docker" \
+--docker-image docker:latest \
+--description "shdy docker executor" \
+--tag-list "cicd-docker" \
 --run-untagged="false" \
 --locked="false" \
 --access-level="not_protected"
