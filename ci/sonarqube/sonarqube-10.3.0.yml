@@ -1,0 +1,49 @@
+version: '3'
+services:
+  sonarqube:
+    image: sonarqube:10.3.0-community
+    restart: always
+    privileged: true
+    container_name: sonarqube
+    # depends_on:
+    #   - postgres
+    volumes:
+      - sonarqube_extensions_1030:/opt/sonarqube/extensions:rw
+      - sonarqube_logs_1030:/opt/sonarqube/logs:rw
+      - sonarqube_data_1030:/opt/sonarqube/data:rw
+      - sonarqube_conf_1030:/opt/sonarqube/conf:rw
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 9001:9000
+    environment:
+      SONARQUBE_JDBC_USERNAME: postgres
+      SONARQUBE_JDBC_PASSWORD: 123456
+      SONARQUBE_JDBC_URL: jdbc:postgresql://postgres:5432/sonarqube1030
+    command:
+      # 内存设置
+      - -Dsonar.ce.javaOpts=-Xmx2048m
+      - -Dsonar.web.javaOpts=-Xmx2048m
+      # 设置服务代理路径
+      - -Dsonar.web.context=/
+      # 此设置用于集成gitlab时，回调地址设置
+      #- -Dsonar.core.serverBaseURL=https://sonarqube.example.com
+    networks:
+      - cicd
+
+#docker volume create --opt type=none --opt o=bind --opt device=/shdy/sonar my_volume
+#docker run -v my_volume:/shdy/sonar -d your_image_name
+volumes:
+  sonarqube_data_1030:
+  sonarqube_logs_1030:
+  sonarqube_conf_1030:
+  sonarqube_extensions_1030:
+    # driver: local
+    # driver_opts:
+    #   type: none
+    #   o: bind
+    #   device: /dows/paas/sonarqube/logs # 绑定的文件夹
+
+networks:
+  cicd:
+    external: true
+
