@@ -1,0 +1,45 @@
+version: '3'
+services:
+  dev-taos:
+    image: tdengine/tdengine:latest
+    container_name: dev-taos
+    ports:
+      - "6030:6030" # ?????
+      - "6041:6041"
+      - "6043-6049:6043-6049" # ??????
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./data:/var/lib/taos  # ?????
+    command: /usr/bin/taosd
+    restart: always
+
+#version: '3'
+#services:
+#  dev-taosd:
+#    image: taosdata/tdengine:latest
+#    container_name: dev-taosd
+#    environment:
+#      - TAOS_FQDN=taosd
+#    volumes:
+#      - taos-data:/var/lib/taos
+#    ports:
+#      - "6030-6049:6030-6049"
+#    command: ["taosd"]
+#    restart: on-failure
+#  dev-taos:
+#    image: taosdata/tdengine:latest
+#    container_name: dev-taos
+#    depends_on:
+#      - dev-taosd
+#    environment:
+#      - TAOS_USER=taos
+#    volumes:
+#      - ./taos.cfg:/taos.cfg
+#    links:
+#      - dev-taosd
+#    entrypoint: ["taosd", "-c", "/taos.cfg"]
+#    tty: true
+#
+#volumes:
+#  taos-data:
