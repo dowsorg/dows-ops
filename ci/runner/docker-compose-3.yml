@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+  gitlab-runner:
+    image: 192.168.111.103:88/cicd/gitlab-runner:16.8.1-j17m3s5
+    container_name: gitlab-runner-16.8.1-j17m3s5
+    privileged: true
+    restart:  always
+    volumes:
+      - ./config:/etc/gitlab-runner:z
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TZ=Asia/Shanghai
+#    command:
+#      - register
+#      - --non-interactive
+#      - --url "http://192.168.23.19"
+#      - --registration-token "Z6DZL2dtNDU8bBPfsJs9"
+#      - --executor "docker"
+#      - --docker-image "docker:latest"
+#      - --description "docker executor"
+#      - --tag-list "cicd-docker"
+#      - --run-untagged "false"
+#      - --locked "false"
+#      - --access-level "not_protected"

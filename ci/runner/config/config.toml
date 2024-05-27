@@ -1,0 +1,27 @@
+concurrent = 1
+check_interval = 0
+
+[session_server]
+session_timeout = 1800
+
+[[runners]]
+name = "9e04527d0635"
+url = "http://192.168.23.19"
+token = "glrt-ysxvvz7Ch8xsjUGMCNT_"
+executor = "docker"
+[runners.custom_build_dir]
+[runners.cache]
+[runners.cache.s3]
+[runners.cache.gcs]
+[runners.cache.azure]
+[runners.docker]
+tls_verify = false
+image = "docker:latest"
+privileged = true
+disable_entrypoint_overwrite = false
+oom_kill_disable = false
+disable_cache = false
+allowed_pull_policies = ["if-not-present"] #添加了这行
+pull_policy = ["if-not-present"]  #添加了这行
+volumes = ["/var/run/docker.sock:/var/run/docker.sock","/cache"]
+shm_size = 0
