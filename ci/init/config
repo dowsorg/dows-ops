@@ -1,0 +1,6 @@
+
+Host 192.168.23.19
+HostName 192.168.23.19
+IdentityFile ./id_rsa_github
+PreferredAuthentications publickey
+User lait.zhang@gmail.com

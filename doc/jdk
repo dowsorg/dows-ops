@@ -1,0 +1,32 @@
+在 linux 系统中安装了不同版本的 jdk，配置环境变量后用 java -version 查看未生效，还是原来的 jdk。经查阅资料后现已解决，在此做下记录。
+
+执行 $JAVA_HOME 看路径是正确的，但是 java -version 显示的不是该路径下的jdk。
+
+不生效处理
+1. which java
+
+2. which javac
+
+3. rm -rf /usr/bin/java
+
+4. rm -rf /usr/bin/javac
+
+5. ln -s $JAVA_HOME/bin/java /usr/bin/java
+
+6. ln -s $JAVA_HOME/bin/javac /usr/bin/javac
+
+7. 配置/etc/profile
+
+8. source /etc/profile
+
+
+解决办法
+执行 which java，删除输出的目录。
+
+执行 which javac，删除输出的目录。
+
+执行 ln -s $JAVA_HOME/bin/java /usr/bin/java 命令。
+
+执行 ln -s $JAVA_HOME/bin/javac /usr/bin/javac 命令。
+
+执行 source /etc/profile 重新使环境变量生效

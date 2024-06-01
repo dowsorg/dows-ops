@@ -153,3 +153,18 @@ echo "GitLab Runner registration script completed."
 
 
 gitlab-runner set --workdir "/home/gitlab-runner"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ubuntu
+gitlab-runner register  --url http://192.168.23.19  --token glrt-KETF8ddVR8ZyTjmn4n21

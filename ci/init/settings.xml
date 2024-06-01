@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <localRepository>/home/gitlab-runner/repository</localRepository>
+
+    <pluginGroups>
+    </pluginGroups>
+
+    <proxies>
+    </proxies>
+
+    <servers>
+
+        <server>
+            <id>shdy-maven</id>
+            <username>admin</username>
+            <password>shdy123!</password>
+        </server>
+
+        <server>
+            <id>shdy-releases</id>
+            <username>admin</username>
+            <password>shdy123!</password>
+        </server>
+        <server>
+            <id>shdy-snapshots</id>
+            <username>admin</username>
+            <password>shdy123!</password>
+        </server>
+
+        <server>
+            <id>http://192.168.111.103:88</id>
+            <username>admin</username>
+            <password>shdy123!</password>
+        </server>
+
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>aliyun-maven</id>
+            <mirrorOf>central,jcenter,!rdc-releases,!rdc-snapshots</mirrorOf>
+            <name>mirror</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+        </mirror>
+
+        <mirror>
+            <id>shdy-maven</id>
+            <name>nexus</name>
+            <mirrorOf>*</mirrorOf>
+            <url>http://192.168.111.103:8081/repository/maven-public/</url>
+        </mirror>
+
+        <mirror>
+            <id>huaweicloud</id>
+            <mirrorOf>central</mirrorOf>
+            <name>huaweicloud maven</name>
+            <url>https://mirrors.huaweicloud.com/repository/maven/</url>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <!-- <profile>
+            <id>nexus</id>
+            <repositories>
+                <repository>
+                    <id>shdy-maven</id>
+                    <url>http://192.168.111.103:8081/repository/maven-public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>shdy-maven</id>
+                    <url>http://192.168.111.103:8081/repository/maven-public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile> -->
+
+        <profile>
+            <id>harbor</id>
+            <properties>
+                <registry.host>http://192.168.111.103:88</registry.host>
+                <registry.username>admin</registry.username>
+                <registry.password>shdy123!</registry.password>
+            </properties>
+        </profile>
+
+    </profiles>
+
+    <activeProfiles>
+        <!-- <activeProfile>nexus</activeProfile> -->
+        <activeProfile>harbor</activeProfile>
+    </activeProfiles>
+
+</settings>
